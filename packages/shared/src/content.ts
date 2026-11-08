@@ -30,6 +30,17 @@ export const ModifierDef = z.discriminatedUnion("kind", [
     max: z.number(),
     /** Display template, `{n}` is replaced with the value. */
     format: z.string(),
+    /**
+     * Bell curve instead of an even spread: values near `mean` are common, the edges of [min, max] are rare.
+     * `byGender` overrides it by the gender card title (e.g. men are taller on average).
+     */
+    normal: z
+      .object({
+        mean: z.number(),
+        sd: z.number().positive(),
+        byGender: z.record(z.string(), z.object({ mean: z.number(), sd: z.number().positive() })).optional(),
+      })
+      .optional(),
   }),
   z.object({
     kind: z.literal("scale"),

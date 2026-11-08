@@ -198,7 +198,7 @@ export function applyHostAction(state: RoomState, prev: RoomState, action: HostA
     const last = state.undo.pop();
     ensure(last, "Нечего отменять");
     state.game = restore(last, game);
-    state.rngState = last.rngState;
+    // The random generator is not rewound: redoing an undone action gives a new result, not the same one again.
     env.log(`отменил действие «${last.label}»`);
     return;
   }
@@ -711,18 +711,26 @@ function run(env: Env, action: HostAction): string {
       return done(`сделал возраст «${group.label}» ${who(env, action.target)}`);
     }
     case "host.body": {
+      // Only the body type changes; height and other modifiers stay as they were.
       const d = def(game, "body");
-      const item = pool(env, d.contentType).find((i) => i.title === action.title);
-      ensure(item, "Нет такого телосложения");
+      const bodies = pool(env, d.contentType).filter((i) => i.weight > 0);
+      const fixed = action.title === "random" ? null : bodies.find((i) => i.title === action.title);
+      ensure(action.title === "random" || fixed, "Нет такого телосложения");
+      const titles: string[] = [];
       forTargets(env, action.target, (pid) => {
         for (const card of cards(game, pid, "body")) {
+          const others = bodies.filter((i) => i.id !== card.contentId);
+          const item = fixed ?? (others.length ? env.rng.pick(others) : bodies[0]);
+          ensure(item, "Нет такого телосложения");
           card.contentId = item.id;
           card.title = item.title;
           card.description = item.description;
           card.abilities = item.abilities;
+          titles.push(item.title);
         }
       });
-      return done(`сделал телосложение «${item.title}» ${who(env, action.target)}`);
+      const what = fixed ? `«${fixed.title}»` : action.target === "all" ? "случайное" : `«${titles[0] ?? "случайное"}»`;
+      return done(`сделал телосложение ${what} ${who(env, action.target)} (рост сохранён)`);
     }
     case "host.char.add": {
       const d = def(game, action.charKey);

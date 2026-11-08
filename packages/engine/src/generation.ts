@@ -71,6 +71,15 @@ export class Picker {
   }
 }
 
+/** A whole number from the bell curve inside [min, max]; values outside are drawn again, so the edges do not pile up. */
+function bellInt(rng: Rng, min: number, max: number, { mean, sd }: { mean: number; sd: number }): number {
+  for (let i = 0; i < 20; i++) {
+    const v = Math.round(rng.normal(mean, sd));
+    if (v >= min && v <= max) return v;
+  }
+  return Math.min(max, Math.max(min, Math.round(mean)));
+}
+
 export function generateModifiers(def: CharacteristicDef, item: ContentItem | null, ctx: CharacterContext, rules: RuleSet, rng: Rng): ModifierValues {
   const values: ModifierValues = {};
   for (const m of def.modifiers) {
@@ -86,7 +95,7 @@ export function generateModifiers(def: CharacteristicDef, item: ContentItem | nu
         const r = item?.modifierRules.ranges?.[m.key];
         const min = Math.max(m.min, r?.min ?? m.min);
         const max = Math.max(min, Math.min(m.max, r?.max ?? m.max));
-        values[m.key] = rng.int(min, max);
+        values[m.key] = m.normal ? bellInt(rng, min, max, (ctx.gender && m.normal.byGender?.[ctx.gender]) || m.normal) : rng.int(min, max);
         break;
       }
       case "scale": {

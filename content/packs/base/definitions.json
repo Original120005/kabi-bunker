@@ -28,7 +28,16 @@
       "sort": 2,
       "contentType": "body",
       "onSteal": "regenerate",
-      "modifiers": [{ "kind": "range", "key": "height", "min": 150, "max": 210, "format": "(Рост: {n} см.)" }]
+      "modifiers": [
+        {
+          "kind": "range",
+          "key": "height",
+          "min": 150,
+          "max": 210,
+          "format": "(Рост: {n} см.)",
+          "normal": { "mean": 172, "sd": 8, "byGender": { "Мужчина": { "mean": 178, "sd": 7 }, "Женщина": { "mean": 165, "sd": 6.5 } } }
+        }
+      ]
     },
     { "key": "trait", "name": "Человеческая черта", "sort": 3, "contentType": "trait", "onSteal": "regenerate" },
     {

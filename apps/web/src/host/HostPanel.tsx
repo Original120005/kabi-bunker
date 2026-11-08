@@ -108,6 +108,7 @@ function Tools({ view }: { view: RoomView }) {
   const [exp, setExp] = useState({ target: firstOf(players), scale: experience[0]?.id ?? "", level: RANDOM });
   const [hl, setHl] = useState({ target: firstOf(players), level: RANDOM });
   const [gender, setGender] = useState("all");
+  const [body, setBody] = useState({ target: firstOf(players), title: "random" });
   const [swap, setSwap] = useState({ a: firstOf(players), b: players[1]?.[0] ?? "", charKey: firstOf(charsNoSpecial) });
   const [steal, setSteal] = useState({ thief: firstOf(players), victim: players[1]?.[0] ?? "", charKey: firstOf(inventory) || firstOf(chars) });
   const [cure, setCure] = useState({ target: firstOf(players), group: ageGroups[0]?.key ?? "", body: game.host?.bodies[0] ?? "" });
@@ -144,6 +145,15 @@ function Tools({ view }: { view: RoomView }) {
           <Select value={hl.target} onChange={(target) => setHl({ ...hl, target })} options={targets} />
           <Select value={hl.level} onChange={(level) => setHl({ ...hl, level })} options={[[RANDOM, "Рандомно"], ...healthScale.levels.map((l): Option => [l.key, l.label])]} />
           <Act onClick={() => act({ type: "host.modifier.set", target: hl.target, charKey: healthScale.charKey, modifierKey: healthScale.modKey, level: hl.level })}>Применить</Act>
+        </Group>
+      )}
+
+      {(game.host?.bodies.length ?? 0) > 0 && (
+        <Group title="Изменить телосложение" open={open === "body"} onToggle={() => toggle("body")}>
+          <Select value={body.target} onChange={(target) => setBody({ ...body, target })} options={targets} />
+          <Select value={body.title} onChange={(title) => setBody({ ...body, title })} options={[["random", "Случайно"], ...game.host!.bodies.map((b): Option => [b, b])]} />
+          <Act onClick={() => act({ type: "host.body", target: body.target, title: body.title })}>Изменить телосложение</Act>
+          <p className="text-xs text-muted">Меняется только тип телосложения, рост остаётся прежним.</p>
         </Group>
       )}
 

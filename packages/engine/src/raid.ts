@@ -32,7 +32,7 @@ function log(state: RoomState, now: number, text: string) {
   state.log.push({ at: now, text });
 }
 
-/** 50% plus the modifiers of body, age and health; clamped to 0–100. */
+/** 60% plus the modifiers of body, age and the first health card; clamped to 0–100. */
 export function survivalChance(game: GameState, playerId: string): { chance: number; modifiers: { label: string; delta: number }[] } {
   const modifiers: { label: string; delta: number }[] = [];
   const body = cardsOf(game, playerId, "body")[0];

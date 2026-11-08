@@ -14,6 +14,13 @@ export class Rng {
     return min + Math.floor(this.next() * (max - min + 1));
   }
 
+  /** Normal distribution (Box–Muller). */
+  normal(mean: number, sd: number): number {
+    const u = 1 - this.next();
+    const v = this.next();
+    return mean + sd * Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+
   chance(p: number): boolean {
     return this.next() < p;
   }
