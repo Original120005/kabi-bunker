@@ -215,6 +215,7 @@ function startGame(state: RoomState, ctx: ActionContext) {
   state.timer = null;
   state.vote = null;
   state.raid = null;
+  state.partyEvents = [];
   state.status = "playing";
   for (const p of state.participants) p.ready = false;
   log(state, ctx.now, `Игра началась. Игроков: ${list.length}, мест в бункере: ${state.game.bunker.seats}`);

@@ -205,7 +205,7 @@ describe("аккаунт и итоги партии", () => {
     expect(() => joinRoom(state, { id: "c", tokenHash: "hc", nickname: "Дима", now: 3, profileId: "d1", avatarUrl: null })).toThrow(/запретил/);
   });
 
-  it("итоги: бункер +20, первый изгнанный −20, второй −10, гибель 0, повторно нельзя", () => {
+  it("итоги: бункер +20 (+10, если выжил), первый изгнанный −20, второй −10, гибель 0, повторно нельзя", () => {
     let state = applyAction(roomWith(6), { type: "lobby.start" }, ctx("p0"));
     state.participants[1].profileId = "prof1";
     state = applyAction(state, { type: "host.exile", playerId: "p1" }, ctx("p0"));
@@ -215,12 +215,13 @@ describe("аккаунт и итоги партии", () => {
     state.game!.statuses.p4 = "dead";
     state = applyAction(state, { type: "host.finish" }, ctx("p0"));
     const rows = Object.fromEntries(state.game!.settlement!.rows.map((r) => [r.playerId, r]));
+    const inside = state.game!.settlement!.finale!.survived ? 30 : 20;
     expect(rows.p2).toMatchObject({ outcome: "firstOut", delta: -20 });
     expect(rows.p3).toMatchObject({ outcome: "secondOut", delta: -10 });
-    expect(rows.p1).toMatchObject({ outcome: "bunker", delta: 20, profileId: "prof1" });
-    expect(rows.p0).toMatchObject({ outcome: "bunker", delta: 20 });
+    expect(rows.p1).toMatchObject({ outcome: "bunker", delta: inside, profileId: "prof1" });
+    expect(rows.p0).toMatchObject({ outcome: "bunker", delta: inside });
     expect(rows.p4).toMatchObject({ outcome: "none", delta: 0 });
-    expect(rows.p5).toMatchObject({ outcome: "bunker", delta: 20 });
+    expect(rows.p5).toMatchObject({ outcome: "bunker", delta: inside });
     expect(state.game!.statuses.p0).toBe("inBunker");
     expect(state.game!.statuses.p4).toBe("dead");
     expect(projectRoom(state, "p0", new Set(), 0).game!.settled).toBe(true);

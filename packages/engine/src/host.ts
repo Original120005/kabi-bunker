@@ -1,7 +1,8 @@
-import { hasAbilityEffect, isInfoEffect, ratingFor, type CharacteristicDef, type ContentDb, type ContentItem, type HostAction, type SimpleEffect, type SpecialEffect } from "@bunker/shared";
+import { hasAbilityEffect, isInfoEffect, ratingFor, SURVIVAL_BONUS, type CharacteristicDef, type ContentDb, type ContentItem, type HostAction, type SimpleEffect, type SpecialEffect } from "@bunker/shared";
 import { ensure, GameError } from "./errors.ts";
 import { catastropheFrom, effectOf, generateGame, generateModifiers, makeCard, Picker, type CharacterContext } from "./generation.ts";
 import { BUNKER_EVENTS } from "./events.ts";
+import { simulateBunker } from "./finale.ts";
 import { raidBusy, raidProtects, returnRaid, spinReel, startRaid } from "./raid.ts";
 import { Rng } from "./rng.ts";
 import type { ActionContext, Card, EventSpin, GameState, NoticeColor, RoomState, UndoEntry } from "./types.ts";
@@ -563,21 +564,33 @@ function run(env: Env, action: HostAction): string {
       ensure(!game.settlement, "Итоги этой партии уже подведены");
       ensure(state.vote?.status !== "open", "Сначала завершите голосование");
       ensure(!state.raid || state.raid.stage === "done" || state.raid.stage === "cancelled", "Сначала завершите вылазку");
+      ensure(!state.event?.spin || state.event.spin.applied, "Дождитесь конца рулетки ивента");
+      const inside = game.seatOrder.filter((id) => game.statuses[id] === "alive" || game.statuses[id] === "inBunker");
+      ensure(
+        inside.length <= game.bunker.seats,
+        `В лагере ${inside.length} ${inside.length === 1 ? "игрок" : "игроков"}, а мест в бункере ${game.bunker.seats}. Сначала изгоните лишних.`,
+      );
+      const finale = simulateBunker(state, game, inside, env.rng, ctx.now);
       const exiled = (game.exileOrder ?? []).filter((id) => game.statuses[id] === "exiled");
       const rows = game.seatOrder.map((id) => {
         const profileId = state.participants.find((p) => p.id === id)?.profileId ?? null;
         const status = game.statuses[id];
-        if (status === "alive" || status === "inBunker") {
+        if (inside.includes(id)) {
           game.statuses[id] = "inBunker";
-          return { playerId: id, profileId, ...ratingFor(true, null) };
+          const base = ratingFor(true, null);
+          return finale.survived
+            ? { playerId: id, profileId, outcome: base.outcome, delta: base.delta + SURVIVAL_BONUS, reason: "в бункере, бункер выжил" }
+            : { playerId: id, profileId, ...base, reason: "в бункере, бункер погиб" };
         }
-        if (status === "exiled") return { playerId: id, profileId, ...ratingFor(false, exiled.indexOf(id)) };
-        return { playerId: id, profileId, ...ratingFor(false, null) };
+        if (status === "exiled") {
+          const r = ratingFor(false, exiled.indexOf(id));
+          return { playerId: id, profileId, ...r, reason: r.outcome === "firstOut" ? "изгнан первым" : r.outcome === "secondOut" ? "изгнан вторым" : "изгнан" };
+        }
+        return { playerId: id, profileId, ...ratingFor(false, null), reason: status === "dead" ? "погиб на вылазке" : "не попал в бункер" };
       });
-      game.settlement = { id: `${state.code}:${game.startedAt}`, rows };
+      game.settlement = { id: `${state.code}:${game.startedAt}`, rows, finale };
       state.undo = [];
-      const summary = rows.map((r) => `${env.name(r.playerId)} ${r.delta > 0 ? `+${r.delta}` : r.delta}`).join(", ");
-      return done(`подвёл итоги партии (${summary})`);
+      return done("подводит итоги: идёт симуляция бункера");
     }
     case "host.seats": {
       const next = game.bunker.seats + action.delta;
@@ -825,6 +838,7 @@ function run(env: Env, action: HostAction): string {
       state.vote = null;
       state.raid = null;
       state.event = null;
+      state.partyEvents = [];
       return done("начал игру заново");
     }
     case "host.timer": {
@@ -881,6 +895,7 @@ function run(env: Env, action: HostAction): string {
       if (pool.length === 0) pool = BUNKER_EVENTS.filter((e) => e.key !== used[used.length - 1]);
       const picked = env.rng.pick(pool);
       state.eventUsed = used.includes(picked.key) ? [picked.key] : [...used, picked.key];
+      state.partyEvents = [...(state.partyEvents ?? []), picked.key];
       const raider = state.raid && (state.raid.stage === "picking" || state.raid.stage === "away" || state.raid.stage === "returning") ? state.raid.playerId : null;
       const eligible = game.seatOrder.filter((id) => game.statuses[id] === "alive" && id !== raider);
       let spin: EventSpin | null = null;

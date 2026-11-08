@@ -19,7 +19,7 @@ function serverNow() {
   return Date.now() + useRoom.getState().clockOffset;
 }
 
-function useServerNow(ms = 200) {
+export function useServerNow(ms = 200) {
   const [now, setNow] = useState(serverNow);
   useEffect(() => {
     const t = setInterval(() => setNow(serverNow()), ms);

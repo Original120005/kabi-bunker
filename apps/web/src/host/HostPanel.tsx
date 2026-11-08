@@ -380,20 +380,20 @@ function Top({ view, game }: { view: RoomView; game: GameView }) {
       </Act>
       <Act onClick={() => act({ type: "host.revealAll" }, "Открыть всем все характеристики всех игроков?")}>Открыть все характеристики</Act>
       {game.settled ? (
-        <p className="rounded-lg border border-accent/40 bg-accent/10 px-3 py-2 text-center text-xs text-accent-2">Итоги подведены. Рейтинг записан. Чтобы сыграть ещё раз — «Начать заново».</p>
+        <p className="rounded-lg border border-accent/40 bg-accent/10 px-3 py-2 text-center text-xs text-accent-2">Итоги подведены, рейтинг записан. Чтобы сыграть ещё раз — «Начать заново».</p>
       ) : (
         <Act
           tone="ok"
           onClick={async () => {
             if (
               !(await ask("Подвести итоги партии?", {
-                text: "Кто остался в лагере, попадает в бункер и получает +20. Первый изгнанный теряет 20, второй — 10. Остальные без изменений. Начислить рейтинг второй раз нельзя.",
+                text: "Кто остался в лагере, попадает в бункер (+20). Затем все увидят симуляцию: выживет ли бункер. Если выживет — каждому внутри ещё +10. Первый изгнанный теряет 20, второй — 10. Итог окончательный, переиграть нельзя.",
                 confirmLabel: "Подвести итоги",
                 tone: "ok",
               }))
             )
               return;
-            if (await send({ type: "host.finish" })) toast("ok", "Рейтинг и статистика записаны", "Итоги партии");
+            if (await send({ type: "host.finish" })) toast("ok", "Все видят симуляцию бункера. Рейтинг записан.", "Итоги партии");
           }}
         >
           Подвести итоги партии

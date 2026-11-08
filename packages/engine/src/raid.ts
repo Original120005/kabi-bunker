@@ -202,9 +202,15 @@ function raidWakeAt(state: RoomState): number | null {
   }
 }
 
+/** When the verdict of «Итоги партии» may be sent to everyone. */
+function finaleWakeAt(state: RoomState): number | null {
+  const f = state.game?.settlement?.finale;
+  return f && !f.revealed ? f.revealAt : null;
+}
+
 /** When the server should call `advanceRoom` next, or null when nothing is pending. */
 export function nextWakeAt(state: RoomState): number | null {
-  const times = [raidWakeAt(state), pendingEventAt(state)].filter((t): t is number => t !== null);
+  const times = [raidWakeAt(state), pendingEventAt(state), finaleWakeAt(state)].filter((t): t is number => t !== null);
   return times.length ? Math.min(...times) : null;
 }
 
@@ -212,8 +218,18 @@ export function nextWakeAt(state: RoomState): number | null {
 export function advanceRoom(prev: RoomState, ctx: Pick<ActionContext, "now" | "newId">): RoomState {
   const raidAt = raidWakeAt(prev);
   const eventAt = pendingEventAt(prev);
+  const finaleAt = finaleWakeAt(prev);
   const raidDue = raidAt !== null && ctx.now >= raidAt;
   const eventDue = eventAt !== null && ctx.now >= eventAt;
+  if (finaleAt !== null && ctx.now >= finaleAt) {
+    const state = structuredClone(prev);
+    const settlement = state.game!.settlement!;
+    settlement.finale!.revealed = true;
+    const summary = settlement.rows.map((r) => `${nameOf(state, r.playerId)} ${r.delta > 0 ? `+${r.delta}` : r.delta}`).join(", ");
+    log(state, ctx.now, `Итоги партии: бункер ${settlement.finale!.survived ? "выжил" : "не выжил"} (${summary})`);
+    state.version = prev.version + 1;
+    return state;
+  }
   if (!raidDue && !eventDue) return prev;
   const state = structuredClone(prev);
   if (eventDue && (!raidDue || eventAt! <= raidAt!)) {

@@ -1,4 +1,5 @@
 import type { SpecialEffect } from "./content.ts";
+import type { FinaleView } from "./finale.ts";
 import type { RaidView } from "./raid.ts";
 
 /** What a single participant receives from the server. Hidden cards of other players never carry their values. */
@@ -98,6 +99,8 @@ export interface GameView {
   players: GamePlayerView[];
   /** The host has scored this party. Rating is not sent to the client. */
   settled: boolean;
+  /** «Итоги партии»: the bunker simulation shown to everyone. */
+  finale: FinaleView | null;
   /** Only for the host: values for host panel selects and the last undoable action. */
   host: { bodies: string[]; undoLabel: string | null } | null;
 }

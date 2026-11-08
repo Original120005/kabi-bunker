@@ -147,6 +147,8 @@ export interface RoomState {
   } | null;
   /** Keys already shown. Cleared after the whole pool has been used, so one event does not return early. */
   eventUsed: string[];
+  /** Events launched in the current party, for «Итоги партии». Reset when a party starts. */
+  partyEvents?: string[];
 }
 
 /**

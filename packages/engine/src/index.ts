@@ -8,3 +8,4 @@ export * from "./rng.ts";
 export * from "./room.ts";
 export * from "./rules.ts";
 export * from "./types.ts";
+export * from "./finale.ts";

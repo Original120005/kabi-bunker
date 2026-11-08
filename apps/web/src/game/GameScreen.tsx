@@ -11,6 +11,7 @@ import { TimerBar, TimerSplash } from "./TimerBar.tsx";
 import { EventPopup } from "./EventPopup.tsx";
 import { RaidPopup } from "./RaidPopup.tsx";
 import { VotePopup } from "./VotePopup.tsx";
+import { FinalePopup } from "./FinalePopup.tsx";
 
 const NAV = [
   { id: "catastrophe", label: "Катаклизм" },
@@ -58,6 +59,7 @@ export function GameScreen({ view }: { view: RoomView }) {
       <VotePopup view={view} />
       <EventPopup view={view} />
       <RaidPopup view={view} />
+      <FinalePopup view={view} />
       <TimerSplash />
     </div>
   );

@@ -1,4 +1,4 @@
-import { RAID, formatCardLabel, type CardView, type GameView, type ModifierView, type ParticipantView, type RaidView, type RoomView, type VoteView } from "@bunker/shared";
+import { chanceLevel, factorStrength, RAID, formatCardLabel, type FinaleView, type CardView, type GameView, type ModifierView, type ParticipantView, type RaidView, type RoomView, type VoteView } from "@bunker/shared";
 import type { Card, GameState, Participant, Raid, RoomState, Vote } from "./types.ts";
 
 /**
@@ -31,7 +31,7 @@ export function projectRoom(state: RoomState, viewerId: string | null, online: R
     },
     participants: state.participants.map(toView),
     banned: viewer?.isHost ? state.banned.map((b) => ({ id: b.id, nickname: b.nickname })) : [],
-    game: state.game ? projectGame(state, state.game, viewer) : null,
+    game: state.game ? projectGame(state, state.game, viewer, now) : null,
     log: viewer?.isHost ? state.log.slice(-100) : [],
     notices: (state.notices ?? [])
       .filter((n) => n.to === "all" || n.to === viewerId)
@@ -97,7 +97,31 @@ function projectVote(vote: Vote, viewerId: string | null): VoteView {
   };
 }
 
-function projectGame(state: RoomState, game: GameState, viewer: Participant | null): GameView {
+/** The show of «Итоги партии»: factors without numbers; verdict and rating only after `revealAt`. */
+function projectFinale(state: RoomState, game: GameState, now: number): FinaleView | null {
+  const s = game.settlement;
+  const f = s?.finale;
+  if (!s || !f) return null;
+  const open = f.revealed || now >= f.revealAt;
+  const listed = f.factors.filter((x) => !x.label.startsWith("Уже в бункере:"));
+  return {
+    id: s.id,
+    at: f.at,
+    revealAt: f.revealAt,
+    factors: listed.map((x) => ({ label: x.label, detail: x.detail, tone: x.delta > 0 ? "good" : x.delta < 0 ? "bad" : "neutral", strength: factorStrength(x.delta) })),
+    finalEvent: f.finalEvent ? { title: f.finalEvent.title, text: f.finalEvent.text, image: f.finalEvent.image, tone: f.finalEvent.tone, outcome: f.finalEvent.outcome, solved: f.finalEvent.solved } : null,
+    level: chanceLevel(f.chance),
+    survived: open ? f.survived : null,
+    rows: open
+      ? s.rows.map((r) => {
+          const p = state.participants.find((x) => x.id === r.playerId);
+          return { playerId: r.playerId, nickname: p?.nickname ?? "Игрок", avatarUrl: p?.avatarUrl ?? null, reason: r.reason ?? "", delta: r.delta, rated: r.profileId !== null };
+        })
+      : null,
+  };
+}
+
+function projectGame(state: RoomState, game: GameState, viewer: Participant | null, now: number): GameView {
   const hostSees = viewer?.isHost === true && game.rules.hostSeesHidden;
   const cardView = (card: Card): CardView => {
     const visible = card.revealed || card.ownerId === viewer?.id || hostSees;
@@ -160,6 +184,7 @@ function projectGame(state: RoomState, game: GameState, viewer: Participant | nu
     })),
     host: viewer?.isHost ? { bodies: game.bodies ?? [], undoLabel: state.undo?.at(-1)?.label ?? null } : null,
     settled: game.settlement != null,
+    finale: projectFinale(state, game, now),
     players: game.seatOrder.map((id, index) => {
       const hand = game.hands[id] ?? {};
       const person = state.participants.find((p) => p.id === id);
