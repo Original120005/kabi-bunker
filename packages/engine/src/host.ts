@@ -748,11 +748,14 @@ function run(env: Env, action: HostAction): string {
     case "host.char.add": {
       const d = def(game, action.charKey);
       targets(game, action.target);
-      const existing = cards(game, action.target, d.key).filter((c) => c.contentId || c.title !== EMPTY);
+      const all = cards(game, action.target, d.key);
+      const existing = all.filter((c) => c.contentId || c.title !== EMPTY);
       const own = new Set(existing.map((c) => c.contentId ?? ""));
       const added = action.text ? textCard(env, d, action.target, action.text) : draw(env, d, action.target, own);
+      // When the characteristic is already open, the new line is open too, so it shows up in the players table.
+      added.revealed = all.some((c) => c.revealed);
       setCards(game, action.target, d.key, [...existing, added]);
-      return done(`добавил «${d.name}» ${who(env, action.target)}`);
+      return done(`добавил «${d.name}»${action.text ? ` («${action.text}»)` : ""} ${who(env, action.target)}`);
     }
     case "host.char.remove": {
       const d = def(game, action.charKey);

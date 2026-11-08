@@ -146,6 +146,23 @@ describe("способности профессий", () => {
     expect(hand(s, "p1", "backpack").map((c) => c.title)).toContain("Микроскоп с подсветкой");
   });
 
+  it("добавленный предмет сразу виден в таблице, если рюкзак или инвентарь уже открыт", () => {
+    let s = prepared();
+    for (const c of hand(s, "p1", "backpack")) c.revealed = true;
+    for (const c of hand(s, "p1", "bigInventory")) c.revealed = false;
+    const librarian = giveProfession(s, "p1", byTitle("Библиотекарь"));
+    s = act(s, { type: "host.special.apply", cardId: librarian.id, text: "Пара книг и очки" });
+    const books = hand(s, "p1", "backpack").find((c) => c.title === "Пара книг и очки")!;
+    expect(books.revealed).toBe(true);
+    const seen = projectRoom(s, "p3", new Set(), 0).game!.players.find((p) => p.id === "p1")!.cards.backpack;
+    expect(seen.some((c) => !c.hidden && c.title === "Пара книг и очки")).toBe(true);
+
+    const agronomist = giveProfession(s, "p2", byTitle("Агроном"));
+    for (const c of hand(s, "p2", "bigInventory")) c.revealed = false;
+    s = act(s, { type: "host.special.apply", cardId: agronomist.id, text: "Ящик с продуктами" });
+    expect(hand(s, "p2", "bigInventory").find((c) => c.title === "Ящик с продуктами")!.revealed).toBe(false);
+  });
+
   it("отметка «использовано» переходит вместе с профессией, а Учёный получает чужую неиспользованной", () => {
     let s = prepared();
     const teacher = giveProfession(s, "p2", byTitle("Педагог"));
