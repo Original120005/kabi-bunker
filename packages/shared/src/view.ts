@@ -38,9 +38,9 @@ export interface VisibleCardView {
   abilities: { name: string; text: string; kind: string }[];
   /** Whether the card is open to everybody; owners also see their closed cards. */
   revealed: boolean;
-  /** Special cards: what the host's one-click application does; null when it is applied by hand. */
+  /** Special cards and professions: what the host's one-click application does; null when it is applied by hand. */
   effect: SpecialEffect | null;
-  /** Special cards: already applied by the host. */
+  /** Special cards and professions: already applied by the host. */
   used: boolean;
 }
 

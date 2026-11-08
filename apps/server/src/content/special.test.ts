@@ -113,7 +113,7 @@ describe("умное применение спец. возможностей", (
     expect(() => act(s, { type: "host.special.apply", cardId: swap.id })).toThrow(/Выберите игрока/);
     expect(() => act(s, { type: "host.special.apply", cardId: swap.id, target: "p1" })).toThrow(/другого игрока/);
     expect(() => act(s, { type: "host.special.apply", cardId: swap.id, target: "p2" }, "p1")).toThrow(/только ведущий/);
-    expect(() => act(s, { type: "host.special.apply", cardId: hand(s, "p1", "profession")[0].id })).toThrow(/Спец. карта не найдена/);
+    expect(() => act(s, { type: "host.special.apply", cardId: hand(s, "p1", "trait")[0].id })).toThrow(/Карта со способностью не найдена/);
     swap.revealed = false;
     expect(() => act(s, { type: "host.special.apply", cardId: swap.id, target: "p2" })).toThrow(/открыть/);
     swap.revealed = true;

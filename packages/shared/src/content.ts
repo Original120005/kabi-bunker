@@ -110,50 +110,188 @@ export const ModifierRules = z.object({
 export type ModifierRules = z.infer<typeof ModifierRules>;
 
 const EffectKey = z.string().min(1).max(40);
-/** self — the card owner; other — a chosen player except the owner; any — any chosen player; all — everyone in the camp. */
-const EffectTarget = z.enum(["self", "other", "any", "all"]);
+/** «*» in charKey/group/title means the host picks the value while applying. */
+const Note = z.string().min(1).max(300);
+/**
+ * self — the card owner; other — a chosen player except the owner; any — any chosen player; all — everyone in the camp;
+ * neighbor — the chosen player sitting right before or after the owner; neighbors — both of them.
+ */
+const EffectTarget = z.enum(["self", "other", "any", "all", "neighbor", "neighbors"]);
+const OneTarget = z.enum(["self", "other", "any", "neighbor"]);
+const Delta = z.union([z.literal(1), z.literal(-1)]);
+
+/** `note` is a reminder for the host shown before applying (e.g. which diseases a doctor may cure). */
+const fx = <T extends z.ZodRawShape>(shape: T) => z.object({ ...shape, note: Note.optional() });
+
+/** One action applied by the host. */
+export const SimpleEffect = z.discriminatedUnion("op", [
+  fx({ op: z.literal("bunker.reroll"), field: EffectKey }),
+  fx({ op: z.literal("bunker.set"), field: EffectKey, options: z.array(z.string().min(1).max(200)).max(12).optional() }),
+  fx({ op: z.literal("bunker.addItem") }),
+  fx({ op: z.literal("catastrophe.reroll") }),
+  fx({ op: z.literal("seats"), delta: Delta }),
+  fx({ op: z.literal("rotate"), charKey: EffectKey, dir: z.enum(["cw", "ccw"]) }),
+  fx({ op: z.literal("nullify"), charKey: EffectKey }),
+  fx({
+    op: z.literal("reroll"),
+    charKey: EffectKey,
+    target: EffectTarget.exclude(["neighbors"]),
+    choices: z.array(EffectKey).optional(),
+    onlyClosed: z.boolean().optional(),
+    requireHealthy: z.boolean().optional(),
+    minAge: z.number().int().optional(),
+  }),
+  fx({ op: z.literal("modifier.step"), charKey: EffectKey, modifierKey: EffectKey, delta: Delta, target: OneTarget, notFrom: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("modifier.set"), charKey: EffectKey, modifierKey: EffectKey, level: EffectKey, target: OneTarget, from: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("swap"), charKey: EffectKey, from: z.enum(["alive", "exiled"]).optional(), resetUsed: z.boolean().optional(), choices: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("swap.pair"), charKey: EffectKey, choices: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("steal"), charKey: EffectKey, from: z.enum(["alive", "exiled", "neighbor"]).optional(), onlyRevealed: z.boolean().optional(), choices: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("healthy"), target: OneTarget, maxSeverity: EffectKey.optional() }),
+  fx({ op: z.literal("return") }),
+  fx({ op: z.literal("reveal"), charKey: EffectKey.optional(), target: OneTarget.exclude(["neighbor"]).optional(), halfOpen: z.boolean().optional() }),
+  fx({ op: z.literal("give"), charKey: EffectKey, text: z.string().min(1).max(300), target: OneTarget }),
+  fx({ op: z.literal("add"), charKey: EffectKey, target: EffectTarget.exclude(["all"]) }),
+  fx({ op: z.literal("remove"), charKey: EffectKey, target: OneTarget }),
+  fx({ op: z.literal("gender.flip"), target: OneTarget }),
+  fx({ op: z.literal("childfree"), target: OneTarget }),
+  fx({ op: z.literal("curePhobia"), target: OneTarget }),
+  fx({ op: z.literal("ageGroup"), group: EffectKey, target: OneTarget, from: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("body"), title: EffectKey, target: OneTarget, from: z.array(EffectKey).optional() }),
+  fx({ op: z.literal("cancelSpecial") }),
+  fx({ op: z.literal("manual"), note: Note }),
+  /** A permanent property: nothing to apply, the card shows no button. */
+  fx({ op: z.literal("info"), note: Note }),
+]);
+export type SimpleEffect = z.infer<typeof SimpleEffect>;
 
 /**
- * What a special card does, stored in `data.effect`. The host applies it with one click from the special table;
- * cards without an effect, or with `manual`, are only marked as used.
+ * What a special card or a profession ability does, stored in `data.effect`. The host applies it with one click;
+ * cards without an effect, or with `manual`, are only marked as used. `choice` — the host picks one of the variants
+ * («или»), `multi` — all steps are applied in order («и»).
  */
-export const SpecialEffect = z.discriminatedUnion("op", [
-  z.object({ op: z.literal("bunker.reroll"), field: EffectKey }),
-  z.object({ op: z.literal("bunker.addItem") }),
-  z.object({ op: z.literal("catastrophe.reroll") }),
-  z.object({ op: z.literal("seats"), delta: z.union([z.literal(1), z.literal(-1)]) }),
-  z.object({ op: z.literal("rotate"), charKey: EffectKey, dir: z.enum(["cw", "ccw"]) }),
-  z.object({ op: z.literal("nullify"), charKey: EffectKey }),
-  z.object({ op: z.literal("reroll"), charKey: EffectKey, target: EffectTarget }),
-  z.object({ op: z.literal("modifier.step"), charKey: EffectKey, modifierKey: EffectKey, delta: z.union([z.literal(1), z.literal(-1)]), target: EffectTarget.exclude(["all"]) }),
-  z.object({ op: z.literal("swap"), charKey: EffectKey }),
-  z.object({ op: z.literal("steal"), charKey: EffectKey }),
-  z.object({ op: z.literal("healthy"), target: EffectTarget.exclude(["all"]) }),
-  z.object({ op: z.literal("return") }),
-  z.object({ op: z.literal("reveal") }),
-  z.object({ op: z.literal("cancelSpecial") }),
-  z.object({ op: z.literal("manual"), note: z.string().min(1).max(300) }),
+export const SpecialEffect = z.union([
+  SimpleEffect,
+  z.object({ op: z.literal("choice"), options: z.array(z.object({ label: z.string().min(1).max(80), effect: SimpleEffect })).min(2).max(4) }),
+  z.object({ op: z.literal("multi"), steps: z.array(SimpleEffect).min(2).max(3) }),
 ]);
 export type SpecialEffect = z.infer<typeof SpecialEffect>;
 
-/** Which choice the host makes when applying an effect. */
-export function effectInput(effect: SpecialEffect | null): "none" | "other" | "any" | "exiled" | "reveal" {
-  if (!effect) return "none";
-  switch (effect.op) {
+/** Characteristics whose cards can carry an effect applied by the host: special cards and professions. */
+export const ABILITY_CHAR_KEYS = ["profession"] as const;
+export function hasAbilityEffect(def: { key: string; specialCard?: boolean }): boolean {
+  return def.specialCard === true || (ABILITY_CHAR_KEYS as readonly string[]).includes(def.key);
+}
+
+/** What the host has to choose before applying an effect. */
+export interface EffectNeeds {
+  /** Which player to pick, if any. */
+  player: "none" | "other" | "any" | "exiled" | "neighbor";
+  /** A second player is needed (swap between two other players). */
+  player2: boolean;
+  /** Characteristic keys to pick from; null — fixed by the effect. Empty array — any non-special one. */
+  chars: string[] | null;
+  /** Free text with its default (an item, a new bunker value). */
+  text: { initial: string; options?: string[]; label: string } | null;
+  /** A level / group / body title to pick: which list. */
+  value: "ageGroup" | "body" | null;
+  /** The ability changes one health line; the host may pick it when several are visible. */
+  healthLine: boolean;
+}
+
+function needsOf(e: SimpleEffect): EffectNeeds {
+  const n: EffectNeeds = { player: "none", player2: false, chars: null, text: null, value: null, healthLine: false };
+  const t = (target: string) => (target === "other" || target === "any" || target === "neighbor" ? target : "none") as EffectNeeds["player"];
+  const choose = (key: string, choices?: string[]) => (key === "*" ? (choices ?? []) : null);
+  switch (e.op) {
     case "swap":
+      n.player = e.from === "exiled" ? "exiled" : "other";
+      n.chars = choose(e.charKey, e.choices);
+      break;
+    case "swap.pair":
+      n.player = "other";
+      n.player2 = true;
+      n.chars = choose(e.charKey, e.choices);
+      break;
     case "steal":
-      return "other";
+      n.player = e.from === "exiled" ? "exiled" : e.from === "neighbor" ? "neighbor" : "other";
+      n.chars = choose(e.charKey, e.choices);
+      break;
     case "return":
-      return "exiled";
+      n.player = "exiled";
+      break;
     case "reveal":
-      return "reveal";
+      n.player = t(e.target ?? "other");
+      n.chars = e.charKey ? choose(e.charKey) : [];
+      break;
     case "reroll":
+      n.player = t(e.target);
+      n.chars = choose(e.charKey, e.choices);
+      break;
     case "modifier.step":
+    case "modifier.set":
+      n.player = t(e.target);
+      n.healthLine = e.charKey === "health";
+      break;
     case "healthy":
-      return effect.target === "other" || effect.target === "any" ? effect.target : "none";
-    default:
-      return "none";
+      n.player = t(e.target);
+      n.healthLine = e.maxSeverity !== undefined;
+      break;
+    case "give":
+      n.player = t(e.target);
+      n.text = { initial: e.text, label: "Что добавить" };
+      break;
+    case "add":
+      n.player = t(e.target);
+      break;
+    case "remove":
+    case "gender.flip":
+    case "childfree":
+    case "curePhobia":
+      n.player = t(e.target);
+      break;
+    case "ageGroup":
+      n.player = t(e.target);
+      if (e.group === "*") n.value = "ageGroup";
+      break;
+    case "body":
+      n.player = t(e.target);
+      if (e.title === "*") n.value = "body";
+      break;
+    case "bunker.set":
+      n.text = { initial: e.options?.[0] ?? "", options: e.options, label: "Новое значение" };
+      break;
   }
+  return n;
+}
+
+/** Needs of the effect; for `choice` — of the picked variant, for `multi` — of all steps together. */
+export function effectNeeds(effect: SpecialEffect | null, option = 0): EffectNeeds {
+  const none: EffectNeeds = { player: "none", player2: false, chars: null, text: null, value: null, healthLine: false };
+  if (!effect) return none;
+  if (effect.op === "choice") return needsOf(effect.options[Math.min(option, effect.options.length - 1)].effect);
+  if (effect.op === "multi") {
+    return effect.steps.map(needsOf).reduce((a, b) => ({
+      player: a.player !== "none" ? a.player : b.player,
+      player2: a.player2 || b.player2,
+      chars: a.chars ?? b.chars,
+      text: a.text ?? b.text,
+      value: a.value ?? b.value,
+      healthLine: a.healthLine || b.healthLine,
+    }));
+  }
+  return needsOf(effect);
+}
+
+/** Which choice the host makes when applying an effect (kept for older callers). */
+export function effectInput(effect: SpecialEffect | null): "none" | "other" | "any" | "exiled" | "reveal" {
+  const n = effectNeeds(effect);
+  if (effect?.op === "reveal") return "reveal";
+  return n.player === "neighbor" ? "other" : n.player;
+}
+
+/** Abilities that are only a reminder and have nothing to apply. */
+export function isInfoEffect(effect: SpecialEffect | null): boolean {
+  return effect?.op === "info";
 }
 
 export const ContentItemFile = z.object({
@@ -173,7 +311,7 @@ export const ContentItemFile = z.object({
     .superRefine((data, ctx) => {
       if (data.effect === undefined) return;
       const r = SpecialEffect.safeParse(data.effect);
-      if (!r.success) ctx.addIssue({ code: "custom", path: ["effect"], message: `Неверный эффект спец. карты: ${r.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}` });
+      if (!r.success) ctx.addIssue({ code: "custom", path: ["effect"], message: `Неверный эффект карты: ${r.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}` });
     }),
   source: ContentSource.default("user"),
 });

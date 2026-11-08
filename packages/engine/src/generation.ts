@@ -1,4 +1,4 @@
-import { SpecialEffect, type CharacteristicDef, type ContentDb, type ContentItem, type ModifierValues } from "@bunker/shared";
+import { hasAbilityEffect, SpecialEffect, type CharacteristicDef, type ContentDb, type ContentItem, type ModifierValues } from "@bunker/shared";
 import type { Rng } from "./rng.ts";
 import { seatsFor, type RuleSet } from "./rules.ts";
 import type { Card, GameState } from "./types.ts";
@@ -121,7 +121,7 @@ export function makeCard(def: CharacteristicDef, item: ContentItem | null, owner
     abilities: item?.abilities ?? [],
     link: typeof item?.data.link === "string" ? item.data.link : undefined,
     revealed: false,
-    ...(def.specialCard ? { effect: effectOf(item), used: false } : {}),
+    ...(hasAbilityEffect(def) ? { effect: effectOf(item), used: false } : {}),
   };
 }
 

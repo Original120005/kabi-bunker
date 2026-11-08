@@ -41,9 +41,9 @@ export interface Card {
   /** Article about this condition, when the card is a disease. */
   link?: string;
   revealed: boolean;
-  /** Special cards: effect copied from the content at deal time. Missing in games started before effects existed. */
+  /** Special cards and professions: effect copied from the content at deal time. Missing in games started before effects existed. */
   effect?: SpecialEffect | null;
-  /** Special cards: applied by the host. */
+  /** Special cards and professions: applied by the host (the mark travels with the card). */
   used?: boolean;
 }
 

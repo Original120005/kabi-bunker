@@ -1,4 +1,4 @@
-import type { ClientAction, ContentDb, HostAction } from "@bunker/shared";
+import { hasAbilityEffect, type ClientAction, type ContentDb, type HostAction } from "@bunker/shared";
 import { ensure, GameError } from "./errors.ts";
 import { effectOf, generateGame } from "./generation.ts";
 import { applyHostAction } from "./host.ts";
@@ -81,7 +81,7 @@ export function upgradeRoom(state: RoomState, loadContent?: (packSlugs: string[]
     state.game.catastrophe.image ??= null;
     state.game.bodies ??= [];
     const game = state.game;
-    const specialKeys = new Set(game.characteristics.filter((c) => c.specialCard).map((c) => c.key));
+    const specialKeys = new Set(game.characteristics.filter((c) => hasAbilityEffect(c)).map((c) => c.key));
     const missing = Object.values(game.cards).filter((c) => specialKeys.has(c.charKey) && c.effect === undefined);
     if (missing.length && loadContent) {
       const items = new Map(Object.values(loadContent(state.settings.packSlugs).pools).flat(2).map((i) => [i.id, i]));

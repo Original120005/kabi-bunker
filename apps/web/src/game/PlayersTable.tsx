@@ -1,9 +1,10 @@
 ﻿import { useEffect, useState } from "react";
-import type { CardView, CharacteristicView, GamePlayerView, PlayerStatus, RoomView } from "@bunker/shared";
+import { isInfoEffect, type CardView, type CharacteristicView, type GamePlayerView, type GameView, type PlayerStatus, type RoomView, type VisibleCardView } from "@bunker/shared";
 import { useRoom } from "../store/room.ts";
 import { Section } from "../ui/Section.tsx";
 import { ask } from "../ui/Confirm.tsx";
 import { CardTitle, LevelsHint } from "./Hint.tsx";
+import { ApplySpecial } from "../host/ApplySpecial.tsx";
 
 const STATUS: Record<PlayerStatus, { text: string; cls: string } | null> = {
   alive: null,
@@ -43,8 +44,50 @@ export function outOfGame(status: PlayerStatus): boolean {
   return status === "exiled" || status === "dead";
 }
 
+/** Host button under an open profession: applies its ability with one click. Hidden for permanent properties. */
+function AbilityButton({ game, player, card }: { game: GameView; player: GamePlayerView; card: VisibleCardView }) {
+  const [open, setOpen] = useState(false);
+  if (!card.abilities.length || isInfoEffect(card.effect)) return null;
+  const fresh = game.players.find((p) => p.id === player.id);
+  const freshCard = fresh?.cards[card.charKey]?.find((c): c is VisibleCardView => c.id === card.id && !c.hidden);
+  return (
+    <>
+      {card.used ? (
+        <button onClick={() => setOpen(true)} className="w-fit rounded-md px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[#7fc99c]/80 hover:bg-ok/10" title="Способность профессии уже использована">
+          ✓ способность
+        </button>
+      ) : (
+        <button
+          onClick={() => setOpen(true)}
+          className="w-fit rounded-md border border-ok/50 bg-ok/15 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[#8fe0ad] hover:bg-ok/30"
+          title="Применить способность профессии"
+        >
+          ⚡ способность
+        </button>
+      )}
+      {open && fresh && freshCard && <ApplySpecial game={game} card={freshCard} owner={fresh} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
 /** Only opened cards are shown; for the host an empty cell offers to open the card on hover. */
-function Cell({ cards, isHost, def, owner, align }: { cards: CardView[]; isHost: boolean; def: CharacteristicView; owner: string; align: "center" | "right" }) {
+function Cell({
+  cards,
+  isHost,
+  def,
+  owner,
+  align,
+  game,
+  player,
+}: {
+  cards: CardView[];
+  isHost: boolean;
+  def: CharacteristicView;
+  owner: string;
+  align: "center" | "right";
+  game: GameView;
+  player: GamePlayerView;
+}) {
   const send = useRoom((s) => s.send);
   const open = cards.filter((c): c is Extract<CardView, { hidden: false }> => !c.hidden && c.revealed);
   const closed = cards.filter((c) => c.hidden || !c.revealed);
@@ -56,7 +99,10 @@ function Cell({ cards, isHost, def, owner, align }: { cards: CardView[]; isHost:
   return (
     <div className="flex flex-col items-center justify-center gap-1 text-center">
       {open.map((c) => (
-        <CardTitle key={c.id} card={c} align={align} className="font-semibold leading-snug text-white" />
+        <span key={c.id} className="flex flex-col items-center gap-1">
+          <CardTitle card={c} align={align} className="font-semibold leading-snug text-white" />
+          {isHost && def.key === "profession" && <AbilityButton game={game} player={player} card={c} />}
+        </span>
       ))}
       {isHost && closed.length > 0 && (
         <button onClick={reveal} className="w-fit rounded-md px-1.5 py-0.5 text-xs font-semibold text-transparent transition group-hover/cell:text-white/35 hover:!bg-ok/15 hover:!text-[#74c495]">
@@ -134,7 +180,7 @@ function Desktop({ view, columns, online, isHost }: { view: RoomView; columns: C
               </td>
               {columns.map((c, ci) => (
                 <td key={c.key} className="group/cell hyphens-auto break-words border-b border-r border-line/70 px-2.5 py-2 text-center leading-snug last:border-r-0">
-                  <Cell cards={p.cards[c.key] ?? []} isHost={isHost} def={c} owner={p.nickname} align={ci === columns.length - 1 ? "right" : "center"} />
+                  <Cell cards={p.cards[c.key] ?? []} isHost={isHost} def={c} owner={p.nickname} align={ci === columns.length - 1 ? "right" : "center"} game={game} player={p} />
                 </td>
               ))}
             </tr>
@@ -175,7 +221,10 @@ function Mobile({ view, columns, online, isHost }: { view: RoomView; columns: Ch
                     <dt className="text-muted">{def.name}</dt>
                     <dd className="flex flex-col font-semibold [overflow-wrap:anywhere]">
                       {cards.map((c) => (
-                        <CardTitle key={c.id} card={c} align="right" />
+                        <span key={c.id} className="flex flex-col items-end gap-1">
+                          <CardTitle card={c} align="right" />
+                          {isHost && def.key === "profession" && <AbilityButton game={game} player={p} card={c} />}
+                        </span>
                       ))}
                     </dd>
                   </div>

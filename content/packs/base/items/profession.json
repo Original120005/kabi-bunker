@@ -13,7 +13,13 @@
       ],
       "data": {
         "nameEn": "Businessman",
-        "abilityEn": "Can take the open \"Large Equipment\" of an exiled player"
+        "abilityEn": "Can take the open \"Large Equipment\" of an exiled player",
+        "effect": {
+          "op": "steal",
+          "charKey": "bigInventory",
+          "from": "exiled",
+          "onlyRevealed": true
+        }
       },
       "source": "original"
     },
@@ -29,7 +35,13 @@
       ],
       "data": {
         "nameEn": "Biologist",
-        "abilityEn": "Can add seeds of crops and vegetables to their \"Backpack\""
+        "abilityEn": "Can add seeds of crops and vegetables to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Семена культур, овощей",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -45,7 +57,13 @@
       ],
       "data": {
         "nameEn": "Biophysicist",
-        "abilityEn": "Can add a microscope to their \"Backpack\""
+        "abilityEn": "Can add a microscope to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Микроскоп",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -61,7 +79,19 @@
       ],
       "data": {
         "nameEn": "Bioecologist",
-        "abilityEn": "Can change the location of the bunker to \"in the forest,\" \"near the lake,\" \"near the river,\" \"near the sea,\" \"on the mountain,\" or \"in the gorge.\" Player-generated objects around the bunker remain"
+        "abilityEn": "Can change the location of the bunker to \"in the forest,\" \"near the lake,\" \"near the river,\" \"near the sea,\" \"on the mountain,\" or \"in the gorge.\" Player-generated objects around the bunker remain",
+        "effect": {
+          "op": "bunker.set",
+          "field": "location",
+          "options": [
+            "В лесу",
+            "Около озера",
+            "Около реки",
+            "Около моря",
+            "На горе",
+            "В ущелье"
+          ]
+        }
       },
       "source": "original"
     },
@@ -77,7 +107,13 @@
       ],
       "data": {
         "nameEn": "3D Animator",
-        "abilityEn": "Can add a tablet with a charger to their \"Backpack\""
+        "abilityEn": "Can add a tablet with a charger to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Планшет с зарядным устройством",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -93,7 +129,13 @@
       ],
       "data": {
         "nameEn": "Applicant",
-        "abilityEn": "Can change their \"Profession\" to a random one if they are over 27 years old"
+        "abilityEn": "Can change their \"Profession\" to a random one if they are over 27 years old",
+        "effect": {
+          "op": "reroll",
+          "charKey": "profession",
+          "target": "self",
+          "minAge": 28
+        }
       },
       "source": "original"
     },
@@ -109,7 +151,13 @@
       ],
       "data": {
         "nameEn": "Agronomist",
-        "abilityEn": "Can add a box of food to their \"Large Equipment\""
+        "abilityEn": "Can add a box of food to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Ящик с продуктами",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -125,7 +173,12 @@
       ],
       "data": {
         "nameEn": "Antique Dealer",
-        "abilityEn": "Can add an additional item to any player's \"Backpack\""
+        "abilityEn": "Can add an additional item to any player's \"Backpack\"",
+        "effect": {
+          "op": "add",
+          "charKey": "backpack",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -141,7 +194,13 @@
       ],
       "data": {
         "nameEn": "Archaeologist",
-        "abilityEn": "Can add a shovel and a total station to their \"Large Equipment\""
+        "abilityEn": "Can add a shovel and a total station to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Лопата и тахеометр",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -157,7 +216,13 @@
       ],
       "data": {
         "nameEn": "Astronomer",
-        "abilityEn": "Can add a telescope to their \"Large Equipment\""
+        "abilityEn": "Can add a telescope to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Телескоп",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -173,7 +238,13 @@
       ],
       "data": {
         "nameEn": "Astrophysicist",
-        "abilityEn": "Can add a star atlas to their \"Backpack\""
+        "abilityEn": "Can add a star atlas to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Атлас звёздного неба",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -189,7 +260,13 @@
       ],
       "data": {
         "nameEn": "Barista",
-        "abilityEn": "Can add a bag of coffee beans to their \"Backpack\""
+        "abilityEn": "Can add a bag of coffee beans to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Мешок с кофейными зернами",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -205,7 +282,13 @@
       ],
       "data": {
         "nameEn": "Librarian",
-        "abilityEn": "Can add a couple of books (of choice) and glasses to their \"Backpack\""
+        "abilityEn": "Can add a couple of books (of choice) and glasses to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Пара книг (на выбор) и очки",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -221,7 +304,13 @@
       ],
       "data": {
         "nameEn": "Botanist",
-        "abilityEn": "Can add seeds of any plants to their \"Backpack\""
+        "abilityEn": "Can add seeds of any plants to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Семена любых растений",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -237,7 +326,13 @@
       ],
       "data": {
         "nameEn": "Baker",
-        "abilityEn": "Can add fresh buns for 2 weeks to their \"Large Equipment\""
+        "abilityEn": "Can add fresh buns for 2 weeks to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Свежие булочки на 2 недели",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -253,7 +348,13 @@
       ],
       "data": {
         "nameEn": "Driller",
-        "abilityEn": "Can add a drill with a charged battery to their \"Large Equipment\""
+        "abilityEn": "Can add a drill with a charged battery to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Дрель с заряженным аккумулятором",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -269,7 +370,13 @@
       ],
       "data": {
         "nameEn": "Watchman",
-        "abilityEn": "Can add a safe to their \"Large Equipment\""
+        "abilityEn": "Can add a safe to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Сейф",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -285,7 +392,13 @@
       ],
       "data": {
         "nameEn": "Web Designer",
-        "abilityEn": "Can add a tablet with a charger to their \"Backpack\""
+        "abilityEn": "Can add a tablet with a charger to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Планшет с зарядным устройством",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -301,7 +414,30 @@
       ],
       "data": {
         "nameEn": "Veterinarian",
-        "abilityEn": "Can add any animal (up to 50 kg) to their \"Large Equipment\" or add a rabies vaccine to their \"Backpack\""
+        "abilityEn": "Can add any animal (up to 50 kg) to their \"Large Equipment\" or add a rabies vaccine to their \"Backpack\"",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Животное в крупный инвентарь",
+              "effect": {
+                "op": "give",
+                "charKey": "bigInventory",
+                "text": "Животное до 50 кг (на выбор)",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Вакцина от бешенства в рюкзак",
+              "effect": {
+                "op": "give",
+                "charKey": "backpack",
+                "text": "Вакцина от бешенства",
+                "target": "self"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -317,7 +453,13 @@
       ],
       "data": {
         "nameEn": "Videographer",
-        "abilityEn": "Can add several survival discs to their \"Backpack.\" Has watched all survival movies"
+        "abilityEn": "Can add several survival discs to their \"Backpack.\" Has watched all survival movies",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Несколько дисков о выживании",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -333,7 +475,13 @@
       ],
       "data": {
         "nameEn": "Virologist",
-        "abilityEn": "Can add a universal serum for airborne infections (1 dose) to their \"Backpack\""
+        "abilityEn": "Can add a universal serum for airborne infections (1 dose) to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Универсальная сыворотка от воздушно-капельных инфекций (1 шт.)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -349,7 +497,13 @@
       ],
       "data": {
         "nameEn": "Diver",
-        "abilityEn": "Can add a diving kit to their \"Large Equipment\""
+        "abilityEn": "Can add a diving kit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Набор для дайвинга",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -365,7 +519,13 @@
       ],
       "data": {
         "nameEn": "Military Personnel",
-        "abilityEn": "Can add a pistol and 28 bullets to their \"Backpack\""
+        "abilityEn": "Can add a pistol and 28 bullets to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Пистолет и 28 патронов",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -381,7 +541,14 @@
       ],
       "data": {
         "nameEn": "Military Engineer",
-        "abilityEn": "Can add a toolbox to their \"Large Equipment\" and solve heating problems in the bunker"
+        "abilityEn": "Can add a toolbox to their \"Large Equipment\" and solve heating problems in the bunker",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Ящик инструментов",
+          "target": "self",
+          "note": "проблемы с отоплением в бункере уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -397,7 +564,13 @@
       ],
       "data": {
         "nameEn": "Military Pilot",
-        "abilityEn": "Can add parachute equipment to their \"Large Equipment\""
+        "abilityEn": "Can add parachute equipment to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Снаряжение парашютиста",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -413,7 +586,11 @@
       ],
       "data": {
         "nameEn": "Thief",
-        "abilityEn": "Can steal another player's \"Backpack\""
+        "abilityEn": "Can steal another player's \"Backpack\"",
+        "effect": {
+          "op": "steal",
+          "charKey": "backpack"
+        }
       },
       "source": "original"
     },
@@ -429,7 +606,13 @@
       ],
       "data": {
         "nameEn": "Game Designer",
-        "abilityEn": "Can add a personal laptop to their \"Backpack\""
+        "abilityEn": "Can add a personal laptop to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Личный ноутбук",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -445,7 +628,13 @@
       ],
       "data": {
         "nameEn": "Geographer",
-        "abilityEn": "Can add a map of the area to their \"Backpack\""
+        "abilityEn": "Can add a map of the area to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Карта местности",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -461,7 +650,13 @@
       ],
       "data": {
         "nameEn": "Geologist",
-        "abilityEn": "Can add a pickaxe and shovel to their \"Large Equipment\""
+        "abilityEn": "Can add a pickaxe and shovel to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Кирка и лопата",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -477,7 +672,13 @@
       ],
       "data": {
         "nameEn": "Tour Guide",
-        "abilityEn": "Can add a survival guide for extreme conditions to their \"Backpack\""
+        "abilityEn": "Can add a survival guide for extreme conditions to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Справочник по выживанию в экстремальных условиях",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -493,7 +694,13 @@
       ],
       "data": {
         "nameEn": "Maid",
-        "abilityEn": "Can add a disinfection kit to their \"Large Equipment\""
+        "abilityEn": "Can add a disinfection kit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Набор для дезинфекции",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -509,7 +716,13 @@
       ],
       "data": {
         "nameEn": "Truck Driver",
-        "abilityEn": "Can add a stack of magazines to their \"Backpack\""
+        "abilityEn": "Can add a stack of magazines to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Стопка журналов",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -525,7 +738,14 @@
       ],
       "data": {
         "nameEn": "Janitor",
-        "abilityEn": "Can add a broom to their \"Large Equipment.\" Immune to colds"
+        "abilityEn": "Can add a broom to their \"Large Equipment.\" Immune to colds",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Метла",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: имеет иммунитет к простудным заболеваниям"
+        }
       },
       "source": "original"
     },
@@ -541,7 +761,14 @@
       ],
       "data": {
         "nameEn": "Taster",
-        "abilityEn": "Can add 10 liters of any drink to their \"Large Equipment.\" Immune to \"Phobia/Fear\" and alcohol-related illnesses"
+        "abilityEn": "Can add 10 liters of any drink to their \"Large Equipment.\" Immune to \"Phobia/Fear\" and alcohol-related illnesses",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "10 литров любого напитка",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: неуязвим к \"Фобиям/Страхам\" и болезням, связанным с алкоголем"
+        }
       },
       "source": "original"
     },
@@ -557,7 +784,14 @@
       ],
       "data": {
         "nameEn": "Exterminator",
-        "abilityEn": "Upon entering the bunker, can remove problems with rodents and insects and add a protective suit to their \"Large Equipment\""
+        "abilityEn": "Upon entering the bunker, can remove problems with rodents and insects and add a protective suit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Защитный костюм",
+          "target": "self",
+          "note": "проблемы с грызунами и насекомыми уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -573,7 +807,12 @@
       ],
       "data": {
         "nameEn": "Director",
-        "abilityEn": "Can exchange their \"Profession\" with an exiled player"
+        "abilityEn": "Can exchange their \"Profession\" with an exiled player",
+        "effect": {
+          "op": "swap",
+          "charKey": "profession",
+          "from": "exiled"
+        }
       },
       "source": "original"
     },
@@ -589,7 +828,13 @@
       ],
       "data": {
         "nameEn": "Milkmaid",
-        "abilityEn": "Can add a cow to their \"Large Equipment\""
+        "abilityEn": "Can add a cow to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Корова",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -605,7 +850,14 @@
       ],
       "data": {
         "nameEn": "Livestock Farmer",
-        "abilityEn": "Can add a bag of animal feed to their \"Backpack\" (3 kg). Immune to \"Phobia/Fear\" related to animals"
+        "abilityEn": "Can add a bag of animal feed to their \"Backpack\" (3 kg). Immune to \"Phobia/Fear\" related to animals",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Мешок корма для животных (3 кг.)",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: неуязвим к \"Фобиям/Страхам\", связанным с животными"
+        }
       },
       "source": "original"
     },
@@ -621,7 +873,13 @@
       ],
       "data": {
         "nameEn": "Jockey",
-        "abilityEn": "Can add a horse to their \"Large Equipment\""
+        "abilityEn": "Can add a horse to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Лошадь",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -637,7 +895,14 @@
       ],
       "data": {
         "nameEn": "School Deputy",
-        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "delta": 1,
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -653,7 +918,13 @@
       ],
       "data": {
         "nameEn": "Gas Station Attendant",
-        "abilityEn": "Can add 2 gasoline cans to their \"Large Equipment\""
+        "abilityEn": "Can add 2 gasoline cans to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "2 канистры с бензином",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -669,7 +940,35 @@
       ],
       "data": {
         "nameEn": "Herbalist",
-        "abilityEn": "Can add medicinal herbs to their \"Backpack\" or reduce a \"Moderate\"/\"Severe\" illness by 1 for any player"
+        "abilityEn": "Can add medicinal herbs to their \"Backpack\" or reduce a \"Moderate\"/\"Severe\" illness by 1 for any player",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Целебные травы в рюкзак",
+              "effect": {
+                "op": "give",
+                "charKey": "backpack",
+                "text": "Целебные травы",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Снизить степень болезни на 1",
+              "effect": {
+                "op": "modifier.step",
+                "charKey": "health",
+                "modifierKey": "severity",
+                "delta": -1,
+                "target": "any",
+                "notFrom": [
+                  "light",
+                  "critical"
+                ]
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -685,7 +984,13 @@
       ],
       "data": {
         "nameEn": "Cash Collector",
-        "abilityEn": "Can add a bulletproof vest to their \"Backpack\""
+        "abilityEn": "Can add a bulletproof vest to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Бронежилет",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -701,7 +1006,14 @@
       ],
       "data": {
         "nameEn": "Cashier",
-        "abilityEn": "If near a shopping center, can add any product up to 10 kg to their \"Large Equipment\""
+        "abilityEn": "If near a shopping center, can add any product up to 10 kg to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Любой товар до 10 кг (на выбор)",
+          "target": "self",
+          "note": "только если рядом есть торговый центр"
+        }
       },
       "source": "original"
     },
@@ -717,7 +1029,13 @@
       ],
       "data": {
         "nameEn": "Cyberneticist",
-        "abilityEn": "Can add a powerful all-in-one PC to their \"Large Equipment\""
+        "abilityEn": "Can add a powerful all-in-one PC to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Мощный моноблок",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -733,7 +1051,13 @@
       ],
       "data": {
         "nameEn": "Dog Trainer",
-        "abilityEn": "Can add a shepherd dog (3 years old) and food for 3 months to their \"Large Equipment\""
+        "abilityEn": "Can add a shepherd dog (3 years old) and food for 3 months to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Овчарка (3 года) и корм для неё на 3 месяца",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -749,7 +1073,11 @@
       ],
       "data": {
         "nameEn": "Debt Collector",
-        "abilityEn": "Can steal \"Large Equipment\" from any player"
+        "abilityEn": "Can steal \"Large Equipment\" from any player",
+        "effect": {
+          "op": "steal",
+          "charKey": "bigInventory"
+        }
       },
       "source": "original"
     },
@@ -765,7 +1093,13 @@
       ],
       "data": {
         "nameEn": "Ship Captain",
-        "abilityEn": "Can add an inflatable motorboat to their \"Large Equipment\""
+        "abilityEn": "Can add an inflatable motorboat to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Надувная моторная лодка",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -781,7 +1115,13 @@
       ],
       "data": {
         "nameEn": "Combine Harvester",
-        "abilityEn": "Can add seeds for sowing to their \"Backpack\""
+        "abilityEn": "Can add seeds for sowing to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Семена для посева",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -797,7 +1137,11 @@
       ],
       "data": {
         "nameEn": "Commercial Director",
-        "abilityEn": "Can nullify the \"Profession\" of all players"
+        "abilityEn": "Can nullify the \"Profession\" of all players",
+        "effect": {
+          "op": "nullify",
+          "charKey": "profession"
+        }
       },
       "source": "original"
     },
@@ -813,7 +1157,14 @@
       ],
       "data": {
         "nameEn": "Composer",
-        "abilityEn": "Can add a musical instrument to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to music"
+        "abilityEn": "Can add a musical instrument to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to music",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Музыкальный инструмент",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: имеет иммунитет к \"Фобиям/Страхам\", связанным с музыкой"
+        }
       },
       "source": "original"
     },
@@ -829,7 +1180,13 @@
       ],
       "data": {
         "nameEn": "Astronaut",
-        "abilityEn": "Can add a spacesuit to their \"Large Equipment\""
+        "abilityEn": "Can add a spacesuit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Скафандр",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -845,7 +1202,12 @@
       ],
       "data": {
         "nameEn": "Criminalist",
-        "abilityEn": "Can take the \"Large Equipment\" of an exiled player"
+        "abilityEn": "Can take the \"Large Equipment\" of an exiled player",
+        "effect": {
+          "op": "steal",
+          "charKey": "bigInventory",
+          "from": "exiled"
+        }
       },
       "source": "original"
     },
@@ -861,7 +1223,13 @@
       ],
       "data": {
         "nameEn": "Blacksmith",
-        "abilityEn": "Can add a hammer to their \"Backpack\""
+        "abilityEn": "Can add a hammer to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Молоток",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -877,7 +1245,13 @@
       ],
       "data": {
         "nameEn": "Manicurist",
-        "abilityEn": "Can add a manicure set to their \"Backpack\""
+        "abilityEn": "Can add a manicure set to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Маникюрный набор",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -893,7 +1267,13 @@
       ],
       "data": {
         "nameEn": "Mathematician",
-        "abilityEn": "Can add a box of stationery to their \"Backpack\""
+        "abilityEn": "Can add a box of stationery to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Коробка канцтоваров",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -909,7 +1289,13 @@
       ],
       "data": {
         "nameEn": "Sailor",
-        "abilityEn": "Can add a 60-meter rope to their \"Large Equipment\""
+        "abilityEn": "Can add a 60-meter rope to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Канат 60 метров",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -925,7 +1311,11 @@
       ],
       "data": {
         "nameEn": "Sales Manager",
-        "abilityEn": "Can exchange their \"Backpack\" with another player's \"Backpack\""
+        "abilityEn": "Can exchange their \"Backpack\" with another player's \"Backpack\"",
+        "effect": {
+          "op": "swap",
+          "charKey": "backpack"
+        }
       },
       "source": "original"
     },
@@ -941,7 +1331,13 @@
       ],
       "data": {
         "nameEn": "Meteorologist",
-        "abilityEn": "Can add a small meteorological device to their \"Backpack\""
+        "abilityEn": "Can add a small meteorological device to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Небольшое метеорологическое устройство",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -957,7 +1353,13 @@
       ],
       "data": {
         "nameEn": "Mechanic",
-        "abilityEn": "Can add an electric generator to their \"Large Equipment\""
+        "abilityEn": "Can add an electric generator to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Генератор электричества",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -973,7 +1375,13 @@
       ],
       "data": {
         "nameEn": "Fashion Designer",
-        "abilityEn": "Can add 3 sets of insulated clothing to their \"Large Equipment\""
+        "abilityEn": "Can add 3 sets of insulated clothing to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "3 комплекта утеплённой одежды",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -989,7 +1397,14 @@
       ],
       "data": {
         "nameEn": "Sailor",
-        "abilityEn": "Can add a boat to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to the sea and water"
+        "abilityEn": "Can add a boat to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to the sea and water",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Лодка",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: неуязвим к \"Фобиям/Страхам\", связанным с морем и водой"
+        }
       },
       "source": "original"
     },
@@ -1005,7 +1420,14 @@
       ],
       "data": {
         "nameEn": "Musician",
-        "abilityEn": "Can add an autonomous music speaker to their \"Backpack.\" Immune to \"Phobia/Fear\" related to music"
+        "abilityEn": "Can add an autonomous music speaker to their \"Backpack.\" Immune to \"Phobia/Fear\" related to music",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Автономная музыкальная колонка",
+          "target": "self",
+          "note": "вторая часть — постоянное свойство профессии: имеет иммунитет к \"Фобиям/Страхам\", связанным с музыкой"
+        }
       },
       "source": "original"
     },
@@ -1021,7 +1443,13 @@
       ],
       "data": {
         "nameEn": "Butcher",
-        "abilityEn": "Can add 5 kg of smoked meat to their \"Backpack\""
+        "abilityEn": "Can add 5 kg of smoked meat to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "5 кг сырокопчёного мяса",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1037,7 +1465,13 @@
       ],
       "data": {
         "nameEn": "Nanny",
-        "abilityEn": "Can add 10 bottles of baby food and a bib to their \"Backpack\""
+        "abilityEn": "Can add 10 bottles of baby food and a bib to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "10 бутылочек детского питания и \"слюнявчик\"",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1053,7 +1487,13 @@
       ],
       "data": {
         "nameEn": "Call Center Operator",
-        "abilityEn": "Can add a radiotelephone to their \"Backpack\""
+        "abilityEn": "Can add a radiotelephone to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Радиотелефон",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1069,7 +1509,14 @@
       ],
       "data": {
         "nameEn": "Ornithologist",
-        "abilityEn": "Can fix bunker problems related to animals and add a parrot in a cage to their \"Large Equipment\""
+        "abilityEn": "Can fix bunker problems related to animals and add a parrot in a cage to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Клетка с попугаем",
+          "target": "self",
+          "note": "проблемы бункера с животными уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -1085,7 +1532,14 @@
       ],
       "data": {
         "nameEn": "Hunter",
-        "abilityEn": "Can remove bunker problems related to animals and add a rifle with 10 bullets to their \"Large Equipment\""
+        "abilityEn": "Can remove bunker problems related to animals and add a rifle with 10 bullets to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Винтовка с 10 патронами",
+          "target": "self",
+          "note": "проблемы бункера с животными уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -1101,7 +1555,29 @@
       ],
       "data": {
         "nameEn": "Hairdresser",
-        "abilityEn": "Can add scissors to their \"Backpack.\" Can cure \"Phobia/Fear\" related to body hair"
+        "abilityEn": "Can add scissors to their \"Backpack.\" Can cure \"Phobia/Fear\" related to body hair",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Ножницы в рюкзак",
+              "effect": {
+                "op": "give",
+                "charKey": "backpack",
+                "text": "Ножницы",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Вылечить фобию",
+              "effect": {
+                "op": "curePhobia",
+                "target": "any",
+                "note": "только фобия, связанная с растительностью на теле"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -1117,7 +1593,28 @@
       ],
       "data": {
         "nameEn": "Perfumer",
-        "abilityEn": "Can solve another player's unpleasant odor problem or add essential oils to their \"Backpack\""
+        "abilityEn": "Can solve another player's unpleasant odor problem or add essential oils to their \"Backpack\"",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Эфирные масла в рюкзак",
+              "effect": {
+                "op": "give",
+                "charKey": "backpack",
+                "text": "Эфирные масла",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Убрать неприятный запах у игрока",
+              "effect": {
+                "op": "manual",
+                "note": "уберите неприятный запах у игрока вручную"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -1133,7 +1630,13 @@
       ],
       "data": {
         "nameEn": "Singer",
-        "abilityEn": "Can add a microphone, tape recorder, and several cassettes with songs to their \"Backpack\""
+        "abilityEn": "Can add a microphone, tape recorder, and several cassettes with songs to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Микрофон, магнитофон и несколько кассет с песнями",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1149,7 +1652,14 @@
       ],
       "data": {
         "nameEn": "Teacher",
-        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "delta": 1,
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -1165,7 +1675,13 @@
       ],
       "data": {
         "nameEn": "Brewer",
-        "abilityEn": "Can add 1 box of beer and hop seeds to their \"Backpack\""
+        "abilityEn": "Can add 1 box of beer and hop seeds to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "1 ящик пива и семена хмеля",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1181,7 +1697,25 @@
       ],
       "data": {
         "nameEn": "Carpenter",
-        "abilityEn": "Can move the bunker to the forest and add a saw and plane to their \"Backpack\""
+        "abilityEn": "Can move the bunker to the forest and add a saw and plane to their \"Backpack\"",
+        "effect": {
+          "op": "multi",
+          "steps": [
+            {
+              "op": "bunker.set",
+              "field": "location",
+              "options": [
+                "В лесу"
+              ]
+            },
+            {
+              "op": "give",
+              "charKey": "backpack",
+              "text": "Ножовка и рубанок",
+              "target": "self"
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -1197,7 +1731,13 @@
       ],
       "data": {
         "nameEn": "Cook",
-        "abilityEn": "Can add 10 packs of instant noodles to their \"Backpack\""
+        "abilityEn": "Can add 10 packs of instant noodles to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "10 пачек доширака",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1213,7 +1753,13 @@
       ],
       "data": {
         "nameEn": "Firefighter",
-        "abilityEn": "Can add a protective suit to their \"Large Equipment\""
+        "abilityEn": "Can add a protective suit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Защитный костюм",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1229,7 +1775,13 @@
       ],
       "data": {
         "nameEn": "Dishwasher",
-        "abilityEn": "Can add a dishwasher to their \"Large Equipment\""
+        "abilityEn": "Can add a dishwasher to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Посудомоечная машина",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1245,7 +1797,13 @@
       ],
       "data": {
         "nameEn": "Postman",
-        "abilityEn": "Can add a bicycle, a stack of A4 paper, and glue to their \"Large Equipment\""
+        "abilityEn": "Can add a bicycle, a stack of A4 paper, and glue to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Велосипед, стопка листов А4 и клей",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1261,7 +1819,13 @@
       ],
       "data": {
         "nameEn": "Entrepreneur",
-        "abilityEn": "Can add 2 small items to their \"Backpack\""
+        "abilityEn": "Can add 2 small items to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "2 небольших предмета (на выбор)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1277,7 +1841,14 @@
       ],
       "data": {
         "nameEn": "Lecturer",
-        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "delta": 1,
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -1293,7 +1864,12 @@
       ],
       "data": {
         "nameEn": "Programmer",
-        "abilityEn": "Can change another player's \"Profession\""
+        "abilityEn": "Can change another player's \"Profession\"",
+        "effect": {
+          "op": "reroll",
+          "charKey": "profession",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -1309,7 +1885,14 @@
       ],
       "data": {
         "nameEn": "Beekeeper",
-        "abilityEn": "Can add 3 jars of honey to their \"Backpack\" and solve the problem with the beehive at the entrance"
+        "abilityEn": "Can add 3 jars of honey to their \"Backpack\" and solve the problem with the beehive at the entrance",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "3 банки мёда",
+          "target": "self",
+          "note": "проблему с ульем на входе уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -1325,7 +1908,13 @@
       ],
       "data": {
         "nameEn": "Radio Technician",
-        "abilityEn": "Can add everything needed to communicate with other bunkers and the outside world to their \"Large Equipment\""
+        "abilityEn": "Can add everything needed to communicate with other bunkers and the outside world to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Всё необходимое для связи с другими бункерами и внешним миром",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1341,7 +1930,13 @@
       ],
       "data": {
         "nameEn": "Handyman",
-        "abilityEn": "Can add any hand construction tool of their choice to their \"Backpack\""
+        "abilityEn": "Can add any hand construction tool of their choice to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Ручной строительный инструмент (на выбор)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1357,7 +1952,13 @@
       ],
       "data": {
         "nameEn": "Resuscitator",
-        "abilityEn": "Can add a defibrillator to their \"Backpack\""
+        "abilityEn": "Can add a defibrillator to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Дефибриллятор",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1373,7 +1974,14 @@
       ],
       "data": {
         "nameEn": "Recruiter",
-        "abilityEn": "Can reduce the \"Profession\" experience of any player by 1"
+        "abilityEn": "Can reduce the \"Profession\" experience of any player by 1",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "delta": -1,
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -1389,7 +1997,14 @@
       ],
       "data": {
         "nameEn": "Rector",
-        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "delta": 1,
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -1405,7 +2020,13 @@
       ],
       "data": {
         "nameEn": "Gardener",
-        "abilityEn": "Can add a bag of fertile soil and carrot seeds to their \"Backpack\""
+        "abilityEn": "Can add a bag of fertile soil and carrot seeds to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Мешок земли плодородной почвы и семена моркови",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1421,7 +2042,13 @@
       ],
       "data": {
         "nameEn": "Sanitary Worker",
-        "abilityEn": "Can add a first aid kit with medications to their \"Backpack\""
+        "abilityEn": "Can add a first aid kit with medications to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Аптечка с медикаментами",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1437,7 +2064,13 @@
       ],
       "data": {
         "nameEn": "Welder",
-        "abilityEn": "Can add a welding machine to their \"Backpack\""
+        "abilityEn": "Can add a welding machine to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Сварочный аппарат",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1453,7 +2086,14 @@
       ],
       "data": {
         "nameEn": "Secretary",
-        "abilityEn": "Can copy any item (not a room) from the bunker or another player to their \"Large Equipment\""
+        "abilityEn": "Can copy any item (not a room) from the bunker or another player to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Копия предмета: …",
+          "target": "self",
+          "note": "впишите предмет из бункера или у другого игрока (не помещение)"
+        }
       },
       "source": "original"
     },
@@ -1469,7 +2109,13 @@
       ],
       "data": {
         "nameEn": "Cattleman",
-        "abilityEn": "Can add livestock (1 animal) to their \"Large Equipment\""
+        "abilityEn": "Can add livestock (1 animal) to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Скотина (1 шт.)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1485,7 +2131,13 @@
       ],
       "data": {
         "nameEn": "Telecom Shop Employee",
-        "abilityEn": "Can add a product from a telecom shop to their \"Backpack\""
+        "abilityEn": "Can add a product from a telecom shop to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Товар из салона связи",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1501,7 +2153,13 @@
       ],
       "data": {
         "nameEn": "Watchman",
-        "abilityEn": "Can add a salt gun to their \"Backpack\""
+        "abilityEn": "Can add a salt gun to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Пистолет с солью",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1517,7 +2175,14 @@
       ],
       "data": {
         "nameEn": "Student",
-        "abilityEn": "Can add energy drinks in double the number of bunker slots to their \"Backpack\""
+        "abilityEn": "Can add energy drinks in double the number of bunker slots to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Энергетики",
+          "target": "self",
+          "note": "количество — вдвое больше мест в бункере, впишите число"
+        }
       },
       "source": "original"
     },
@@ -1533,7 +2198,11 @@
       ],
       "data": {
         "nameEn": "Bailiff",
-        "abilityEn": "Can steal \"Large Equipment\" from another player"
+        "abilityEn": "Can steal \"Large Equipment\" from another player",
+        "effect": {
+          "op": "steal",
+          "charKey": "bigInventory"
+        }
       },
       "source": "original"
     },
@@ -1549,7 +2218,13 @@
       ],
       "data": {
         "nameEn": "Sushi Chef",
-        "abilityEn": "Can add 2 kg of sushi to their \"Backpack\""
+        "abilityEn": "Can add 2 kg of sushi to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "2 кг суши",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1565,7 +2240,13 @@
       ],
       "data": {
         "nameEn": "Taxi Driver",
-        "abilityEn": "Can add a car with a full tank to their \"Large Equipment\""
+        "abilityEn": "Can add a car with a full tank to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Автомобиль с полностью залитым баком",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1581,7 +2262,13 @@
       ],
       "data": {
         "nameEn": "Tattoo Artist",
-        "abilityEn": "Can add a tattoo kit with bandages and antiseptic to their \"Backpack\""
+        "abilityEn": "Can add a tattoo kit with bandages and antiseptic to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Набор татуировщика с бинтом и антисептиком",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1597,7 +2284,13 @@
       ],
       "data": {
         "nameEn": "TV Journalist",
-        "abilityEn": "Can add a TV to their \"Large Equipment\""
+        "abilityEn": "Can add a TV to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Телевизор",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1613,7 +2306,13 @@
       ],
       "data": {
         "nameEn": "Printer",
-        "abilityEn": "Can add a stack of magazines (choice of scientific/entertainment/construction) to their \"Backpack\""
+        "abilityEn": "Can add a stack of magazines (choice of scientific/entertainment/construction) to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Стопка журналов (на выбор: научные/развлекательные/строительные)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1629,7 +2328,14 @@
       ],
       "data": {
         "nameEn": "Tractor Driver",
-        "abilityEn": "Can say \"300\" and add 2 kg of grain to their \"Backpack\""
+        "abilityEn": "Can say \"300\" and add 2 kg of grain to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Зерно (2 кг)",
+          "target": "self",
+          "note": "игрок должен сказать «300»"
+        }
       },
       "source": "original"
     },
@@ -1645,7 +2351,12 @@
       ],
       "data": {
         "nameEn": "Cleaner",
-        "abilityEn": "Can delete any player's \"Backpack\""
+        "abilityEn": "Can delete any player's \"Backpack\"",
+        "effect": {
+          "op": "remove",
+          "charKey": "backpack",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -1661,7 +2372,12 @@
       ],
       "data": {
         "nameEn": "Scientist",
-        "abilityEn": "Can swap \"Profession\" with another player and use their professional ability (even if it has already been used)"
+        "abilityEn": "Can swap \"Profession\" with another player and use their professional ability (even if it has already been used)",
+        "effect": {
+          "op": "swap",
+          "charKey": "profession",
+          "resetUsed": true
+        }
       },
       "source": "original"
     },
@@ -1677,7 +2393,13 @@
       ],
       "data": {
         "nameEn": "Geography Teacher",
-        "abilityEn": "Can add a world atlas to their \"Backpack\""
+        "abilityEn": "Can add a world atlas to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Атлас мира",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1693,7 +2415,13 @@
       ],
       "data": {
         "nameEn": "Paramedic",
-        "abilityEn": "Can add a large first aid kit to their \"Large Equipment\""
+        "abilityEn": "Can add a large first aid kit to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Большая аптечка",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1709,7 +2437,13 @@
       ],
       "data": {
         "nameEn": "Farmer",
-        "abilityEn": "Can add a box of food to their \"Large Equipment\""
+        "abilityEn": "Can add a box of food to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Ящик с продуктами",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1725,7 +2459,11 @@
       ],
       "data": {
         "nameEn": "Physicist",
-        "abilityEn": "Can exchange the \"Profession\" of two other players"
+        "abilityEn": "Can exchange the \"Profession\" of two other players",
+        "effect": {
+          "op": "swap.pair",
+          "charKey": "profession"
+        }
       },
       "source": "original"
     },
@@ -1741,7 +2479,14 @@
       ],
       "data": {
         "nameEn": "Photographer",
-        "abilityEn": "Can add a camera to their \"Backpack.\" If there are any rat problems in the bunker, can fix them"
+        "abilityEn": "Can add a camera to their \"Backpack.\" If there are any rat problems in the bunker, can fix them",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Фотоаппарат",
+          "target": "self",
+          "note": "проблемы с крысами в бункере уберите вручную"
+        }
       },
       "source": "original"
     },
@@ -1757,7 +2502,13 @@
       ],
       "data": {
         "nameEn": "Sommelier",
-        "abilityEn": "Can add 50 cigars to their \"Backpack\""
+        "abilityEn": "Can add 50 cigars to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "50 сигар",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1773,7 +2524,13 @@
       ],
       "data": {
         "nameEn": "Hacker",
-        "abilityEn": "Can add a laptop with a charger to their \"Backpack\""
+        "abilityEn": "Can add a laptop with a charger to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Ноутбук с зарядным устройством",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1789,7 +2546,13 @@
       ],
       "data": {
         "nameEn": "Chemist",
-        "abilityEn": "Can add chemical reagents to their \"Backpack\""
+        "abilityEn": "Can add chemical reagents to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Химические реактивы",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1805,7 +2568,13 @@
       ],
       "data": {
         "nameEn": "Hockey Player",
-        "abilityEn": "Can add hockey gear to their \"Large Equipment\""
+        "abilityEn": "Can add hockey gear to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Амуниция хоккеиста",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1821,7 +2590,12 @@
       ],
       "data": {
         "nameEn": "Watchmaker",
-        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused"
+        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused",
+        "effect": {
+          "op": "rotate",
+          "charKey": "profession",
+          "dir": "cw"
+        }
       },
       "source": "original"
     },
@@ -1837,7 +2611,13 @@
       ],
       "data": {
         "nameEn": "Seamstress",
-        "abilityEn": "Can add a set of thermal clothing to their \"Backpack\""
+        "abilityEn": "Can add a set of thermal clothing to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Комплект термоодежды",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1853,7 +2633,13 @@
       ],
       "data": {
         "nameEn": "Ecologist",
-        "abilityEn": "Can add a bag of fertilized fertile soil to their \"Backpack\""
+        "abilityEn": "Can add a bag of fertilized fertile soil to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Мешок удобренной плодовитой почвы",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1869,7 +2655,13 @@
       ],
       "data": {
         "nameEn": "Energy Engineer",
-        "abilityEn": "Can add a portable power station to their \"Large Equipment\""
+        "abilityEn": "Can add a portable power station to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Переносная электростанция",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1885,7 +2677,13 @@
       ],
       "data": {
         "nameEn": "Winemaker",
-        "abilityEn": "Can add a box of wine to their \"Large Equipment\""
+        "abilityEn": "Can add a box of wine to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Ящик с вином",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1901,7 +2699,13 @@
       ],
       "data": {
         "nameEn": "Epidemiologist",
-        "abilityEn": "Immune to infectious and viral diseases. Can add one vaccine for any infection or virus to their \"Backpack\""
+        "abilityEn": "Immune to infectious and viral diseases. Can add one vaccine for any infection or virus to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Вакцина от инфекции или вируса (на выбор)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -1917,7 +2721,14 @@
       ],
       "data": {
         "nameEn": "Ethnographer",
-        "abilityEn": "Can add a map of the area to his \"Backpack\", where there is information about all the bunkers. It can also eliminate an enemy bunker or cancel hostile communication between any players"
+        "abilityEn": "Can add a map of the area to his \"Backpack\", where there is information about all the bunkers. It can also eliminate an enemy bunker or cancel hostile communication between any players",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Карта местности со всеми бункерами",
+          "target": "self",
+          "note": "устранение вражеского бункера и вражды — вручную"
+        }
       },
       "source": "original"
     },
@@ -1933,7 +2744,11 @@
       ],
       "data": {
         "nameEn": "Jeweler",
-        "abilityEn": "Can skillfully steal another player's \"Backpack\""
+        "abilityEn": "Can skillfully steal another player's \"Backpack\"",
+        "effect": {
+          "op": "steal",
+          "charKey": "backpack"
+        }
       },
       "source": "original"
     },
@@ -1949,7 +2764,11 @@
       ],
       "data": {
         "nameEn": "Car Mechanic",
-        "abilityEn": "Knows where the service station is located"
+        "abilityEn": "Knows where the service station is located",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится СТО"
+        }
       },
       "source": "original"
     },
@@ -1965,7 +2784,11 @@
       ],
       "data": {
         "nameEn": "Bank Agent",
-        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -1981,7 +2804,11 @@
       ],
       "data": {
         "nameEn": "Travel Agent",
-        "abilityEn": "Can change the \"Time in the bunker\" once"
+        "abilityEn": "Can change the \"Time in the bunker\" once",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "duration"
+        }
       },
       "source": "original"
     },
@@ -1997,7 +2824,11 @@
       ],
       "data": {
         "nameEn": "Lawyer",
-        "abilityEn": "Can give 15 seconds to any player during defense speeches"
+        "abilityEn": "Can give 15 seconds to any player during defense speeches",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2013,7 +2844,11 @@
       ],
       "data": {
         "nameEn": "Administrator",
-        "abilityEn": "Can solve any problem in the bunker, except for a homeless person"
+        "abilityEn": "Can solve any problem in the bunker, except for a homeless person",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -2029,7 +2864,11 @@
       ],
       "data": {
         "nameEn": "Voice Actor",
-        "abilityEn": "Can take 15 seconds of any player's speech and use it immediately"
+        "abilityEn": "Can take 15 seconds of any player's speech and use it immediately",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2045,7 +2884,11 @@
       ],
       "data": {
         "nameEn": "Actor/Actress",
-        "abilityEn": "Can use a professional ability instead of any player"
+        "abilityEn": "Can use a professional ability instead of any player",
+        "effect": {
+          "op": "manual",
+          "note": "используйте способность выбранного игрока вместо него — примените её с его карты"
+        }
       },
       "source": "original"
     },
@@ -2061,7 +2904,11 @@
       ],
       "data": {
         "nameEn": "Midwife",
-        "abilityEn": "Upon entering the bunker, can help women of any body type give birth"
+        "abilityEn": "Upon entering the bunker, can help women of any body type give birth",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2077,7 +2924,12 @@
       ],
       "data": {
         "nameEn": "Analyst",
-        "abilityEn": "Can reveal any characteristic of any player that is already revealed by half of the players"
+        "abilityEn": "Can reveal any characteristic of any player that is already revealed by half of the players",
+        "effect": {
+          "op": "reveal",
+          "target": "any",
+          "halfOpen": true
+        }
       },
       "source": "original"
     },
@@ -2093,7 +2945,11 @@
       ],
       "data": {
         "nameEn": "Andrologist",
-        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)"
+        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)",
+        "effect": {
+          "op": "gender.flip",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -2109,7 +2965,12 @@
       ],
       "data": {
         "nameEn": "Anthropologist",
-        "abilityEn": "Can change the \"Phobia/Fear\" of any player"
+        "abilityEn": "Can change the \"Phobia/Fear\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "phobia",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2125,7 +2986,11 @@
       ],
       "data": {
         "nameEn": "Artist",
-        "abilityEn": "Can use a professional ability instead of any player"
+        "abilityEn": "Can use a professional ability instead of any player",
+        "effect": {
+          "op": "manual",
+          "note": "используйте способность выбранного игрока вместо него — примените её с его карты"
+        }
       },
       "source": "original"
     },
@@ -2141,7 +3006,11 @@
       ],
       "data": {
         "nameEn": "Architect",
-        "abilityEn": "Can change the \"Bunker Information\" about when the bunker was built"
+        "abilityEn": "Can change the \"Bunker Information\" about when the bunker was built",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "history"
+        }
       },
       "source": "original"
     },
@@ -2157,7 +3026,12 @@
       ],
       "data": {
         "nameEn": "Astrologer",
-        "abilityEn": "Can add \"Additional Information\" to players before and after themselves"
+        "abilityEn": "Can add \"Additional Information\" to players before and after themselves",
+        "effect": {
+          "op": "add",
+          "charKey": "extraInfo",
+          "target": "neighbors"
+        }
       },
       "source": "original"
     },
@@ -2173,7 +3047,12 @@
       ],
       "data": {
         "nameEn": "Auditor",
-        "abilityEn": "If there is enough food in the bunker (excluding players' provisions), can add 1 slot to the bunker"
+        "abilityEn": "If there is enough food in the bunker (excluding players' provisions), can add 1 slot to the bunker",
+        "effect": {
+          "op": "seats",
+          "delta": 1,
+          "note": "только если еды в бункере достаточно без учёта провизии игроков"
+        }
       },
       "source": "original"
     },
@@ -2189,7 +3068,12 @@
       ],
       "data": {
         "nameEn": "Ballerina",
-        "abilityEn": "Can change their \"Body Type\" to \"Athletic\""
+        "abilityEn": "Can change their \"Body Type\" to \"Athletic\"",
+        "effect": {
+          "op": "body",
+          "title": "Атлетическое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -2205,7 +3089,11 @@
       ],
       "data": {
         "nameEn": "Banker",
-        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -2221,7 +3109,13 @@
       ],
       "data": {
         "nameEn": "Bartender",
-        "abilityEn": "Can add \"Addicted to alcohol\" to the Additional information for any player"
+        "abilityEn": "Can add \"Addicted to alcohol\" to the Additional information for any player",
+        "effect": {
+          "op": "give",
+          "charKey": "extraInfo",
+          "text": "Зависим от алкоголя",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2237,7 +3131,13 @@
       ],
       "data": {
         "nameEn": "Priest",
-        "abilityEn": "Can change a negative \"Human Trait\" of another player"
+        "abilityEn": "Can change a negative \"Human Trait\" of another player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "trait",
+          "target": "other",
+          "note": "только если черта отрицательная"
+        }
       },
       "source": "original"
     },
@@ -2253,7 +3153,11 @@
       ],
       "data": {
         "nameEn": "Business Consultant",
-        "abilityEn": "Can change the \"Large Equipment\" in the bunker"
+        "abilityEn": "Can change the \"Large Equipment\" in the bunker",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "items"
+        }
       },
       "source": "original"
     },
@@ -2269,7 +3173,11 @@
       ],
       "data": {
         "nameEn": "Biochemist",
-        "abilityEn": "Upon entering the bunker, can make vitamins for a month"
+        "abilityEn": "Upon entering the bunker, can make vitamins for a month",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2285,7 +3193,11 @@
       ],
       "data": {
         "nameEn": "Broker",
-        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -2301,7 +3213,11 @@
       ],
       "data": {
         "nameEn": "Bookmaker",
-        "abilityEn": "Can swap the \"Hobby\" of any two players"
+        "abilityEn": "Can swap the \"Hobby\" of any two players",
+        "effect": {
+          "op": "swap.pair",
+          "charKey": "hobby"
+        }
       },
       "source": "original"
     },
@@ -2317,7 +3233,12 @@
       ],
       "data": {
         "nameEn": "Accountant",
-        "abilityEn": "Can change the amount of food in the bunker by 2 times (increase or decrease)"
+        "abilityEn": "Can change the amount of food in the bunker by 2 times (increase or decrease)",
+        "effect": {
+          "op": "bunker.set",
+          "field": "food",
+          "note": "впишите количество еды в 2 раза больше или меньше текущего"
+        }
       },
       "source": "original"
     },
@@ -2333,7 +3254,11 @@
       ],
       "data": {
         "nameEn": "Event Host",
-        "abilityEn": "Can set any two bunkers against each other, including your own"
+        "abilityEn": "Can set any two bunkers against each other, including your own",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -2349,7 +3274,13 @@
       ],
       "data": {
         "nameEn": "Venereologist",
-        "abilityEn": "Can cure venereal diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player"
+        "abilityEn": "Can cure venereal diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть венерологической — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2365,7 +3296,12 @@
       ],
       "data": {
         "nameEn": "Makeup Artist",
-        "abilityEn": "Can change the age of another player to \"Young\""
+        "abilityEn": "Can change the age of another player to \"Young\"",
+        "effect": {
+          "op": "ageGroup",
+          "group": "young",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -2381,7 +3317,11 @@
       ],
       "data": {
         "nameEn": "Winemaker",
-        "abilityEn": "Upon entering the bunker, can bring a box of wine"
+        "abilityEn": "Upon entering the bunker, can bring a box of wine",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2397,7 +3337,11 @@
       ],
       "data": {
         "nameEn": "Store Owner",
-        "abilityEn": "Upon entering the bunker, adds food for +3 months"
+        "abilityEn": "Upon entering the bunker, adds food for +3 months",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2413,7 +3357,12 @@
       ],
       "data": {
         "nameEn": "Military Doctor",
-        "abilityEn": "Can cure any disease of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player"
+        "abilityEn": "Can cure any disease of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "medium"
+        }
       },
       "source": "original"
     },
@@ -2429,7 +3378,11 @@
       ],
       "data": {
         "nameEn": "Educator",
-        "abilityEn": "Can take a child from another player. The child does not occupy a slot"
+        "abilityEn": "Can take a child from another player. The child does not occupy a slot",
+        "effect": {
+          "op": "manual",
+          "note": "ребёнок переходит к владельцу и не занимает место — отметьте вручную"
+        }
       },
       "source": "original"
     },
@@ -2445,7 +3398,14 @@
       ],
       "data": {
         "nameEn": "Bouncer",
-        "abilityEn": "Can increase the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can increase the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": 1,
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -2461,7 +3421,13 @@
       ],
       "data": {
         "nameEn": "Gastroenterologist",
-        "abilityEn": "Can cure digestive tract diseases to \"Perfect Health\" for another player. Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure digestive tract diseases to \"Perfect Health\" for another player. Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с пищеварением — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2477,7 +3443,13 @@
       ],
       "data": {
         "nameEn": "Gamer",
-        "abilityEn": "Knows a few valuable tips on how to survive in extreme situations, having played all survival games. He can add a portable game of his choice to his \"Large Equipment\""
+        "abilityEn": "Knows a few valuable tips on how to survive in extreme situations, having played all survival games. He can add a portable game of his choice to his \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Портативная игра (на выбор)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -2493,7 +3465,13 @@
       ],
       "data": {
         "nameEn": "Hematologist",
-        "abilityEn": "Can cure blood diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+        "abilityEn": "Can cure blood diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с кровью — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2509,7 +3487,11 @@
       ],
       "data": {
         "nameEn": "Geneticist",
-        "abilityEn": "Upon entering the bunker, significantly increases the chance of healthy children being born"
+        "abilityEn": "Upon entering the bunker, significantly increases the chance of healthy children being born",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2525,7 +3507,15 @@
       ],
       "data": {
         "nameEn": "Gerontologist",
-        "abilityEn": "Can change the age of any player from \"Elderly\" to \"Adult\""
+        "abilityEn": "Can change the age of any player from \"Elderly\" to \"Adult\"",
+        "effect": {
+          "op": "ageGroup",
+          "group": "adult",
+          "target": "any",
+          "from": [
+            "old"
+          ]
+        }
       },
       "source": "original"
     },
@@ -2541,7 +3531,13 @@
       ],
       "data": {
         "nameEn": "Gynecologist",
-        "abilityEn": "Can cure diseases of the female reproductive system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+        "abilityEn": "Can cure diseases of the female reproductive system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с женской репродуктивной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2557,7 +3553,12 @@
       ],
       "data": {
         "nameEn": "Hypnotist",
-        "abilityEn": "Can change the \"Phobia/Fear\" of any player"
+        "abilityEn": "Can change the \"Phobia/Fear\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "phobia",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2573,7 +3574,12 @@
       ],
       "data": {
         "nameEn": "Makeup Artist",
-        "abilityEn": "Can change the age of another player (make it Young/Adult/Elderly)"
+        "abilityEn": "Can change the age of another player (make it Young/Adult/Elderly)",
+        "effect": {
+          "op": "ageGroup",
+          "group": "*",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -2589,7 +3595,11 @@
       ],
       "data": {
         "nameEn": "Undertaker",
-        "abilityEn": "Can say the phrase \"He's still alive!\" and revive an exiled player. A returned player can change their single worst characteristic"
+        "abilityEn": "Can say the phrase \"He's still alive!\" and revive an exiled player. A returned player can change their single worst characteristic",
+        "effect": {
+          "op": "return",
+          "note": "возвращённый игрок может сам заменить одну свою худшую характеристику — сделайте это в панели"
+        }
       },
       "source": "original"
     },
@@ -2605,7 +3615,12 @@
       ],
       "data": {
         "nameEn": "Loader",
-        "abilityEn": "Can change their \"Body Type\" to \"Strong\""
+        "abilityEn": "Can change their \"Body Type\" to \"Strong\"",
+        "effect": {
+          "op": "body",
+          "title": "Крепкое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -2621,7 +3636,11 @@
       ],
       "data": {
         "nameEn": "Butler",
-        "abilityEn": "Can protect another player from being expelled until the next round. Used before voting"
+        "abilityEn": "Can protect another player from being expelled until the next round. Used before voting",
+        "effect": {
+          "op": "manual",
+          "note": "игрок защищён от изгнания до следующего круга — не выставляйте его на голосование"
+        }
       },
       "source": "original"
     },
@@ -2637,7 +3656,18 @@
       ],
       "data": {
         "nameEn": "Dean",
-        "abilityEn": "Can reduce the \"Profession\" experience from \"Intern\" or \"Amateur\" to \"Beginner\""
+        "abilityEn": "Can reduce the \"Profession\" experience from \"Intern\" or \"Amateur\" to \"Beginner\"",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "profession",
+          "modifierKey": "experience",
+          "level": "novice",
+          "target": "any",
+          "from": [
+            "intern",
+            "amateur"
+          ]
+        }
       },
       "source": "original"
     },
@@ -2653,7 +3683,11 @@
       ],
       "data": {
         "nameEn": "Deputy",
-        "abilityEn": "Can increase their speaking time by 30 seconds"
+        "abilityEn": "Can increase their speaking time by 30 seconds",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2669,7 +3703,15 @@
       ],
       "data": {
         "nameEn": "Dermatologist",
-        "abilityEn": "Can reduce the illness severity by 1 for any player related to skin diseases. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity by 1 for any player related to skin diseases. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "any",
+          "note": "болезнь должна быть связана с кожей — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2685,7 +3727,11 @@
       ],
       "data": {
         "nameEn": "Dietitian",
-        "abilityEn": "Upon entering the bunker, can improve the \"Body Type\" from \"Fragile\" to \"Thin\" for any player"
+        "abilityEn": "Upon entering the bunker, can improve the \"Body Type\" from \"Fragile\" to \"Thin\" for any player",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2701,7 +3747,12 @@
       ],
       "data": {
         "nameEn": "Designer",
-        "abilityEn": "Can make any player \"Young\""
+        "abilityEn": "Can make any player \"Young\"",
+        "effect": {
+          "op": "ageGroup",
+          "group": "young",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2717,7 +3768,11 @@
       ],
       "data": {
         "nameEn": "Announcer",
-        "abilityEn": "Can add 30 seconds of monologue to any player"
+        "abilityEn": "Can add 30 seconds of monologue to any player",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2733,7 +3788,11 @@
       ],
       "data": {
         "nameEn": "Diplomat",
-        "abilityEn": "Can cancel the relationship of relatives, friends, enemies, etc., for any player"
+        "abilityEn": "Can cancel the relationship of relatives, friends, enemies, etc., for any player",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -2749,7 +3808,12 @@
       ],
       "data": {
         "nameEn": "Doctor",
-        "abilityEn": "Can cure any disease of \"Mild\" or \"Moderate\" severity for another player"
+        "abilityEn": "Can cure any disease of \"Mild\" or \"Moderate\" severity for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "medium"
+        }
       },
       "source": "original"
     },
@@ -2765,7 +3829,12 @@
       ],
       "data": {
         "nameEn": "Document Specialist",
-        "abilityEn": "Can reveal the \"Additional Information\" of any player"
+        "abilityEn": "Can reveal the \"Additional Information\" of any player",
+        "effect": {
+          "op": "reveal",
+          "charKey": "extraInfo",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2781,7 +3850,12 @@
       ],
       "data": {
         "nameEn": "Playwright",
-        "abilityEn": "Can change the \"Hobby\" of all players"
+        "abilityEn": "Can change the \"Hobby\" of all players",
+        "effect": {
+          "op": "reroll",
+          "charKey": "hobby",
+          "target": "all"
+        }
       },
       "source": "original"
     },
@@ -2797,7 +3871,12 @@
       ],
       "data": {
         "nameEn": "Painter",
-        "abilityEn": "Can change the \"Hobby\" of any player"
+        "abilityEn": "Can change the \"Hobby\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "hobby",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2813,7 +3892,11 @@
       ],
       "data": {
         "nameEn": "Journalist",
-        "abilityEn": "Can express their opinion for an additional 30 seconds. Used before voting"
+        "abilityEn": "Can express their opinion for an additional 30 seconds. Used before voting",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2829,7 +3912,11 @@
       ],
       "data": {
         "nameEn": "Sound Engineer",
-        "abilityEn": "Can take 30 seconds of speech from any player"
+        "abilityEn": "Can take 30 seconds of speech from any player",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -2845,7 +3932,11 @@
       ],
       "data": {
         "nameEn": "Inventor",
-        "abilityEn": "Upon entering the bunker, can create an automatic egg incubator"
+        "abilityEn": "Upon entering the bunker, can create an automatic egg incubator",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2861,7 +3952,11 @@
       ],
       "data": {
         "nameEn": "Illusionist",
-        "abilityEn": "Can reveal any of their characteristics additionally"
+        "abilityEn": "Can reveal any of their characteristics additionally",
+        "effect": {
+          "op": "reveal",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -2877,7 +3972,12 @@
       ],
       "data": {
         "nameEn": "Illustrator",
-        "abilityEn": "Can add a \"Phobia/Fear\" to any player"
+        "abilityEn": "Can add a \"Phobia/Fear\" to any player",
+        "effect": {
+          "op": "add",
+          "charKey": "phobia",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2893,7 +3993,13 @@
       ],
       "data": {
         "nameEn": "Immunologist",
-        "abilityEn": "Can cure diseases of the immune system of \"Mild\" and \"Moderate\" severity for any player. Immune to infectious diseases"
+        "abilityEn": "Can cure diseases of the immune system of \"Mild\" and \"Moderate\" severity for any player. Immune to infectious diseases",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с иммунной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -2909,7 +4015,11 @@
       ],
       "data": {
         "nameEn": "Engineer",
-        "abilityEn": "Upon entering the bunker, can create a fully equipped greenhouse for growing plants in the bunker"
+        "abilityEn": "Upon entering the bunker, can create a fully equipped greenhouse for growing plants in the bunker",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -2925,7 +4035,11 @@
       ],
       "data": {
         "nameEn": "Inspector",
-        "abilityEn": "Can add any problem to the bunker (lack of electricity, mold, wolves, heating problems, rats, homeless person, etc.)"
+        "abilityEn": "Can add any problem to the bunker (lack of electricity, mold, wolves, heating problems, rats, homeless person, etc.)",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -2941,7 +4055,12 @@
       ],
       "data": {
         "nameEn": "Instructor",
-        "abilityEn": "Can change the \"Body Type\" of any player to their choice"
+        "abilityEn": "Can change the \"Body Type\" of any player to their choice",
+        "effect": {
+          "op": "body",
+          "title": "*",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -2957,7 +4076,12 @@
       ],
       "data": {
         "nameEn": "Historian",
-        "abilityEn": "Can steal any characteristic from an exiled player"
+        "abilityEn": "Can steal any characteristic from an exiled player",
+        "effect": {
+          "op": "steal",
+          "charKey": "*",
+          "from": "exiled"
+        }
       },
       "source": "original"
     },
@@ -2973,7 +4097,13 @@
       ],
       "data": {
         "nameEn": "Karateka",
-        "abilityEn": "Can regenerate the \"Health\" condition \"Perfect Health\" for another player"
+        "abilityEn": "Can regenerate the \"Health\" condition \"Perfect Health\" for another player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "health",
+          "target": "other",
+          "requireHealthy": true
+        }
       },
       "source": "original"
     },
@@ -2989,7 +4119,13 @@
       ],
       "data": {
         "nameEn": "Cardiologist",
-        "abilityEn": "Can cure diseases related to cardiovascular diseases for another player"
+        "abilityEn": "Can cure diseases related to cardiovascular diseases for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "critical",
+          "note": "болезнь должна быть связана с сердцем или сосудами — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3005,7 +4141,11 @@
       ],
       "data": {
         "nameEn": "Cartographer",
-        "abilityEn": "Upon entering the bunker, can add a 50 m² room with protective suits"
+        "abilityEn": "Upon entering the bunker, can add a 50 m² room with protective suits",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -3021,7 +4161,11 @@
       ],
       "data": {
         "nameEn": "Stuntman",
-        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players"
+        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players",
+        "effect": {
+          "op": "cancelSpecial",
+          "note": "только карта, направленная на самого владельца, и не применённая ко всем"
+        }
       },
       "source": "original"
     },
@@ -3037,7 +4181,14 @@
       ],
       "data": {
         "nameEn": "Killer",
-        "abilityEn": "Can increase the illness severity to \"Critical\" for a player before or after themselves"
+        "abilityEn": "Can increase the illness severity to \"Critical\" for a player before or after themselves",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "level": "critical",
+          "target": "neighbor"
+        }
       },
       "source": "original"
     },
@@ -3053,7 +4204,12 @@
       ],
       "data": {
         "nameEn": "Film Projectionist",
-        "abilityEn": "Can change their \"Additional Information\""
+        "abilityEn": "Can change their \"Additional Information\"",
+        "effect": {
+          "op": "reroll",
+          "charKey": "extraInfo",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -3069,7 +4225,12 @@
       ],
       "data": {
         "nameEn": "Film Director",
-        "abilityEn": "Can change the \"Additional Information\" of all players"
+        "abilityEn": "Can change the \"Additional Information\" of all players",
+        "effect": {
+          "op": "reroll",
+          "charKey": "extraInfo",
+          "target": "all"
+        }
       },
       "source": "original"
     },
@@ -3085,7 +4246,10 @@
       ],
       "data": {
         "nameEn": "Climatologist",
-        "abilityEn": "Can change the Cataclysm"
+        "abilityEn": "Can change the Cataclysm",
+        "effect": {
+          "op": "catastrophe.reroll"
+        }
       },
       "source": "original"
     },
@@ -3101,7 +4265,12 @@
       ],
       "data": {
         "nameEn": "Clown",
-        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused"
+        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused",
+        "effect": {
+          "op": "rotate",
+          "charKey": "profession",
+          "dir": "cw"
+        }
       },
       "source": "original"
     },
@@ -3117,7 +4286,12 @@
       ],
       "data": {
         "nameEn": "Comedian",
-        "abilityEn": "Can change the \"Human Trait\" of another player"
+        "abilityEn": "Can change the \"Human Trait\" of another player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "trait",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -3133,7 +4307,11 @@
       ],
       "data": {
         "nameEn": "Confectioner",
-        "abilityEn": "Upon entering the bunker, can provide sweets for a month"
+        "abilityEn": "Upon entering the bunker, can provide sweets for a month",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -3149,7 +4327,11 @@
       ],
       "data": {
         "nameEn": "Cosmetologist",
-        "abilityEn": "Can swap the \"Body Type\" of two other players"
+        "abilityEn": "Can swap the \"Body Type\" of two other players",
+        "effect": {
+          "op": "swap.pair",
+          "charKey": "body"
+        }
       },
       "source": "original"
     },
@@ -3165,7 +4347,11 @@
       ],
       "data": {
         "nameEn": "Critic",
-        "abilityEn": "Can increase their accusatory speech by 30 seconds"
+        "abilityEn": "Can increase their accusatory speech by 30 seconds",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -3181,7 +4367,12 @@
       ],
       "data": {
         "nameEn": "Croupier",
-        "abilityEn": "Can steal the \"Backpack\" of a player before or after themselves"
+        "abilityEn": "Can steal the \"Backpack\" of a player before or after themselves",
+        "effect": {
+          "op": "steal",
+          "charKey": "backpack",
+          "from": "neighbor"
+        }
       },
       "source": "original"
     },
@@ -3197,7 +4388,11 @@
       ],
       "data": {
         "nameEn": "Cultural Scientist",
-        "abilityEn": "Can cure the \"Phobia/Fear\" of any player"
+        "abilityEn": "Can cure the \"Phobia/Fear\" of any player",
+        "effect": {
+          "op": "curePhobia",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -3213,7 +4408,11 @@
       ],
       "data": {
         "nameEn": "Courier",
-        "abilityEn": "Upon entering the bunker, can bring a thermal bag with food for +1 week"
+        "abilityEn": "Upon entering the bunker, can bring a thermal bag with food for +1 week",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -3229,7 +4428,11 @@
       ],
       "data": {
         "nameEn": "Landscape Designer",
-        "abilityEn": "Can change the \"Bunker Information\" about the bunker size"
+        "abilityEn": "Can change the \"Bunker Information\" about the bunker size",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "size"
+        }
       },
       "source": "original"
     },
@@ -3245,7 +4448,11 @@
       ],
       "data": {
         "nameEn": "Lieutenant",
-        "abilityEn": "Can remove a vote against themselves. Used after voting"
+        "abilityEn": "Can remove a vote against themselves. Used after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3261,7 +4468,12 @@
       ],
       "data": {
         "nameEn": "Lumberjack",
-        "abilityEn": "Can change their \"Body Type\" to \"Strong\""
+        "abilityEn": "Can change their \"Body Type\" to \"Strong\"",
+        "effect": {
+          "op": "body",
+          "title": "Крепкое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -3277,7 +4489,11 @@
       ],
       "data": {
         "nameEn": "Linguist",
-        "abilityEn": "Knows 5 languages"
+        "abilityEn": "Knows 5 languages",
+        "effect": {
+          "op": "info",
+          "note": "Знает 5 языков"
+        }
       },
       "source": "original"
     },
@@ -3293,7 +4509,10 @@
       ],
       "data": {
         "nameEn": "Lobbyist",
-        "abilityEn": "Can cancel the last \"Special Ability\" card"
+        "abilityEn": "Can cancel the last \"Special Ability\" card",
+        "effect": {
+          "op": "cancelSpecial"
+        }
       },
       "source": "original"
     },
@@ -3309,7 +4528,28 @@
       ],
       "data": {
         "nameEn": "Speech Therapist",
-        "abilityEn": "Can add a speech defect to any player until the end of the game (must role-play) or remove a speech defect"
+        "abilityEn": "Can add a speech defect to any player until the end of the game (must role-play) or remove a speech defect",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Добавить дефект речи",
+              "effect": {
+                "op": "give",
+                "charKey": "extraInfo",
+                "text": "Дефект речи (обязан отыгрывать до конца игры)",
+                "target": "any"
+              }
+            },
+            {
+              "label": "Убрать дефект речи",
+              "effect": {
+                "op": "manual",
+                "note": "уберите дефект речи у игрока вручную в панели ведущего"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -3325,7 +4565,11 @@
       ],
       "data": {
         "nameEn": "Major",
-        "abilityEn": "Knows where the weapons warehouse is located"
+        "abilityEn": "Knows where the weapons warehouse is located",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится склад с оружием"
+        }
       },
       "source": "original"
     },
@@ -3341,7 +4585,11 @@
       ],
       "data": {
         "nameEn": "Marketer",
-        "abilityEn": "Can reveal one additional characteristic of their own at any time"
+        "abilityEn": "Can reveal one additional characteristic of their own at any time",
+        "effect": {
+          "op": "reveal",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -3357,7 +4605,16 @@
       ],
       "data": {
         "nameEn": "Masseur",
-        "abilityEn": "Can reduce the \"Body Type\" from \"Strong Obesity\" or \"Weak Obesity\" to \"Full\" for another player"
+        "abilityEn": "Can reduce the \"Body Type\" from \"Strong Obesity\" or \"Weak Obesity\" to \"Full\" for another player",
+        "effect": {
+          "op": "body",
+          "title": "Полное",
+          "target": "other",
+          "from": [
+            "Ожирение-слабое",
+            "Ожирение-сильное"
+          ]
+        }
       },
       "source": "original"
     },
@@ -3373,7 +4630,12 @@
       ],
       "data": {
         "nameEn": "Nurse/Medic",
-        "abilityEn": "Can cure any disease of \"Mild\" severity for another player"
+        "abilityEn": "Can cure any disease of \"Mild\" severity for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "light"
+        }
       },
       "source": "original"
     },
@@ -3389,7 +4651,11 @@
       ],
       "data": {
         "nameEn": "Microbiologist",
-        "abilityEn": "Upon entering the bunker, can create penicillin (antibiotic) from mold"
+        "abilityEn": "Upon entering the bunker, can create penicillin (antibiotic) from mold",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -3405,7 +4671,12 @@
       ],
       "data": {
         "nameEn": "Model",
-        "abilityEn": "Can change their \"Body Type\" to \"Thin\""
+        "abilityEn": "Can change their \"Body Type\" to \"Thin\"",
+        "effect": {
+          "op": "body",
+          "title": "Худое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -3421,7 +4692,12 @@
       ],
       "data": {
         "nameEn": "Monk",
-        "abilityEn": "Can change the \"Human Trait\" of any player"
+        "abilityEn": "Can change the \"Human Trait\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "trait",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -3437,7 +4713,12 @@
       ],
       "data": {
         "nameEn": "Motion Designer",
-        "abilityEn": "Can change the \"Hobby\" of another player"
+        "abilityEn": "Can change the \"Hobby\" of another player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "hobby",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -3453,7 +4734,13 @@
       ],
       "data": {
         "nameEn": "Narcologist",
-        "abilityEn": "Can cure drug addiction and alcoholism for any player"
+        "abilityEn": "Can cure drug addiction and alcoholism for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "critical",
+          "note": "только наркозависимость или алкоголизм; если зависимость записана в доп. сведении — уберите её вручную"
+        }
       },
       "source": "original"
     },
@@ -3469,7 +4756,13 @@
       ],
       "data": {
         "nameEn": "Neurologist",
-        "abilityEn": "Can cure diseases of the nervous system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+        "abilityEn": "Can cure diseases of the nervous system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с нервной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3485,7 +4778,19 @@
       ],
       "data": {
         "nameEn": "Neurosurgeon",
-        "abilityEn": "Can reduce the illness severity related to diseases of the nervous system, including the brain, spinal cord, and peripheral nervous system to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity related to diseases of the nervous system, including the brain, spinal cord, and peripheral nervous system to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "level": "light",
+          "target": "any",
+          "from": [
+            "medium",
+            "heavy"
+          ],
+          "note": "болезнь должна быть связана с нервной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3501,7 +4806,11 @@
       ],
       "data": {
         "nameEn": "Notary",
-        "abilityEn": "If there is an exiled player, can add one vote to any player. Used after voting"
+        "abilityEn": "If there is an exiled player, can add one vote to any player. Used after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3517,7 +4826,19 @@
       ],
       "data": {
         "nameEn": "Ophthalmologist",
-        "abilityEn": "Can reduce the illness severity related to vision diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity related to vision diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "level": "light",
+          "target": "any",
+          "from": [
+            "medium",
+            "heavy"
+          ],
+          "note": "болезнь должна быть связана с зрением — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3533,7 +4854,19 @@
       ],
       "data": {
         "nameEn": "Oncologist",
-        "abilityEn": "Can reduce the illness severity of oncological diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity of oncological diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "level": "light",
+          "target": "any",
+          "from": [
+            "medium",
+            "heavy"
+          ],
+          "note": "болезнь должна быть онкологической — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3549,7 +4882,11 @@
       ],
       "data": {
         "nameEn": "Event Organizer",
-        "abilityEn": "If there are nearby bunkers with builders and medics, they can come to our bunker without taking slots or consuming our food (they bring their own)"
+        "abilityEn": "If there are nearby bunkers with builders and medics, they can come to our bunker without taking slots or consuming our food (they bring their own)",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -3565,7 +4902,18 @@
       ],
       "data": {
         "nameEn": "Orthopedist",
-        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "any",
+          "notFrom": [
+            "critical"
+          ],
+          "note": "болезнь должна быть связана с травмой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3581,7 +4929,13 @@
       ],
       "data": {
         "nameEn": "Otolaryngologist",
-        "abilityEn": "Can cure diseases related to the ears, throat, and nose for any player"
+        "abilityEn": "Can cure diseases related to the ears, throat, and nose for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "critical",
+          "note": "болезнь должна быть связана с ушами, горлом или носом — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3597,7 +4951,11 @@
       ],
       "data": {
         "nameEn": "Waiter",
-        "abilityEn": "Knows where the nearest wine cellar is located"
+        "abilityEn": "Knows where the nearest wine cellar is located",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится ближайший винный погреб"
+        }
       },
       "source": "original"
     },
@@ -3613,7 +4971,11 @@
       ],
       "data": {
         "nameEn": "Security Guard",
-        "abilityEn": "Can redirect 2 votes from others to themselves. Used immediately after voting"
+        "abilityEn": "Can redirect 2 votes from others to themselves. Used immediately after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3629,7 +4991,11 @@
       ],
       "data": {
         "nameEn": "Appraiser",
-        "abilityEn": "Can choose the characteristic that another player will reveal"
+        "abilityEn": "Can choose the characteristic that another player will reveal",
+        "effect": {
+          "op": "manual",
+          "note": "владелец выбирает, какую характеристику откроет другой игрок"
+        }
       },
       "source": "original"
     },
@@ -3645,7 +5011,11 @@
       ],
       "data": {
         "nameEn": "Paramedic",
-        "abilityEn": "Can return an exiled player to the temporary camp and change one bad revealed characteristic"
+        "abilityEn": "Can return an exiled player to the temporary camp and change one bad revealed characteristic",
+        "effect": {
+          "op": "return",
+          "note": "одну плохую открытую характеристику вернувшегося игрока поменяйте в панели"
+        }
       },
       "source": "original"
     },
@@ -3661,7 +5031,13 @@
       ],
       "data": {
         "nameEn": "Pathologist",
-        "abilityEn": "Can steal the revealed \"Health\" of an exiled player"
+        "abilityEn": "Can steal the revealed \"Health\" of an exiled player",
+        "effect": {
+          "op": "steal",
+          "charKey": "health",
+          "from": "exiled",
+          "onlyRevealed": true
+        }
       },
       "source": "original"
     },
@@ -3677,7 +5053,18 @@
       ],
       "data": {
         "nameEn": "Pediatrician",
-        "abilityEn": "Can reduce the severity of an infectious disease from \"Moderate\" to \"Mild\" for any player"
+        "abilityEn": "Can reduce the severity of an infectious disease from \"Moderate\" to \"Mild\" for any player",
+        "effect": {
+          "op": "modifier.set",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "level": "light",
+          "target": "any",
+          "from": [
+            "medium"
+          ],
+          "note": "болезнь должна быть инфекционной — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3693,7 +5080,11 @@
       ],
       "data": {
         "nameEn": "Translator",
-        "abilityEn": "Knows 7 languages and can communicate with the deaf and mute"
+        "abilityEn": "Knows 7 languages and can communicate with the deaf and mute",
+        "effect": {
+          "op": "info",
+          "note": "Знает 7 языков и умеет общаться с глухонемыми"
+        }
       },
       "source": "original"
     },
@@ -3709,7 +5100,11 @@
       ],
       "data": {
         "nameEn": "Pilot",
-        "abilityEn": "Immune to \"Phobia/Fear\" related to height, air, speed, and movement"
+        "abilityEn": "Immune to \"Phobia/Fear\" related to height, air, speed, and movement",
+        "effect": {
+          "op": "info",
+          "note": "неуязвим к фобиям, связанным с высотой, воздухом, скоростью и движением"
+        }
       },
       "source": "original"
     },
@@ -3725,7 +5120,16 @@
       ],
       "data": {
         "nameEn": "Writer",
-        "abilityEn": "Can change the \"Additional Information\" or \"Hobby\" of any player"
+        "abilityEn": "Can change the \"Additional Information\" or \"Hobby\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "*",
+          "target": "any",
+          "choices": [
+            "extraInfo",
+            "hobby"
+          ]
+        }
       },
       "source": "original"
     },
@@ -3741,7 +5145,11 @@
       ],
       "data": {
         "nameEn": "Plastic Surgeon",
-        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)"
+        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)",
+        "effect": {
+          "op": "gender.flip",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -3757,7 +5165,13 @@
       ],
       "data": {
         "nameEn": "Podiatrist",
-        "abilityEn": "Can cure diseases related to the foot or nails for another player. Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure diseases related to the foot or nails for another player. Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с стопой или ногтями — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3773,7 +5187,11 @@
       ],
       "data": {
         "nameEn": "Political Scientist",
-        "abilityEn": "Can take the floor for 15 seconds. Used after voting"
+        "abilityEn": "Can take the floor for 15 seconds. Used after voting",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -3789,7 +5207,11 @@
       ],
       "data": {
         "nameEn": "Police Officer",
-        "abilityEn": "Can redirect a vote directed at themselves to another player. Used immediately after voting"
+        "abilityEn": "Can redirect a vote directed at themselves to another player. Used immediately after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3805,7 +5227,11 @@
       ],
       "data": {
         "nameEn": "Ambassador",
-        "abilityEn": "Can interrupt another player's speech for 15 seconds if the entire speech is at least 45 seconds"
+        "abilityEn": "Can interrupt another player's speech for 15 seconds if the entire speech is at least 45 seconds",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -3821,7 +5247,11 @@
       ],
       "data": {
         "nameEn": "President",
-        "abilityEn": "Can add one vote to any player. Used after voting"
+        "abilityEn": "Can add one vote to any player. Used after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3837,7 +5267,11 @@
       ],
       "data": {
         "nameEn": "Pharmacist",
-        "abilityEn": "Upon entering the bunker, can tell the location of the medical warehouse"
+        "abilityEn": "Upon entering the bunker, can tell the location of the medical warehouse",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -3853,7 +5287,11 @@
       ],
       "data": {
         "nameEn": "Salesperson",
-        "abilityEn": "Knows where the nearest shopping center is located"
+        "abilityEn": "Knows where the nearest shopping center is located",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится ближайший торговый центр"
+        }
       },
       "source": "original"
     },
@@ -3869,7 +5307,11 @@
       ],
       "data": {
         "nameEn": "Producer",
-        "abilityEn": "If there are enemy bunkers, can negotiate with them"
+        "abilityEn": "If there are enemy bunkers, can negotiate with them",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -3885,7 +5327,13 @@
       ],
       "data": {
         "nameEn": "Proctologist",
-        "abilityEn": "Can cure diseases of the rectum and large intestine of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure diseases of the rectum and large intestine of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с прямой кишкой или кишечником — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3901,7 +5349,11 @@
       ],
       "data": {
         "nameEn": "Prosecutor",
-        "abilityEn": "Can use another player's vote. Used before voting"
+        "abilityEn": "Can use another player's vote. Used before voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -3917,7 +5369,12 @@
       ],
       "data": {
         "nameEn": "Foreman",
-        "abilityEn": "Can divide any room in the bunker into 2 rooms"
+        "abilityEn": "Can divide any room in the bunker into 2 rooms",
+        "effect": {
+          "op": "bunker.set",
+          "field": "rooms",
+          "note": "перепишите комнаты так, чтобы одна была разделена на две"
+        }
       },
       "source": "original"
     },
@@ -3933,7 +5390,28 @@
       ],
       "data": {
         "nameEn": "Psychiatrist",
-        "abilityEn": "Can cure \"Phobia/Fear\" or \"Health\" related to mental illness for another player"
+        "abilityEn": "Can cure \"Phobia/Fear\" or \"Health\" related to mental illness for another player",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Вылечить фобию",
+              "effect": {
+                "op": "curePhobia",
+                "target": "other"
+              }
+            },
+            {
+              "label": "Вылечить психическую болезнь",
+              "effect": {
+                "op": "healthy",
+                "target": "other",
+                "maxSeverity": "critical",
+                "note": "болезнь должна быть психической — проверьте сами"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -3949,7 +5427,11 @@
       ],
       "data": {
         "nameEn": "Psychologist",
-        "abilityEn": "Can cure the \"Phobia/Fear\" of another player"
+        "abilityEn": "Can cure the \"Phobia/Fear\" of another player",
+        "effect": {
+          "op": "curePhobia",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -3965,7 +5447,13 @@
       ],
       "data": {
         "nameEn": "Psychotherapist",
-        "abilityEn": "Can cure mental illness of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure mental illness of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть психической — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3981,7 +5469,13 @@
       ],
       "data": {
         "nameEn": "Pulmonologist",
-        "abilityEn": "Can cure diseases of the respiratory system for another player. Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure diseases of the respiratory system for another player. Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с дыхательной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -3997,7 +5491,17 @@
       ],
       "data": {
         "nameEn": "Rehabilitation Specialist",
-        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "other",
+          "notFrom": [
+            "critical"
+          ]
+        }
       },
       "source": "original"
     },
@@ -4013,7 +5517,11 @@
       ],
       "data": {
         "nameEn": "Auditor",
-        "abilityEn": "If there are enemy bunkers, eliminates them"
+        "abilityEn": "If there are enemy bunkers, eliminates them",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -4029,7 +5537,11 @@
       ],
       "data": {
         "nameEn": "Director",
-        "abilityEn": "Can swap any characteristic of two other players"
+        "abilityEn": "Can swap any characteristic of two other players",
+        "effect": {
+          "op": "swap.pair",
+          "charKey": "*"
+        }
       },
       "source": "original"
     },
@@ -4045,7 +5557,11 @@
       ],
       "data": {
         "nameEn": "Realtor",
-        "abilityEn": "If there is an enemy bunker, can reduce the bunker slots by 1, and if there is a friendly bunker, can add 1 slot"
+        "abilityEn": "If there is an enemy bunker, can reduce the bunker slots by 1, and if there is a friendly bunker, can add 1 slot",
+        "effect": {
+          "op": "manual",
+          "note": "при вражеском бункере уберите 1 место, при дружеском добавьте 1 место — кнопками мест в панели"
+        }
       },
       "source": "original"
     },
@@ -4061,7 +5577,11 @@
       ],
       "data": {
         "nameEn": "Leader",
-        "abilityEn": "Can reveal the \"Additional Information\" of another player"
+        "abilityEn": "Can reveal the \"Additional Information\" of another player",
+        "effect": {
+          "op": "reveal",
+          "charKey": "extraInfo"
+        }
       },
       "source": "original"
     },
@@ -4077,7 +5597,11 @@
       ],
       "data": {
         "nameEn": "Rapper",
-        "abilityEn": "Immune to diseases related to speech and hearing disorders"
+        "abilityEn": "Immune to diseases related to speech and hearing disorders",
+        "effect": {
+          "op": "info",
+          "note": "иммунитет к заболеваниям, связанным с нарушением речи и слуха"
+        }
       },
       "source": "original"
     },
@@ -4093,7 +5617,11 @@
       ],
       "data": {
         "nameEn": "Plumber",
-        "abilityEn": "Upon entering the bunker, can add a fully equipped 4 m² bathroom to the bunker"
+        "abilityEn": "Upon entering the bunker, can add a fully equipped 4 m² bathroom to the bunker",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4109,7 +5637,11 @@
       ],
       "data": {
         "nameEn": "Priest",
-        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players"
+        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players",
+        "effect": {
+          "op": "cancelSpecial",
+          "note": "только карта, направленная на самого владельца, и не применённая ко всем"
+        }
       },
       "source": "original"
     },
@@ -4125,7 +5657,13 @@
       ],
       "data": {
         "nameEn": "Secret Agent",
-        "abilityEn": "Can change any hidden characteristic of any player"
+        "abilityEn": "Can change any hidden characteristic of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "*",
+          "target": "any",
+          "onlyClosed": true
+        }
       },
       "source": "original"
     },
@@ -4141,7 +5679,11 @@
       ],
       "data": {
         "nameEn": "Sculptor",
-        "abilityEn": "Can make two players relatives (both must pass or neither). After one player is expelled, the other leaves immediately. One player cannot be revived"
+        "abilityEn": "Can make two players relatives (both must pass or neither). After one player is expelled, the other leaves immediately. One player cannot be revived",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -4157,7 +5699,11 @@
       ],
       "data": {
         "nameEn": "Investigator",
-        "abilityEn": "Can make two players enemies (only one can enter the bunker). If the number of slots in the bunker equals the number of survivors, a vote is held to expel one or both players"
+        "abilityEn": "Can make two players enemies (only one can enter the bunker). If the number of slots in the bunker equals the number of survivors, a vote is held to expel one or both players",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -4173,7 +5719,11 @@
       ],
       "data": {
         "nameEn": "Locksmith",
-        "abilityEn": "Can change the \"Bunker Information\" about the bunker size"
+        "abilityEn": "Can change the \"Bunker Information\" about the bunker size",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "size"
+        }
       },
       "source": "original"
     },
@@ -4189,7 +5739,12 @@
       ],
       "data": {
         "nameEn": "Soldier",
-        "abilityEn": "Knows how to provide first aid. Can change his bodytype to \"Strong\""
+        "abilityEn": "Knows how to provide first aid. Can change his bodytype to \"Strong\"",
+        "effect": {
+          "op": "body",
+          "title": "Крепкое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4205,7 +5760,13 @@
       ],
       "data": {
         "nameEn": "Somnologist",
-        "abilityEn": "Can cure \"Health\" conditions of \"Mild\" or \"Moderate\" severity related to sleep disorders for another player"
+        "abilityEn": "Can cure \"Health\" conditions of \"Mild\" or \"Moderate\" severity related to sleep disorders for another player",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с нарушением сна — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -4221,7 +5782,11 @@
       ],
       "data": {
         "nameEn": "NASA Employee",
-        "abilityEn": "Can remove time limits if the Cataclysm is time-limited"
+        "abilityEn": "Can remove time limits if the Cataclysm is time-limited",
+        "effect": {
+          "op": "manual",
+          "note": "уберите ограничение по времени у катаклизма вручную"
+        }
       },
       "source": "original"
     },
@@ -4237,7 +5802,11 @@
       ],
       "data": {
         "nameEn": "CIA Employee",
-        "abilityEn": "Can change the \"Bunker Information\" about who is present in the bunker"
+        "abilityEn": "Can change the \"Bunker Information\" about who is present in the bunker",
+        "effect": {
+          "op": "bunker.reroll",
+          "field": "items"
+        }
       },
       "source": "original"
     },
@@ -4253,7 +5822,12 @@
       ],
       "data": {
         "nameEn": "Sociologist",
-        "abilityEn": "Can change the \"Phobia/Fear\" of all players"
+        "abilityEn": "Can change the \"Phobia/Fear\" of all players",
+        "effect": {
+          "op": "reroll",
+          "charKey": "phobia",
+          "target": "all"
+        }
       },
       "source": "original"
     },
@@ -4269,7 +5843,11 @@
       ],
       "data": {
         "nameEn": "Rescuer",
-        "abilityEn": "Can redirect another player's vote against themselves. Used immediately after voting"
+        "abilityEn": "Can redirect another player's vote against themselves. Used immediately after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -4285,7 +5863,12 @@
       ],
       "data": {
         "nameEn": "Sports Coach",
-        "abilityEn": "Can change the \"Body Type\" to \"Athletic\" for any player"
+        "abilityEn": "Can change the \"Body Type\" to \"Athletic\" for any player",
+        "effect": {
+          "op": "body",
+          "title": "Атлетическое",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -4301,7 +5884,12 @@
       ],
       "data": {
         "nameEn": "Athlete",
-        "abilityEn": "Can change their \"Body Type\" to \"Athletic\""
+        "abilityEn": "Can change their \"Body Type\" to \"Athletic\"",
+        "effect": {
+          "op": "body",
+          "title": "Атлетическое",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4317,7 +5905,11 @@
       ],
       "data": {
         "nameEn": "Machinist",
-        "abilityEn": "Upon entering the bunker, can add a machine (for wood or metal) to the bunker"
+        "abilityEn": "Upon entering the bunker, can add a machine (for wood or metal) to the bunker",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4333,7 +5925,11 @@
       ],
       "data": {
         "nameEn": "Stylist",
-        "abilityEn": "Can change the \"Gender\" of any player"
+        "abilityEn": "Can change the \"Gender\" of any player",
+        "effect": {
+          "op": "gender.flip",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -4349,7 +5945,13 @@
       ],
       "data": {
         "nameEn": "Dentist",
-        "abilityEn": "Can cure any disease related to the oral cavity or teeth for another player. Cannot cure \"Critical\" severity"
+        "abilityEn": "Can cure any disease related to the oral cavity or teeth for another player. Cannot cure \"Critical\" severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с ротовой полостью или зубами — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -4365,7 +5967,12 @@
       ],
       "data": {
         "nameEn": "Insurance Agent",
-        "abilityEn": "Can steal another player's \"Health\" during their 30-second defense"
+        "abilityEn": "Can steal another player's \"Health\" during their 30-second defense",
+        "effect": {
+          "op": "steal",
+          "charKey": "health",
+          "note": "только у игрока, у которого сейчас идут 30 оправдательных секунд"
+        }
       },
       "source": "original"
     },
@@ -4381,7 +5988,11 @@
       ],
       "data": {
         "nameEn": "Streamer",
-        "abilityEn": "Can open 1 additional characteristic on their turn"
+        "abilityEn": "Can open 1 additional characteristic on their turn",
+        "effect": {
+          "op": "reveal",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4397,7 +6008,11 @@
       ],
       "data": {
         "nameEn": "Stripper",
-        "abilityEn": "Can add childfree status to another player"
+        "abilityEn": "Can add childfree status to another player",
+        "effect": {
+          "op": "childfree",
+          "target": "other"
+        }
       },
       "source": "original"
     },
@@ -4413,7 +6028,11 @@
       ],
       "data": {
         "nameEn": "Builder",
-        "abilityEn": "Can finish the bathroom, install doors, and solve heating problems in the bunker"
+        "abilityEn": "Can finish the bathroom, install doors, and solve heating problems in the bunker",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -4429,7 +6048,11 @@
       ],
       "data": {
         "nameEn": "Flight Attendant",
-        "abilityEn": "Can protect themselves from being expelled until the next round. Used before voting"
+        "abilityEn": "Can protect themselves from being expelled until the next round. Used before voting",
+        "effect": {
+          "op": "manual",
+          "note": "владелец защищён от изгнания до следующего круга — не выставляйте его на голосование"
+        }
       },
       "source": "original"
     },
@@ -4445,7 +6068,11 @@
       ],
       "data": {
         "nameEn": "Judge",
-        "abilityEn": "If several players have the same number of votes during voting, can choose who to expel"
+        "abilityEn": "If several players have the same number of votes during voting, can choose who to expel",
+        "effect": {
+          "op": "manual",
+          "note": "при равенстве голосов владелец решает, кого изгнать"
+        }
       },
       "source": "original"
     },
@@ -4461,7 +6088,13 @@
       ],
       "data": {
         "nameEn": "Sign Language Interpreter",
-        "abilityEn": "Can add a device to his backpack for automatic translation from any language (including the language of the deaf and dumb)"
+        "abilityEn": "Can add a device to his backpack for automatic translation from any language (including the language of the deaf and dumb)",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Устройство для автоматического перевода с любого языка (включая язык глухонемых)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4477,7 +6110,11 @@
       ],
       "data": {
         "nameEn": "Screenwriter",
-        "abilityEn": "Can exchange \"Additional information\" with two other players"
+        "abilityEn": "Can exchange \"Additional information\" with two other players",
+        "effect": {
+          "op": "swap.pair",
+          "charKey": "extraInfo"
+        }
       },
       "source": "original"
     },
@@ -4493,7 +6130,13 @@
       ],
       "data": {
         "nameEn": "Dancer",
-        "abilityEn": "Can change the \"Body Type\" of any player by 1 degree"
+        "abilityEn": "Can change the \"Body Type\" of any player by 1 degree",
+        "effect": {
+          "op": "body",
+          "title": "*",
+          "target": "any",
+          "note": "телосложение меняется только на соседнее по шкале (на 1 степень)"
+        }
       },
       "source": "original"
     },
@@ -4509,7 +6152,11 @@
       ],
       "data": {
         "nameEn": "TV Host",
-        "abilityEn": "Can reduce another player's speech by 30 seconds or increase their own speaking time"
+        "abilityEn": "Can reduce another player's speech by 30 seconds or increase their own speaking time",
+        "effect": {
+          "op": "manual",
+          "note": "ведущий управляет временем речи вручную (таймер в панели)"
+        }
       },
       "source": "original"
     },
@@ -4525,7 +6172,11 @@
       ],
       "data": {
         "nameEn": "Bodyguard",
-        "abilityEn": "Can redirect a vote against themselves that was directed at another player. Used immediately after voting"
+        "abilityEn": "Can redirect a vote against themselves that was directed at another player. Used immediately after voting",
+        "effect": {
+          "op": "manual",
+          "note": "применяется ведущим вручную во время голосования"
+        }
       },
       "source": "original"
     },
@@ -4541,7 +6192,17 @@
       ],
       "data": {
         "nameEn": "Therapist",
-        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "other",
+          "notFrom": [
+            "critical"
+          ]
+        }
       },
       "source": "original"
     },
@@ -4557,7 +6218,11 @@
       ],
       "data": {
         "nameEn": "Merchandiser",
-        "abilityEn": "Upon entering the bunker, adds fresh food for +1 month"
+        "abilityEn": "Upon entering the bunker, adds fresh food for +1 month",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4573,7 +6238,15 @@
       ],
       "data": {
         "nameEn": "Traumatologist",
-        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot cure the disease"
+        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot cure the disease",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "any",
+          "note": "болезнь должна быть связана с травмой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -4589,7 +6262,13 @@
       ],
       "data": {
         "nameEn": "Urologist",
-        "abilityEn": "Can cure diseases related to the genitourinary system for another player. \"Critical\" severity is reduced to \"Severe\""
+        "abilityEn": "Can cure diseases related to the genitourinary system for another player. \"Critical\" severity is reduced to \"Severe\"",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с мочеполовой системой — проверьте сами; критическую степень снижайте до тяжёлой вручную в панели"
+        }
       },
       "source": "original"
     },
@@ -4605,7 +6284,11 @@
       ],
       "data": {
         "nameEn": "Foreign Language Teacher",
-        "abilityEn": "Can cancel the current foreigner card of any player"
+        "abilityEn": "Can cancel the current foreigner card of any player",
+        "effect": {
+          "op": "manual",
+          "note": "отмените действующую карту иностранца у игрока вручную"
+        }
       },
       "source": "original"
     },
@@ -4621,7 +6304,12 @@
       ],
       "data": {
         "nameEn": "History Teacher",
-        "abilityEn": "Can change the \"Additional Information\" of any player"
+        "abilityEn": "Can change the \"Additional Information\" of any player",
+        "effect": {
+          "op": "reroll",
+          "charKey": "extraInfo",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -4637,7 +6325,11 @@
       ],
       "data": {
         "nameEn": "Elementary School Teacher",
-        "abilityEn": "Can allow children not to occupy slots in the bunker"
+        "abilityEn": "Can allow children not to occupy slots in the bunker",
+        "effect": {
+          "op": "manual",
+          "note": "дети не занимают места в бункере — учтите при подсчёте"
+        }
       },
       "source": "original"
     },
@@ -4653,7 +6345,11 @@
       ],
       "data": {
         "nameEn": "Pharmacist",
-        "abilityEn": "Knows where the medical warehouse is located"
+        "abilityEn": "Knows where the medical warehouse is located",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится склад с медикаментами"
+        }
       },
       "source": "original"
     },
@@ -4669,7 +6365,12 @@
       ],
       "data": {
         "nameEn": "Philosopher",
-        "abilityEn": "Can change their own \"Human Trait\""
+        "abilityEn": "Can change their own \"Human Trait\"",
+        "effect": {
+          "op": "reroll",
+          "charKey": "trait",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4685,7 +6386,11 @@
       ],
       "data": {
         "nameEn": "Financier",
-        "abilityEn": "If there are any problems with electricity or water supply in the bunker, can fix them"
+        "abilityEn": "If there are any problems with electricity or water supply in the bunker, can fix them",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -4701,7 +6406,12 @@
       ],
       "data": {
         "nameEn": "Surgeon",
-        "abilityEn": "Can cure any disease for another player. Cannot be applied to a player with \"Critical\" illness severity"
+        "abilityEn": "Can cure any disease for another player. Cannot be applied to a player with \"Critical\" illness severity",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy"
+        }
       },
       "source": "original"
     },
@@ -4717,7 +6427,29 @@
       ],
       "data": {
         "nameEn": "Choreographer",
-        "abilityEn": "Can cure scoliosis of \"Mild\" severity, as well as change your \"Body Type\""
+        "abilityEn": "Can cure scoliosis of \"Mild\" severity, as well as change your \"Body Type\"",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Изменить себе телосложение",
+              "effect": {
+                "op": "body",
+                "title": "*",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Вылечить сколиоз лёгкой степени",
+              "effect": {
+                "op": "healthy",
+                "target": "any",
+                "maxSeverity": "light",
+                "note": "только сколиоз"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -4733,7 +6465,15 @@
       ],
       "data": {
         "nameEn": "Artist",
-        "abilityEn": "Can reduce the illness severity \"Stress\" (not below \"Mild\") for any player. Upon entering the bunker, can reduce the impact of phobias on bunker life"
+        "abilityEn": "Can reduce the illness severity \"Stress\" (not below \"Mild\") for any player. Upon entering the bunker, can reduce the impact of phobias on bunker life",
+        "effect": {
+          "op": "modifier.step",
+          "charKey": "health",
+          "modifierKey": "severity",
+          "delta": -1,
+          "target": "any",
+          "note": "только болезнь «Стресс»; вторая часть способности (фобии в бункере) — вручную"
+        }
       },
       "source": "original"
     },
@@ -4749,7 +6489,11 @@
       ],
       "data": {
         "nameEn": "Computer Graphics Artist",
-        "abilityEn": "If there are any problems with air filters in the bunker, can fix them"
+        "abilityEn": "If there are any problems with air filters in the bunker, can fix them",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -4765,7 +6509,11 @@
       ],
       "data": {
         "nameEn": "Private Detective",
-        "abilityEn": "Can reveal any characteristic of another player and, if desired, can steal it immediately"
+        "abilityEn": "Can reveal any characteristic of another player and, if desired, can steal it immediately",
+        "effect": {
+          "op": "reveal",
+          "note": "если игрок хочет сразу украсть открытую карту — сделайте это в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -4781,7 +6529,11 @@
       ],
       "data": {
         "nameEn": "Miner",
-        "abilityEn": "If the player enters the bunker, adds a 50 m² room with protective suits"
+        "abilityEn": "If the player enters the bunker, adds a 50 m² room with protective suits",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4797,7 +6549,12 @@
       ],
       "data": {
         "nameEn": "Economist",
-        "abilityEn": "Can increase the amount of food in the bunker for 2 months"
+        "abilityEn": "Can increase the amount of food in the bunker for 2 months",
+        "effect": {
+          "op": "bunker.set",
+          "field": "food",
+          "note": "впишите количество еды на 2 месяца больше текущего"
+        }
       },
       "source": "original"
     },
@@ -4813,7 +6570,11 @@
       ],
       "data": {
         "nameEn": "Tour Guide",
-        "abilityEn": "Upon entering the bunker, can help make one safe outing"
+        "abilityEn": "Upon entering the bunker, can help make one safe outing",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4829,7 +6590,11 @@
       ],
       "data": {
         "nameEn": "Electrician",
-        "abilityEn": "If there are any problems with electricity in the bunker, can fix them"
+        "abilityEn": "If there are any problems with electricity in the bunker, can fix them",
+        "effect": {
+          "op": "manual",
+          "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+        }
       },
       "source": "original"
     },
@@ -4845,7 +6610,11 @@
       ],
       "data": {
         "nameEn": "Lawyer",
-        "abilityEn": "Can cancel the voting process in the current round and start a new one. Cannot be used during the 15-second farewell"
+        "abilityEn": "Can cancel the voting process in the current round and start a new one. Cannot be used during the 15-second farewell",
+        "effect": {
+          "op": "manual",
+          "note": "уберите текущее голосование и запустите новое"
+        }
       },
       "source": "original"
     },
@@ -4861,7 +6630,28 @@
       ],
       "data": {
         "nameEn": "Robot Developer",
-        "abilityEn": "Can solve electricity problems or add a robot vacuum to their \"Large Equipment\""
+        "abilityEn": "Can solve electricity problems or add a robot vacuum to their \"Large Equipment\"",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Робот-пылесос в крупный инвентарь",
+              "effect": {
+                "op": "give",
+                "charKey": "bigInventory",
+                "text": "Робот-пылесос",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Решить проблему с электричеством",
+              "effect": {
+                "op": "manual",
+                "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -4877,7 +6667,11 @@
       ],
       "data": {
         "nameEn": "Geriatrician",
-        "abilityEn": "Can allow one elderly person not to occupy a slot if they enter the bunker together"
+        "abilityEn": "Can allow one elderly person not to occupy a slot if they enter the bunker together",
+        "effect": {
+          "op": "manual",
+          "note": "один пожилой не занимает место, если проходит вместе с владельцем"
+        }
       },
       "source": "original"
     },
@@ -4893,7 +6687,11 @@
       ],
       "data": {
         "nameEn": "Air Conditioner Installer",
-        "abilityEn": "Upon entering the bunker, can solve problems with odor and air filters"
+        "abilityEn": "Upon entering the bunker, can solve problems with odor and air filters",
+        "effect": {
+          "op": "manual",
+          "note": "применяется при прохождении в бункер — учтите в итогах"
+        }
       },
       "source": "original"
     },
@@ -4909,7 +6707,28 @@
       ],
       "data": {
         "nameEn": "Entomologist",
-        "abilityEn": "Can rid the Bunker of insects or add 2 kg of dried crickets to its \"Backpack\""
+        "abilityEn": "Can rid the Bunker of insects or add 2 kg of dried crickets to its \"Backpack\"",
+        "effect": {
+          "op": "choice",
+          "options": [
+            {
+              "label": "Сушёные сверчки в рюкзак",
+              "effect": {
+                "op": "give",
+                "charKey": "backpack",
+                "text": "Сушёные сверчки (2 кг)",
+                "target": "self"
+              }
+            },
+            {
+              "label": "Избавить бункер от насекомых",
+              "effect": {
+                "op": "manual",
+                "note": "проблемы бункера записаны текстом — уберите или поправьте их вручную в панели ведущего"
+              }
+            }
+          ]
+        }
       },
       "source": "original"
     },
@@ -4925,7 +6744,11 @@
       ],
       "data": {
         "nameEn": "Train Operator",
-        "abilityEn": "Can steal \"Large Equipment\" from any player"
+        "abilityEn": "Can steal \"Large Equipment\" from any player",
+        "effect": {
+          "op": "steal",
+          "charKey": "bigInventory"
+        }
       },
       "source": "original"
     },
@@ -4941,7 +6764,11 @@
       ],
       "data": {
         "nameEn": "Bioethicist",
-        "abilityEn": "Can cancel family, friendship, or enmity ties for any player"
+        "abilityEn": "Can cancel family, friendship, or enmity ties for any player",
+        "effect": {
+          "op": "manual",
+          "note": "связи между игроками и бункерами ведущий отслеживает вручную"
+        }
       },
       "source": "original"
     },
@@ -4957,7 +6784,13 @@
       ],
       "data": {
         "nameEn": "Cheesemaker",
-        "abilityEn": "Can add 5 kg of cheese to their \"Backpack\""
+        "abilityEn": "Can add 5 kg of cheese to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Сыр (5 кг.)",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -4973,7 +6806,11 @@
       ],
       "data": {
         "nameEn": "Conductor",
-        "abilityEn": "Knows the location of the metro system"
+        "abilityEn": "Knows the location of the metro system",
+        "effect": {
+          "op": "info",
+          "note": "Знает, где находится метрополитен"
+        }
       },
       "source": "original"
     },
@@ -4989,7 +6826,13 @@
       ],
       "data": {
         "nameEn": "Landscaper",
-        "abilityEn": "Can add a couple of evergreen seedlings to their \"Backpack\""
+        "abilityEn": "Can add a couple of evergreen seedlings to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Пара саженцев вечнозелёных растений",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -5005,7 +6848,13 @@
       ],
       "data": {
         "nameEn": "Neonatologist",
-        "abilityEn": "Can add an infant (under 1 year old) to any player (the child does not take up space in the bunker)"
+        "abilityEn": "Can add an infant (under 1 year old) to any player (the child does not take up space in the bunker)",
+        "effect": {
+          "op": "give",
+          "charKey": "extraInfo",
+          "text": "Грудной ребёнок до 1 года (не занимает место в бункере)",
+          "target": "any"
+        }
       },
       "source": "original"
     },
@@ -5021,7 +6870,13 @@
       ],
       "data": {
         "nameEn": "Radio Host",
-        "abilityEn": "Can add a satellite communication antenna to their \"Large Equipment\""
+        "abilityEn": "Can add a satellite communication antenna to their \"Large Equipment\"",
+        "effect": {
+          "op": "give",
+          "charKey": "bigInventory",
+          "text": "Антенна спутниковой связи",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -5037,7 +6892,13 @@
       ],
       "data": {
         "nameEn": "Parasitologist",
-        "abilityEn": "Can cure a disease related to parasites of \"Mild\" and \"Moderate\" severity to \"Perfectly Healthy\" for any player"
+        "abilityEn": "Can cure a disease related to parasites of \"Mild\" and \"Moderate\" severity to \"Perfectly Healthy\" for any player",
+        "effect": {
+          "op": "healthy",
+          "target": "any",
+          "maxSeverity": "medium",
+          "note": "болезнь должна быть связана с паразитами — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -5053,7 +6914,13 @@
       ],
       "data": {
         "nameEn": "Hirudotherapist",
-        "abilityEn": "Can add a jar with 10 leeches to their \"Backpack\""
+        "abilityEn": "Can add a jar with 10 leeches to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Банка с 10-ю пиявками",
+          "target": "self"
+        }
       },
       "source": "original"
     },
@@ -5069,7 +6936,13 @@
       ],
       "data": {
         "nameEn": "Endocrinologist",
-        "abilityEn": "Can cure endocrine system diseases for another player. Cannot be applied to a player whose disease severity is \"Critical\""
+        "abilityEn": "Can cure endocrine system diseases for another player. Cannot be applied to a player whose disease severity is \"Critical\"",
+        "effect": {
+          "op": "healthy",
+          "target": "other",
+          "maxSeverity": "heavy",
+          "note": "болезнь должна быть связана с эндокринной системой — проверьте сами"
+        }
       },
       "source": "original"
     },
@@ -5085,7 +6958,14 @@
       ],
       "data": {
         "nameEn": "Concierge",
-        "abilityEn": "Knows the location of an empty room (10 m²) and can add a lockpick to their \"Backpack\""
+        "abilityEn": "Knows the location of an empty room (10 m²) and can add a lockpick to their \"Backpack\"",
+        "effect": {
+          "op": "give",
+          "charKey": "backpack",
+          "text": "Отмычка",
+          "target": "self",
+          "note": "пустую комнату (10 м²) добавьте в бункер вручную"
+        }
       },
       "source": "original"
     }

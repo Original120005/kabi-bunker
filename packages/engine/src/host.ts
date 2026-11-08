@@ -1,4 +1,4 @@
-import { ratingFor, type CharacteristicDef, type ContentDb, type ContentItem, type HostAction, type SpecialEffect } from "@bunker/shared";
+import { hasAbilityEffect, isInfoEffect, ratingFor, type CharacteristicDef, type ContentDb, type ContentItem, type HostAction, type SimpleEffect, type SpecialEffect } from "@bunker/shared";
 import { ensure, GameError } from "./errors.ts";
 import { catastropheFrom, effectOf, generateGame, generateModifiers, makeCard, Picker, type CharacterContext } from "./generation.ts";
 import { BUNKER_EVENTS } from "./events.ts";
@@ -207,11 +207,15 @@ export function applyHostAction(state: RoomState, prev: RoomState, action: HostA
   let label: string;
   if (action.type === "host.special.apply") {
     const card = game.cards[action.cardId];
-    ensure(card && game.characteristics.find((c) => c.key === card.charKey)?.specialCard, "Спец. карта не найдена");
-    ensure(card.revealed, "Сначала игрок должен открыть эту карту");
-    ensure(!card.used, "Эта спец. возможность уже применена");
-    const effect = card.effect !== undefined ? card.effect : effectOf(pool(env, def(game, card.charKey).contentType).find((i) => i.id === card.contentId) ?? null);
-    special = { ownerId: card.ownerId, cardId: card.id };
+    const cardDef = card && game.characteristics.find((c) => c.key === card.charKey);
+    ensure(card && cardDef && hasAbilityEffect(cardDef), "Карта со способностью не найдена");
+    const isSpecial = cardDef.specialCard;
+    ensure(card.revealed, isSpecial ? "Сначала игрок должен открыть эту карту" : "Сначала игрок должен открыть профессию");
+    ensure(!card.used, isSpecial ? "Эта спец. возможность уже применена" : "Способность этой профессии уже использована");
+    const effect = card.effect !== undefined ? card.effect : effectOf(pool(env, cardDef.contentType).find((i) => i.id === card.contentId) ?? null);
+    ensure(!isInfoEffect(effect), "Это постоянное свойство профессии — применять его не нужно");
+    // Only special cards can be cancelled by «Отменить спец. возможность».
+    if (isSpecial) special = { ownerId: card.ownerId, cardId: card.id };
     if (effect?.op === "cancelSpecial") {
       label = cancelLastSpecial(env, card);
     } else {
@@ -264,100 +268,273 @@ function cancelLastSpecial(env: Env, card: Card): string {
   return text;
 }
 
-/** Applies a special card through the regular host tools, so every check and the undo work the same way. */
-function applySpecial(env: Env, card: Card, effect: SpecialEffect | null, action: Extract<HostAction, { type: "host.special.apply" }>): string {
-  const { game } = env;
-  const owner = card.ownerId;
-  const chosen = (kind: "other" | "any" | "exiled") => {
-    const t = action.target;
-    ensure(t, "Выберите игрока");
-    ensure(game.seatOrder.includes(t), "Игрок не найден");
-    if (kind === "exiled") ensure(game.statuses[t] === "exiled", "Этот игрок не изгнан");
-    else ensure(game.statuses[t] === "alive", "Игрок должен быть в лагере");
-    if (kind === "other") ensure(t !== owner, "Выберите другого игрока");
-    return t;
-  };
-  const target = (t: "self" | "other" | "any" | "all") => (t === "self" ? owner : t === "all" ? "all" : chosen(t));
-  const quiet: Env = { ...env, log: () => {} };
-  const via = (a: HostAction) => run(quiet, a);
+type ApplyAction = Extract<HostAction, { type: "host.special.apply" }>;
 
+/** Applies a special card or a profession ability through the regular host tools, so every check and the undo work the same way. */
+function applySpecial(env: Env, card: Card, effect: SpecialEffect | null, action: ApplyAction): string {
+  const isSpecial = def(env.game, card.charKey).specialCard;
   let result: string;
   if (!effect || effect.op === "manual") {
     result = effect ? `отмечено как использованное (${effect.note})` : "отмечено как использованное";
+  } else if (effect.op === "choice") {
+    const picked = effect.options[action.option ?? 0];
+    ensure(picked, "Выберите вариант");
+    result = `${picked.label.toLowerCase()} — ${applySimple(env, card.ownerId, picked.effect, action)}`;
+  } else if (effect.op === "multi") {
+    result = effect.steps.map((step) => applySimple(env, card.ownerId, step, action)).join("; ");
   } else {
-    switch (effect.op) {
-      case "bunker.reroll":
-        result = via({ type: "host.bunker.reroll", field: effect.field });
-        break;
-      case "bunker.addItem":
-        result = via({ type: "host.bunker.addItem" });
-        break;
-      case "catastrophe.reroll":
-        result = via({ type: "host.catastrophe.reroll" });
-        break;
-      case "seats":
-        result = via({ type: "host.seats", delta: effect.delta });
-        break;
-      case "rotate":
-        result = via({ type: "host.rotate", charKey: effect.charKey, dir: effect.dir });
-        break;
-      case "nullify":
-        result = via({ type: "host.nullify", charKey: effect.charKey });
-        break;
-      case "reroll":
-        result = via({ type: "host.char.reroll", target: target(effect.target), charKey: effect.charKey });
-        break;
-      case "modifier.step":
-        result = stepModifier(env, target(effect.target), effect.charKey, effect.modifierKey, effect.delta);
-        break;
-      case "swap":
-        result = via({ type: "host.char.swap", a: owner, b: chosen("other"), charKey: effect.charKey });
-        break;
-      case "steal":
-        result = via({ type: "host.char.steal", thief: owner, victim: chosen("other"), charKey: effect.charKey });
-        break;
-      case "healthy":
-        result = via({ type: "host.cure", target: target(effect.target), op: "healthy" });
-        break;
-      case "return":
-        result = via({ type: "host.return", playerId: chosen("exiled") });
-        break;
-      case "reveal": {
-        const victim = chosen("other");
-        ensure(action.charKey, "Выберите характеристику");
-        const d = def(game, action.charKey);
-        const closed = cards(game, victim, d.key).filter((c) => !c.revealed);
-        ensure(closed.length, "Эта характеристика у игрока уже открыта");
-        for (const c of closed) c.revealed = true;
-        result = `открыл «${d.name}» игрока ${env.name(victim)}`;
-        break;
-      }
-      case "cancelSpecial":
-        throw new GameError("Недоступно");
-    }
+    result = applySimple(env, card.ownerId, effect, action);
   }
-  const text = `применил «${card.title}» (${env.name(owner)}): ${result}`;
+  const what = isSpecial ? `«${card.title}»` : `способность профессии «${card.title}»`;
+  const text = `применил ${what} (${env.name(card.ownerId)}): ${result}`;
   env.log(text);
   return text;
 }
 
-/** Moves a scale modifier (experience, severity) one level up or down, respecting age for experience. */
-function stepModifier(env: Env, playerId: string, charKey: string, modifierKey: string, delta: 1 | -1): string {
+/** Players sitting right before and after the owner among those in the camp. */
+function neighborsOf(game: GameState, owner: string): string[] {
+  const ring = game.seatOrder.filter((id) => id === owner || game.statuses[id] === "alive");
+  const i = ring.indexOf(owner);
+  if (i < 0 || ring.length < 2) return [];
+  return [...new Set([ring[(i - 1 + ring.length) % ring.length], ring[(i + 1) % ring.length]])].filter((id) => id !== owner);
+}
+
+function healthyItem(env: Env): ContentItem {
+  const item = pool(env, def(env.game, "health").contentType).find((i) => i.tags.includes("health:none"));
+  ensure(item, "В контенте нет значения «Идеально здоров» (тег health:none)");
+  return item;
+}
+
+function ageGroupOf(game: GameState, playerId: string): string | null {
+  const m = def(game, "gender").modifiers.find((x) => x.kind === "age");
+  const age = characterOf(game, playerId).age;
+  if (!m || m.kind !== "age" || age === undefined) return null;
+  return m.groups.find((g) => age >= g.min && age <= g.max)?.key ?? null;
+}
+
+function applySimple(env: Env, owner: string, effect: SimpleEffect, action: ApplyAction): string {
+  const { game } = env;
+  const quiet: Env = { ...env, log: () => {} };
+  const via = (a: HostAction) => run(quiet, a);
+  const chosen = (kind: "other" | "any" | "exiled" | "neighbor", t = action.target) => {
+    ensure(t, "Выберите игрока");
+    ensure(game.seatOrder.includes(t), "Игрок не найден");
+    if (kind === "exiled") ensure(game.statuses[t] === "exiled", "Этот игрок не изгнан");
+    else ensure(game.statuses[t] === "alive", "Игрок должен быть в лагере");
+    if (kind !== "any") ensure(t !== owner, "Выберите другого игрока");
+    if (kind === "neighbor") ensure(neighborsOf(game, owner).includes(t), "Выберите соседа: игрока сразу до или после владельца карты");
+    return t;
+  };
+  const target = (t: "self" | "other" | "any" | "all" | "neighbor") => (t === "self" ? owner : t === "all" ? "all" : chosen(t));
+  const pickChar = (key: string, choices?: string[]) => {
+    if (key !== "*") return def(game, key).key;
+    ensure(action.charKey, "Выберите характеристику");
+    const d = def(game, action.charKey);
+    ensure(!d.specialCard, "Спец. возможности так менять нельзя");
+    if (choices?.length) ensure(choices.includes(d.key), "Эту характеристику выбрать нельзя");
+    return d.key;
+  };
+
+  switch (effect.op) {
+    case "manual":
+      return `отмечено как использованное (${effect.note})`;
+    case "info":
+      throw new GameError("Это постоянное свойство — применять его не нужно");
+    case "cancelSpecial":
+      throw new GameError("Отмену спец. возможности нельзя совмещать с другими действиями");
+    case "bunker.reroll":
+      return via({ type: "host.bunker.reroll", field: effect.field });
+    case "bunker.set": {
+      ensure(action.text, "Впишите новое значение");
+      if (effect.options?.length) ensure(effect.options.includes(action.text), "Выберите один из вариантов");
+      return via({ type: "host.bunker.set", field: effect.field, text: action.text });
+    }
+    case "bunker.addItem":
+      return via({ type: "host.bunker.addItem" });
+    case "catastrophe.reroll":
+      return via({ type: "host.catastrophe.reroll" });
+    case "seats":
+      return via({ type: "host.seats", delta: effect.delta });
+    case "rotate":
+      return via({ type: "host.rotate", charKey: effect.charKey, dir: effect.dir });
+    case "nullify":
+      return via({ type: "host.nullify", charKey: effect.charKey });
+    case "reroll": {
+      const who = target(effect.target);
+      const key = pickChar(effect.charKey, effect.choices);
+      if (who !== "all") {
+        if (effect.minAge !== undefined) {
+          const age = characterOf(game, who).age;
+          ensure(age !== undefined && age >= effect.minAge, `Нужен возраст от ${effect.minAge} лет`);
+        }
+        if (effect.requireHealthy) {
+          const healthy = healthyItem(env);
+          ensure(cards(game, who, "health").every((c) => c.contentId === healthy.id), `${env.name(who)} не идеально здоров`);
+        }
+        if (effect.onlyClosed) ensure(cards(game, who, key).some((c) => !c.revealed), "Эта характеристика у игрока уже открыта — можно менять только закрытую");
+      }
+      return via({ type: "host.char.reroll", target: who, charKey: key });
+    }
+    case "modifier.step":
+      return stepModifier(env, target(effect.target), effect.charKey, effect.modifierKey, effect.delta, { notFrom: effect.notFrom, lineId: action.lineId });
+    case "modifier.set":
+      return setModifier(env, target(effect.target), effect.charKey, effect.modifierKey, effect.level, { from: effect.from, lineId: action.lineId });
+    case "swap": {
+      const key = pickChar(effect.charKey, effect.choices);
+      const other = chosen(effect.from === "exiled" ? "exiled" : "other");
+      const result = via({ type: "host.char.swap", a: owner, b: other, charKey: key });
+      if (effect.resetUsed) for (const c of cards(game, owner, key)) c.used = false;
+      return result;
+    }
+    case "swap.pair": {
+      const key = pickChar(effect.charKey, effect.choices);
+      const a = chosen("other", action.target);
+      const b = chosen("other", action.target2);
+      ensure(a !== b, "Выберите двух разных игроков");
+      return via({ type: "host.char.swap", a, b, charKey: key });
+    }
+    case "steal": {
+      const key = pickChar(effect.charKey, effect.choices);
+      const victim = chosen(effect.from === "exiled" ? "exiled" : effect.from === "neighbor" ? "neighbor" : "other");
+      if (effect.onlyRevealed) ensure(cards(game, victim, key).some((c) => c.revealed), "Эта характеристика у игрока ещё не открыта");
+      return via({ type: "host.char.steal", thief: owner, victim, charKey: key });
+    }
+    case "healthy": {
+      const who = target(effect.target);
+      if (effect.maxSeverity === undefined && !action.lineId) return via({ type: "host.cure", target: who, op: "healthy" });
+      return cureLine(env, who, effect.maxSeverity, action.lineId);
+    }
+    case "return":
+      return via({ type: "host.return", playerId: chosen("exiled") });
+    case "reveal": {
+      const who = effect.target ? target(effect.target) : chosen("other");
+      const d = def(game, pickChar(effect.charKey ?? "*"));
+      if (effect.halfOpen) {
+        const camp = alive(game);
+        const open = camp.filter((id) => cards(game, id, d.key).some((c) => c.revealed)).length;
+        ensure(open * 2 >= camp.length, `«${d.name}» открыта меньше чем у половины игроков в лагере (${open} из ${camp.length})`);
+      }
+      const closed = cards(game, who, d.key).filter((c) => !c.revealed);
+      ensure(closed.length, "Эта характеристика у игрока уже открыта");
+      for (const c of closed) c.revealed = true;
+      return `открыл «${d.name}» игрока ${env.name(who)}`;
+    }
+    case "give": {
+      const text = action.text ?? effect.text;
+      return via({ type: "host.char.add", target: target(effect.target), charKey: effect.charKey, text });
+    }
+    case "add": {
+      if (effect.target === "neighbors") {
+        const list = neighborsOf(game, owner);
+        ensure(list.length, "Рядом нет игроков в лагере");
+        return list.map((id) => via({ type: "host.char.add", target: id, charKey: effect.charKey })).join("; ");
+      }
+      return via({ type: "host.char.add", target: target(effect.target), charKey: effect.charKey });
+    }
+    case "remove":
+      return via({ type: "host.char.remove", target: target(effect.target), charKey: effect.charKey });
+    case "gender.flip":
+      return via({ type: "host.gender.flip", target: target(effect.target) });
+    case "childfree":
+      return via({ type: "host.cure", target: target(effect.target), op: "childfree" });
+    case "curePhobia":
+      return via({ type: "host.cure", target: target(effect.target), op: "curePhobia" });
+    case "ageGroup": {
+      const who = target(effect.target);
+      const group = effect.group === "*" ? action.text : effect.group;
+      ensure(group, "Выберите возраст");
+      if (effect.from) ensure(effect.from.includes(ageGroupOf(game, who) ?? ""), "Возраст игрока не подходит для этой способности");
+      return via({ type: "host.ageGroup", target: who, group });
+    }
+    case "body": {
+      const who = target(effect.target);
+      const title = effect.title === "*" ? action.text : effect.title;
+      ensure(title, "Выберите телосложение");
+      if (effect.from) ensure(cards(game, who, "body").some((c) => effect.from!.includes(c.title)), `Подходит только телосложение: ${effect.from.join(", ")}`);
+      return via({ type: "host.body", target: who, title });
+    }
+  }
+}
+
+/** Cures one disease line (the chosen one or the first that fits); the player becomes healthy when no disease is left. */
+function cureLine(env: Env, playerId: string, maxSeverity: string | undefined, lineId: string | undefined): string {
+  const { game } = env;
+  const d = def(game, "health");
+  const healthy = healthyItem(env);
+  const m = scaleLevels(d, "severity");
+  const list = cards(game, playerId, "health");
+  const sick = list.filter((c) => c.contentId !== healthy.id);
+  ensure(sick.length, `${env.name(playerId)} уже идеально здоров`);
+  const pickable = lineId ? sick.filter((c) => c.id === lineId) : sick;
+  ensure(pickable.length, "Эта строка здоровья не найдена");
+  const max = maxSeverity === undefined ? m.levels.length - 1 : m.levels.findIndex((l) => l.key === maxSeverity);
+  const fits = pickable.filter((c) => {
+    const i = m.levels.findIndex((l) => l.key === c.modifiers[m.key]);
+    return i <= max;
+  });
+  ensure(fits.length, `Степень болезни слишком высокая: можно вылечить не выше «${m.levels[max]?.label ?? maxSeverity}»`);
+  const cured = fits[0];
+  const rest = sick.filter((c) => c.id !== cured.id);
+  setCards(game, playerId, "health", rest.length ? rest : keepRevealed([makeCard(d, healthy, playerId, {}, env.ctx.newId())], [cured]));
+  return `вылечил «${cured.title}» игроку ${env.name(playerId)}${rest.length ? "" : " — теперь идеально здоров"}`;
+}
+
+/** Health lines that a modifier change may touch: the chosen one, or every line that has the modifier. */
+function modifierLines(env: Env, playerId: string, charKey: string, modifierKey: string, lineId: string | undefined): Card[] {
+  const d = def(env.game, charKey);
+  let list = cards(env.game, playerId, d.key).filter((c) => modifierKey in c.modifiers);
+  ensure(list.length, `У игрока ${env.name(playerId)} нет такого параметра в «${d.name}» (например, он идеально здоров)`);
+  if (lineId) {
+    list = list.filter((c) => c.id === lineId);
+    ensure(list.length, "Эта строка не найдена у игрока");
+  }
+  return list;
+}
+
+/**
+ * Moves a scale modifier (experience, severity) one level up or down, respecting age for experience.
+ * With several lines (two diseases) every line that can move is changed; it fails only when none can.
+ */
+function stepModifier(env: Env, playerId: string, charKey: string, modifierKey: string, delta: 1 | -1, opts: { notFrom?: string[]; lineId?: string } = {}): string {
   const { game } = env;
   const d = def(game, charKey);
   const m = scaleLevels(d, modifierKey);
-  const list = cards(game, playerId, d.key).filter((c) => m.key in c.modifiers);
-  ensure(list.length, `У игрока ${env.name(playerId)} нет такого параметра в «${d.name}» (например, он идеально здоров)`);
+  const list = modifierLines(env, playerId, charKey, modifierKey, opts.lineId);
   const age = characterOf(game, playerId).age;
-  let reached = "";
-  for (const card of list) {
+  const problem = (card: Card): string | null => {
+    const current = m.levels.findIndex((l) => l.key === card.modifiers[m.key]);
+    const next = current + delta;
+    if (opts.notFrom?.includes(String(card.modifiers[m.key]))) return `Нельзя применить при уровне «${m.levels[current]?.label}»`;
+    if (next < 0 || next >= m.levels.length) return delta > 0 ? "Уже максимальный уровень" : "Уже минимальный уровень";
+    if (m.ageBound && delta > 0 && age !== undefined && (m.levels[next].minYears ?? 0) > age - game.rules.workStartAge) return "Возраст персонажа не позволяет повысить стаж";
+    return null;
+  };
+  const movable = list.filter((c) => problem(c) === null);
+  ensure(movable.length, problem(list[0]) ?? "Нельзя изменить");
+  const reached: string[] = [];
+  for (const card of movable) {
     const next = m.levels.findIndex((l) => l.key === card.modifiers[m.key]) + delta;
-    ensure(next >= 0 && next < m.levels.length, delta > 0 ? "Уже максимальный уровень" : "Уже минимальный уровень");
-    if (m.ageBound && delta > 0 && age !== undefined) ensure((m.levels[next].minYears ?? 0) <= age - game.rules.workStartAge, "Возраст персонажа не позволяет повысить стаж");
     card.modifiers[m.key] = m.levels[next].key;
-    reached = m.levels[next].label;
+    reached.push(list.length > 1 ? `${card.title} — ${m.levels[next].label}` : m.levels[next].label);
   }
-  return `${delta > 0 ? "повысил" : "понизил"} «${d.name}» игроку ${env.name(playerId)} до «${reached}»`;
+  return `${delta > 0 ? "повысил" : "понизил"} «${d.name}» игроку ${env.name(playerId)} до «${reached.join("», «")}»`;
+}
+
+/** Sets a scale modifier to a level, optionally only from some levels (e.g. «Стажёр»/«Любитель» → «Новичок»). */
+function setModifier(env: Env, playerId: string, charKey: string, modifierKey: string, level: string, opts: { from?: string[]; lineId?: string } = {}): string {
+  const { game } = env;
+  const d = def(game, charKey);
+  const m = scaleLevels(d, modifierKey);
+  const target = m.levels.find((l) => l.key === level);
+  ensure(target, "Неизвестный уровень");
+  const list = modifierLines(env, playerId, charKey, modifierKey, opts.lineId);
+  const age = characterOf(game, playerId).age;
+  if (m.ageBound && age !== undefined) ensure((target.minYears ?? 0) <= age - game.rules.workStartAge, "Возраст персонажа не позволяет такой стаж");
+  const fits = list.filter((c) => c.modifiers[m.key] !== level && (!opts.from || opts.from.includes(String(c.modifiers[m.key]))));
+  const allowed = opts.from?.map((k) => m.levels.find((l) => l.key === k)?.label ?? k).join(", ");
+  ensure(fits.length, allowed ? `Подходит только уровень: ${allowed}` : `Уже «${target.label}»`);
+  for (const card of fits) card.modifiers[m.key] = level;
+  return `изменил «${d.name}» игроку ${env.name(playerId)} на «${target.label}»`;
 }
 
 /** Applies the action and returns a short label for the log and undo. */

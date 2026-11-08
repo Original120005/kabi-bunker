@@ -31,7 +31,17 @@ export const HostAction = z.discriminatedUnion("type", [
   z.object({ type: z.literal("host.bunker.addItem"), text: Text.optional() }),
   z.object({ type: z.literal("host.revealAll") }),
   /** One-click application of an opened special card; target and charKey depend on the card's effect. */
-  z.object({ type: z.literal("host.special.apply"), cardId: Id, target: Id.optional(), charKey: Key.optional() }),
+  /** Applies a special card or a profession ability; extra fields are the host's choices for the effect. */
+  z.object({
+    type: z.literal("host.special.apply"),
+    cardId: Id,
+    target: Id.optional(),
+    target2: Id.optional(),
+    charKey: Key.optional(),
+    text: Text.optional(),
+    option: z.number().int().min(0).max(3).optional(),
+    lineId: Id.optional(),
+  }),
   z.object({ type: z.literal("host.dice"), sides: z.union([z.literal(6), z.literal(20)]) }),
   z.object({
     type: z.literal("host.message"),
