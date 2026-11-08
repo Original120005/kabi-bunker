@@ -1,0 +1,7 @@
+{
+  "type": "gender",
+  "items": [
+    { "key": "male", "title": "Мужчина", "source": "original" },
+    { "key": "female", "title": "Женщина", "source": "original" }
+  ]
+}

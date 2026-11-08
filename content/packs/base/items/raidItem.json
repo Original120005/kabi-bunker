@@ -1,0 +1,1277 @@
+{
+  "type": "raidItem",
+  "items": [
+    {
+      "title": "Банка тушёнки",
+      "description": "Слегка помятая, но герметичная. Хватит на один сытный ужин.",
+      "data": {
+        "tier": 1,
+        "category": "Еда и вода",
+        "value": 8,
+        "icon": "🥫",
+        "image": "/images/raid/001.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пачка галет",
+      "description": "Армейские галеты, твёрдые как кирпич. Срок годности — вечность.",
+      "data": {
+        "tier": 1,
+        "category": "Еда и вода",
+        "value": 6,
+        "icon": "🍘",
+        "image": "/images/raid/002.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бутылка воды",
+      "description": "Полтора литра чистой питьевой воды. На вес золота.",
+      "data": {
+        "tier": 1,
+        "category": "Еда и вода",
+        "value": 10,
+        "icon": "💧",
+        "image": "/images/raid/003.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мешочек сахара",
+      "description": "Килограмм сахара — быстрая энергия и обменная валюта.",
+      "data": {
+        "tier": 1,
+        "category": "Еда и вода",
+        "value": 7,
+        "icon": "🧂",
+        "image": "/images/raid/004.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пакет сухарей",
+      "description": "Чёрные сухари с чесноком. Немного размокли, но съедобны.",
+      "data": {
+        "tier": 1,
+        "category": "Еда и вода",
+        "value": 5,
+        "icon": "🍞",
+        "image": "/images/raid/005.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Рулон бинта",
+      "description": "Стерильный бинт в упаковке. Пригодится при любой царапине.",
+      "data": {
+        "tier": 1,
+        "category": "Медикаменты",
+        "value": 9,
+        "icon": "🩹",
+        "image": "/images/raid/006.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пачка активированного угля",
+      "description": "Спасёт от отравления сомнительными консервами.",
+      "data": {
+        "tier": 1,
+        "category": "Медикаменты",
+        "value": 6,
+        "icon": "💊",
+        "image": "/images/raid/007.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Флакон зелёнки",
+      "description": "Обеззаразит рану и раскрасит того, кто её обрабатывает.",
+      "data": {
+        "tier": 1,
+        "category": "Медикаменты",
+        "value": 5,
+        "icon": "🧪",
+        "image": "/images/raid/008.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Моток изоленты",
+      "description": "Чинит всё: от шланга до противогаза.",
+      "data": {
+        "tier": 1,
+        "category": "Инструменты",
+        "value": 7,
+        "icon": "🎞️",
+        "image": "/images/raid/009.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Коробок спичек",
+      "description": "Сухие спички в целлофане. Огонь — это жизнь.",
+      "data": {
+        "tier": 1,
+        "category": "Инструменты",
+        "value": 6,
+        "icon": "🔥",
+        "image": "/images/raid/010.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Моток верёвки",
+      "description": "Десять метров прочной капроновой верёвки.",
+      "data": {
+        "tier": 1,
+        "category": "Инструменты",
+        "value": 8,
+        "icon": "🪢",
+        "image": "/images/raid/011.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Свечи",
+      "description": "Пачка хозяйственных свечей. Каждая горит около шести часов.",
+      "data": {
+        "tier": 1,
+        "category": "Инструменты",
+        "value": 6,
+        "icon": "🕯️",
+        "image": "/images/raid/012.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ржавый нож",
+      "description": "Кухонный нож со сколом. Режет, если очень постараться.",
+      "data": {
+        "tier": 1,
+        "category": "Оружие и боеприпасы",
+        "value": 9,
+        "icon": "🔪",
+        "image": "/images/raid/013.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Арматура",
+      "description": "Тяжёлый кусок арматуры. Простое и надёжное оружие.",
+      "data": {
+        "tier": 1,
+        "category": "Оружие и боеприпасы",
+        "value": 7,
+        "icon": "🦯",
+        "image": "/images/raid/014.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Рабочие перчатки",
+      "description": "Грубые перчатки, защищают руки от стекла и ржавчины.",
+      "data": {
+        "tier": 1,
+        "category": "Средства защиты",
+        "value": 6,
+        "icon": "🧤",
+        "image": "/images/raid/015.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Медицинские маски",
+      "description": "Пачка одноразовых масок. От спор не спасут, от пыли — да.",
+      "data": {
+        "tier": 1,
+        "category": "Средства защиты",
+        "value": 5,
+        "icon": "😷",
+        "image": "/images/raid/016.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Батарейки",
+      "description": "Четыре пальчиковые батарейки. Заряд под вопросом.",
+      "data": {
+        "tier": 1,
+        "category": "Оборудование",
+        "value": 8,
+        "icon": "🔋",
+        "image": "/images/raid/017.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Старая газета",
+      "description": "Газета за день до катастрофы. Растопка и немного новостей из прошлого.",
+      "data": {
+        "tier": 1,
+        "category": "Разное",
+        "value": 2,
+        "icon": "📰",
+        "image": "/images/raid/018.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пустая канистра",
+      "description": "Пластиковая канистра на 10 литров. Наполнить её — уже другая задача.",
+      "data": {
+        "tier": 1,
+        "category": "Разное",
+        "value": 6,
+        "icon": "🛢️",
+        "image": "/images/raid/019.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Колода карт",
+      "description": "Неполная колода, не хватает червовой дамы. Спасает от скуки.",
+      "data": {
+        "tier": 1,
+        "category": "Разное",
+        "value": 3,
+        "icon": "🃏",
+        "image": "/images/raid/020.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Резиновая уточка",
+      "description": "Совершенно бесполезна. Но смотрит так, будто знает выход.",
+      "data": {
+        "tier": 1,
+        "category": "Разное",
+        "value": 1,
+        "icon": "🦆",
+        "image": "/images/raid/021.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Носки шерстяные",
+      "description": "Тёплые носки ручной вязки. В бункере холодно.",
+      "data": {
+        "tier": 1,
+        "category": "Разное",
+        "value": 4,
+        "icon": "🧦",
+        "image": "/images/raid/022.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ящик консервов",
+      "description": "Шесть банок рыбных консервов. Неделя сытой жизни.",
+      "data": {
+        "tier": 2,
+        "category": "Еда и вода",
+        "value": 30,
+        "icon": "📦",
+        "image": "/images/raid/023.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Армейский сухпаёк",
+      "description": "Полный суточный рацион с горелкой и спичками.",
+      "data": {
+        "tier": 2,
+        "category": "Еда и вода",
+        "value": 25,
+        "icon": "🎒",
+        "image": "/images/raid/024.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мешок риса",
+      "description": "Пять килограммов риса. Хранится годами.",
+      "data": {
+        "tier": 2,
+        "category": "Еда и вода",
+        "value": 28,
+        "icon": "🍚",
+        "image": "/images/raid/025.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Таблетки для очистки воды",
+      "description": "Обеззараживают до 50 литров воды из любой лужи.",
+      "data": {
+        "tier": 2,
+        "category": "Еда и вода",
+        "value": 35,
+        "icon": "💧",
+        "image": "/images/raid/026.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Аптечка первой помощи",
+      "description": "Автомобильная аптечка: жгут, бинты, пластыри, ножницы.",
+      "data": {
+        "tier": 2,
+        "category": "Медикаменты",
+        "value": 40,
+        "icon": "🧰",
+        "image": "/images/raid/027.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Обезболивающее",
+      "description": "Блистер сильных обезболивающих таблеток.",
+      "data": {
+        "tier": 2,
+        "category": "Медикаменты",
+        "value": 30,
+        "icon": "💊",
+        "image": "/images/raid/028.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Перекись водорода",
+      "description": "Большая бутылка перекиси. Обработает десятки ран.",
+      "data": {
+        "tier": 2,
+        "category": "Медикаменты",
+        "value": 20,
+        "icon": "🧴",
+        "image": "/images/raid/029.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Фонарик с динамо",
+      "description": "Фонарик, который заряжается от вращения ручки. Батарейки не нужны.",
+      "data": {
+        "tier": 2,
+        "category": "Оборудование",
+        "value": 38,
+        "icon": "🔦",
+        "image": "/images/raid/030.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мультитул",
+      "description": "Плоскогубцы, нож, отвёртки и открывалка в одном.",
+      "data": {
+        "tier": 2,
+        "category": "Инструменты",
+        "value": 35,
+        "icon": "🛠️",
+        "image": "/images/raid/031.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Топор",
+      "description": "Туристический топор. Дрова, двери, зомби — без разницы.",
+      "data": {
+        "tier": 2,
+        "category": "Инструменты",
+        "value": 32,
+        "icon": "🪓",
+        "image": "/images/raid/032.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Набор инструментов",
+      "description": "Ящик с ключами, молотком и отвёртками.",
+      "data": {
+        "tier": 2,
+        "category": "Инструменты",
+        "value": 40,
+        "icon": "🧰",
+        "image": "/images/raid/033.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Лопата",
+      "description": "Сапёрная лопатка. Копает, рубит и жарит яичницу.",
+      "data": {
+        "tier": 2,
+        "category": "Инструменты",
+        "value": 25,
+        "icon": "⛏️",
+        "image": "/images/raid/034.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бейсбольная бита",
+      "description": "Деревянная бита с гвоздями. Аргумент в любом споре.",
+      "data": {
+        "tier": 2,
+        "category": "Оружие и боеприпасы",
+        "value": 30,
+        "icon": "🏏",
+        "image": "/images/raid/035.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Охотничий нож",
+      "description": "Острый нож с упором и кожаными ножнами.",
+      "data": {
+        "tier": 2,
+        "category": "Оружие и боеприпасы",
+        "value": 38,
+        "icon": "🗡️",
+        "image": "/images/raid/036.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Рогатка с шариками",
+      "description": "Профессиональная рогатка и горсть стальных шариков.",
+      "data": {
+        "tier": 2,
+        "category": "Оружие и боеприпасы",
+        "value": 22,
+        "icon": "🎯",
+        "image": "/images/raid/037.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Респиратор",
+      "description": "Респиратор со сменными фильтрами. Защищает от пыли и пепла.",
+      "data": {
+        "tier": 2,
+        "category": "Средства защиты",
+        "value": 42,
+        "icon": "😷",
+        "image": "/images/raid/038.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Каска строителя",
+      "description": "Пластиковая каска. Не бронешлем, но лучше, чем ничего.",
+      "data": {
+        "tier": 2,
+        "category": "Средства защиты",
+        "value": 24,
+        "icon": "⛑️",
+        "image": "/images/raid/039.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Дождевик-пончо",
+      "description": "Плотный дождевик. Защищает от кислотного дождя минут на десять.",
+      "data": {
+        "tier": 2,
+        "category": "Средства защиты",
+        "value": 20,
+        "icon": "🧥",
+        "image": "/images/raid/040.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Портативная рация",
+      "description": "Рация с радиусом пару километров. Пара найдена не была.",
+      "data": {
+        "tier": 2,
+        "category": "Оборудование",
+        "value": 45,
+        "icon": "📻",
+        "image": "/images/raid/041.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бутылка водки",
+      "description": "Обеззараживает, согревает и отлично меняется на еду.",
+      "data": {
+        "tier": 2,
+        "category": "Разное",
+        "value": 28,
+        "icon": "🍾",
+        "image": "/images/raid/042.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Блок сигарет",
+      "description": "Десять пачек сигарет — твёрдая валюта постапокалипсиса.",
+      "data": {
+        "tier": 2,
+        "category": "Разное",
+        "value": 35,
+        "icon": "🚬",
+        "image": "/images/raid/043.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Спальный мешок",
+      "description": "Тёплый спальник до −10 °C. Слегка пахнет предыдущим владельцем.",
+      "data": {
+        "tier": 2,
+        "category": "Разное",
+        "value": 33,
+        "icon": "🛌",
+        "image": "/images/raid/044.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Противогаз ГП-7",
+      "description": "Противогаз с запасным фильтром. Защищает от газов, спор и радиоактивной пыли.",
+      "data": {
+        "tier": 3,
+        "category": "Средства защиты",
+        "value": 90,
+        "icon": "🥽",
+        "image": "/images/raid/045.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бронежилет",
+      "description": "Лёгкий бронежилет второго класса. Держит пистолетную пулю.",
+      "data": {
+        "tier": 3,
+        "category": "Средства защиты",
+        "value": 110,
+        "icon": "🦺",
+        "image": "/images/raid/046.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Антибиотики",
+      "description": "Курс антибиотиков широкого спектра. Спасёт жизнь при заражении.",
+      "data": {
+        "tier": 3,
+        "category": "Медикаменты",
+        "value": 100,
+        "icon": "💉",
+        "image": "/images/raid/047.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Хирургический набор",
+      "description": "Скальпели, зажимы, иглы и нити. Нужен кто-то, кто умеет этим пользоваться.",
+      "data": {
+        "tier": 3,
+        "category": "Медикаменты",
+        "value": 95,
+        "icon": "🩺",
+        "image": "/images/raid/048.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Йодид калия",
+      "description": "Таблетки, защищающие щитовидку от радиации. Упаковка на месяц.",
+      "data": {
+        "tier": 3,
+        "category": "Медикаменты",
+        "value": 80,
+        "icon": "💊",
+        "image": "/images/raid/049.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Охотничье ружьё",
+      "description": "Двустволка шестнадцатого калибра и десяток патронов.",
+      "data": {
+        "tier": 3,
+        "category": "Оружие и боеприпасы",
+        "value": 115,
+        "icon": "🔫",
+        "image": "/images/raid/050.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Арбалет",
+      "description": "Тихий спортивный арбалет и пять болтов. Болты можно подобрать.",
+      "data": {
+        "tier": 3,
+        "category": "Оружие и боеприпасы",
+        "value": 100,
+        "icon": "🏹",
+        "image": "/images/raid/051.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Коробка патронов",
+      "description": "Пятьдесят патронов. Подойдут не ко всему, но поменять можно.",
+      "data": {
+        "tier": 3,
+        "category": "Оружие и боеприпасы",
+        "value": 85,
+        "icon": "🧨",
+        "image": "/images/raid/052.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Фильтр для воды",
+      "description": "Походный фильтр: тысяча литров чистой воды из реки.",
+      "data": {
+        "tier": 3,
+        "category": "Еда и вода",
+        "value": 95,
+        "icon": "🚰",
+        "image": "/images/raid/053.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Семена овощей",
+      "description": "Набор семян: картофель, морковь, томаты, лук. Будущее бункера.",
+      "data": {
+        "tier": 3,
+        "category": "Еда и вода",
+        "value": 90,
+        "icon": "🌱",
+        "image": "/images/raid/054.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мёд в банке",
+      "description": "Трёхлитровая банка мёда. Не портится тысячелетиями.",
+      "data": {
+        "tier": 3,
+        "category": "Еда и вода",
+        "value": 70,
+        "icon": "🍯",
+        "image": "/images/raid/055.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Счётчик Гейгера",
+      "description": "Показывает, где можно ходить, а где лучше не стоит.",
+      "data": {
+        "tier": 3,
+        "category": "Оборудование",
+        "value": 110,
+        "icon": "☢️",
+        "image": "/images/raid/056.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Солнечная зарядка",
+      "description": "Складная солнечная панель с USB. Заряжает рации и фонари.",
+      "data": {
+        "tier": 3,
+        "category": "Оборудование",
+        "value": 100,
+        "icon": "🔆",
+        "image": "/images/raid/057.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бинокль",
+      "description": "Армейский бинокль. Опасность лучше увидеть издалека.",
+      "data": {
+        "tier": 3,
+        "category": "Оборудование",
+        "value": 60,
+        "icon": "🔭",
+        "image": "/images/raid/058.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бензопила",
+      "description": "Работает, если найти бензин. Очень громкая.",
+      "data": {
+        "tier": 3,
+        "category": "Инструменты",
+        "value": 85,
+        "icon": "🪚",
+        "image": "/images/raid/059.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Канистра бензина",
+      "description": "Двадцать литров топлива. Генератор будет счастлив.",
+      "data": {
+        "tier": 3,
+        "category": "Редкие ресурсы",
+        "value": 110,
+        "icon": "⛽",
+        "image": "/images/raid/060.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Набор для рыбалки",
+      "description": "Удочка, леска, крючки и блёсны. Если найдётся живая вода — будет рыба.",
+      "data": {
+        "tier": 3,
+        "category": "Инструменты",
+        "value": 55,
+        "icon": "🎣",
+        "image": "/images/raid/061.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Карта местности с пометками",
+      "description": "Карта, на которой кто-то отметил склады и опасные зоны.",
+      "data": {
+        "tier": 3,
+        "category": "Ценности",
+        "value": 75,
+        "icon": "🗺️",
+        "image": "/images/raid/062.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ящик патронов к травмату",
+      "description": "Резиновые пули. Не убивают, но очень убеждают.",
+      "data": {
+        "tier": 3,
+        "category": "Оружие и боеприпасы",
+        "value": 60,
+        "icon": "📦",
+        "image": "/images/raid/063.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Тёплая куртка",
+      "description": "Зимняя пуховая куртка. В ядерную зиму — лучший друг.",
+      "data": {
+        "tier": 3,
+        "category": "Средства защиты",
+        "value": 65,
+        "icon": "🧥",
+        "image": "/images/raid/064.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Клетка с курицей",
+      "description": "Живая несушка. Яйцо в день, если её не съесть раньше.",
+      "data": {
+        "tier": 3,
+        "category": "Еда и вода",
+        "value": 85,
+        "icon": "🐔",
+        "image": "/images/raid/065.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гитара",
+      "description": "Акустическая гитара с пятью струнами. Моральный дух бункера +10.",
+      "data": {
+        "tier": 3,
+        "category": "Разное",
+        "value": 50,
+        "icon": "🎸",
+        "image": "/images/raid/066.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Автомат Калашникова",
+      "description": "АК-74 с двумя магазинами. Самое надёжное оружие на свете.",
+      "data": {
+        "tier": 4,
+        "category": "Оружие и боеприпасы",
+        "value": 260,
+        "icon": "🔫",
+        "image": "/images/raid/067.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пистолет с глушителем",
+      "description": "Компактный пистолет и глушитель. Тихо и эффективно.",
+      "data": {
+        "tier": 4,
+        "category": "Оружие и боеприпасы",
+        "value": 220,
+        "icon": "🔫",
+        "image": "/images/raid/068.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Костюм химзащиты",
+      "description": "Полный костюм Л-1 с противогазом. Можно выйти почти куда угодно.",
+      "data": {
+        "tier": 4,
+        "category": "Средства защиты",
+        "value": 250,
+        "icon": "🧑‍🚀",
+        "image": "/images/raid/069.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Армейский шлем",
+      "description": "Кевларовый шлем с креплением для фонаря.",
+      "data": {
+        "tier": 4,
+        "category": "Средства защиты",
+        "value": 160,
+        "icon": "🪖",
+        "image": "/images/raid/070.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Портативный генератор",
+      "description": "Бензиновый генератор на 2 кВт. Свет и тепло для всего бункера.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 280,
+        "icon": "⚡",
+        "image": "/images/raid/071.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Военная радиостанция",
+      "description": "Мощная КВ-радиостанция. Можно услышать другие убежища.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 240,
+        "icon": "📡",
+        "image": "/images/raid/072.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Прибор ночного видения",
+      "description": "Армейский ПНВ. Ночь больше не страшна — страшно то, что в ней видно.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 230,
+        "icon": "🥽",
+        "image": "/images/raid/073.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Полевая хирургическая аптечка",
+      "description": "Армейская аптечка: кровоостанавливающие, шины, антибиотики и морфин.",
+      "data": {
+        "tier": 4,
+        "category": "Медикаменты",
+        "value": 250,
+        "icon": "🧳",
+        "image": "/images/raid/074.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Инсулин в термосумке",
+      "description": "Запас инсулина на полгода. Для кого-то — вопрос жизни.",
+      "data": {
+        "tier": 4,
+        "category": "Медикаменты",
+        "value": 200,
+        "icon": "💉",
+        "image": "/images/raid/075.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ящик армейских пайков",
+      "description": "Двадцать суточных пайков. Месяц еды для одного или неделя для всех.",
+      "data": {
+        "tier": 4,
+        "category": "Еда и вода",
+        "value": 210,
+        "icon": "📦",
+        "image": "/images/raid/076.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бочка чистой воды",
+      "description": "Двести литров питьевой воды, запечатанные ещё до катастрофы.",
+      "data": {
+        "tier": 4,
+        "category": "Еда и вода",
+        "value": 190,
+        "icon": "🛢️",
+        "image": "/images/raid/077.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Коза",
+      "description": "Живая дойная коза. Молоко каждый день и характер на всю жизнь.",
+      "data": {
+        "tier": 4,
+        "category": "Еда и вода",
+        "value": 180,
+        "icon": "🐐",
+        "image": "/images/raid/078.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Сварочный аппарат",
+      "description": "Инверторный сварочник. Укрепить дверь бункера — святое дело.",
+      "data": {
+        "tier": 4,
+        "category": "Инструменты",
+        "value": 170,
+        "icon": "🔧",
+        "image": "/images/raid/079.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Дрон-разведчик",
+      "description": "Квадрокоптер с камерой и тремя аккумуляторами.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 200,
+        "icon": "🛸",
+        "image": "/images/raid/080.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Золотые слитки",
+      "description": "Три небольших слитка. Еду на них не купишь, но кто знает.",
+      "data": {
+        "tier": 4,
+        "category": "Ценности",
+        "value": 150,
+        "icon": "🥇",
+        "image": "/images/raid/081.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Аккумуляторная батарея",
+      "description": "Тяговый аккумулятор на 200 А·ч. Запас энергии на недели.",
+      "data": {
+        "tier": 4,
+        "category": "Редкие ресурсы",
+        "value": 190,
+        "icon": "🔋",
+        "image": "/images/raid/082.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Лодка с мотором",
+      "description": "Надувная лодка с подвесным мотором. В затопленном мире — король.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 220,
+        "icon": "🚤",
+        "image": "/images/raid/083.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ящик медицинского спирта",
+      "description": "Шесть бутылок медицинского спирта. Антисептик и лучшая валюта.",
+      "data": {
+        "tier": 4,
+        "category": "Редкие ресурсы",
+        "value": 160,
+        "icon": "🧴",
+        "image": "/images/raid/084.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мотоцикл",
+      "description": "Эндуро с полным баком. Быстро уехать — тоже способ выжить.",
+      "data": {
+        "tier": 4,
+        "category": "Оборудование",
+        "value": 270,
+        "icon": "🏍️",
+        "image": "/images/raid/085.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Охотничий карабин с оптикой",
+      "description": "Карабин с прицелом. Еда и защита на дистанции до 300 метров.",
+      "data": {
+        "tier": 4,
+        "category": "Оружие и боеприпасы",
+        "value": 240,
+        "icon": "🎯",
+        "image": "/images/raid/086.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Капибара",
+      "description": "Живая капибара. Невозмутима перед лицом апокалипсиса и успокаивает всех вокруг.",
+      "data": {
+        "tier": 4,
+        "category": "Разное",
+        "value": 199,
+        "icon": "🦫",
+        "image": "/images/raid/087.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Набор для выживания спецназа",
+      "description": "Нож, огниво, компас, аптечка и сухпаёк в одном рюкзаке.",
+      "data": {
+        "tier": 4,
+        "category": "Инструменты",
+        "value": 210,
+        "icon": "🎒",
+        "image": "/images/raid/088.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ключ от военного склада",
+      "description": "Ключ-карта и координаты нетронутого армейского склада.",
+      "data": {
+        "tier": 5,
+        "category": "Ценности",
+        "value": 900,
+        "icon": "🗝️",
+        "image": "/images/raid/089.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Вакцина от катастрофы",
+      "description": "Экспериментальная сыворотка из разрушенной лаборатории. Возможно, единственная в мире.",
+      "data": {
+        "tier": 5,
+        "category": "Медикаменты",
+        "value": 1000,
+        "icon": "🧬",
+        "image": "/images/raid/090.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Экзоскелет",
+      "description": "Военный экзоскелет: игрок поднимает втрое больше и почти не устаёт.",
+      "data": {
+        "tier": 5,
+        "category": "Средства защиты",
+        "value": 850,
+        "icon": "🦾",
+        "image": "/images/raid/091.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Портативный реактор",
+      "description": "Радиоизотопный генератор: десять лет электричества без топлива.",
+      "data": {
+        "tier": 5,
+        "category": "Редкие ресурсы",
+        "value": 950,
+        "icon": "⚛️",
+        "image": "/images/raid/092.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бронированный внедорожник",
+      "description": "Армейский броневик с полным баком. Можно перевезти весь бункер.",
+      "data": {
+        "tier": 5,
+        "category": "Оборудование",
+        "value": 800,
+        "icon": "🚙",
+        "image": "/images/raid/093.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Спутниковый телефон",
+      "description": "Рабочий спутниковый телефон. На том конце кто-то ответил…",
+      "data": {
+        "tier": 5,
+        "category": "Оборудование",
+        "value": 750,
+        "icon": "🛰️",
+        "image": "/images/raid/094.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гидропонная ферма",
+      "description": "Компактная ферма с лампами и семенами: свежие овощи без солнца.",
+      "data": {
+        "tier": 5,
+        "category": "Еда и вода",
+        "value": 820,
+        "icon": "🥬",
+        "image": "/images/raid/095.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Установка опреснения воды",
+      "description": "Опреснитель: неограниченная питьевая вода из любой воды.",
+      "data": {
+        "tier": 5,
+        "category": "Еда и вода",
+        "value": 780,
+        "icon": "🌊",
+        "image": "/images/raid/096.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Ящик гранат",
+      "description": "Десять гранат РГД-5. Решают любую проблему у входа в бункер.",
+      "data": {
+        "tier": 5,
+        "category": "Оружие и боеприпасы",
+        "value": 700,
+        "icon": "💣",
+        "image": "/images/raid/097.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Снайперская винтовка",
+      "description": "Винтовка СВД с оптикой и сотней патронов.",
+      "data": {
+        "tier": 5,
+        "category": "Оружие и боеприпасы",
+        "value": 720,
+        "icon": "🎯",
+        "image": "/images/raid/098.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Передвижная операционная",
+      "description": "Медицинский модуль с оборудованием для сложных операций.",
+      "data": {
+        "tier": 5,
+        "category": "Медикаменты",
+        "value": 880,
+        "icon": "🏥",
+        "image": "/images/raid/099.png"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Кейс с бриллиантами",
+      "description": "Чемоданчик бриллиантов. Бесполезен сейчас, бесценен потом.",
+      "data": {
+        "tier": 5,
+        "category": "Ценности",
+        "value": 650,
+        "icon": "💎",
+        "image": "/images/raid/100.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Чертежи бункера-города",
+      "description": "Документы о гигантском подземном убежище с координатами входа.",
+      "data": {
+        "tier": 5,
+        "category": "Ценности",
+        "value": 900,
+        "icon": "📜",
+        "image": "/images/raid/101.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Беспилотник-грузовоз",
+      "description": "Тяжёлый дрон, способный доставлять припасы с соседних складов.",
+      "data": {
+        "tier": 5,
+        "category": "Оборудование",
+        "value": 760,
+        "icon": "🚁",
+        "image": "/images/raid/102.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Запас лекарств на год",
+      "description": "Контейнер с медикаментами на целый год для всего бункера.",
+      "data": {
+        "tier": 5,
+        "category": "Медикаменты",
+        "value": 950,
+        "icon": "📦",
+        "image": "/images/raid/103.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пара здоровых кроликов",
+      "description": "Самец и самка. Через год у бункера будет мясная ферма.",
+      "data": {
+        "tier": 5,
+        "category": "Еда и вода",
+        "value": 700,
+        "icon": "🐇",
+        "image": "/images/raid/104.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Белый кролик с часами",
+      "description": "Говорит, что опаздывает, и знает короткий путь из апокалипсиса.",
+      "data": {
+        "tier": 5,
+        "category": "Разное",
+        "value": 999,
+        "icon": "⏱️",
+        "image": "/images/raid/105.jpg"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Золотая капибара",
+      "description": "Статуэтка из чистого золота. Говорят, приносит удачу всему бункеру.",
+      "data": {
+        "tier": 5,
+        "category": "Ценности",
+        "value": 888,
+        "icon": "🏆",
+        "image": "/images/raid/106.jpg"
+      },
+      "source": "author"
+    }
+  ]
+}

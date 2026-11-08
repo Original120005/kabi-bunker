@@ -1,0 +1,1079 @@
+{
+  "type": "health",
+  "items": [
+    {
+      "key": "healthy",
+      "title": "Идеально здоров",
+      "description": "Ничем не болен. На вылазке это даёт плюс к шансу вернуться.",
+      "weight": 1,
+      "modifierRules": {
+        "disable": [
+          "severity"
+        ]
+      },
+      "tags": [
+        "health:none"
+      ],
+      "source": "original"
+    },
+    {
+      "title": "Covid-19",
+      "description": "Заразная респираторная инфекция. В тесном бункере быстро переходит на соседей.",
+      "weight": 1,
+      "tags": [
+        "health:infectious",
+        "health:airborne",
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/COVID-19"
+      },
+      "source": "original"
+    },
+    {
+      "title": "ВИЧ",
+      "description": "Вирус бьёт по иммунитету. Сам по себе не передаётся воздухом, но любая рана и кровь опасны для остальных.",
+      "weight": 1,
+      "tags": [
+        "health:infectious",
+        "health:immune",
+        "health:venereal"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/ВИЧ"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Гепатит B",
+      "description": "Вирус печени. Передаётся через кровь. В лазарете без перчаток это чужая проблема.",
+      "weight": 1,
+      "tags": [
+        "health:infectious",
+        "health:digestive"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гепатит_B"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Рак",
+      "description": "Злокачественная опухоль. В бункере нет нормальной онкологии, человек слабеет.",
+      "weight": 1,
+      "tags": [
+        "health:oncology"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Рак_(заболевание)"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Синдром хрустального человека",
+      "description": "Кости ломаются от обычной нагрузки. Тяжёлая работа и драка для него опасны.",
+      "weight": 1,
+      "tags": [
+        "health:physical",
+        "health:genetic"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Несовершенный_остеогенез"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Туберкулёз",
+      "description": "Заразная лёгочная болезнь. В общей спальне кашель разносит её дальше.",
+      "weight": 1,
+      "tags": [
+        "health:infectious",
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Туберкулёз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гемофилия",
+      "description": "Кровь плохо сворачивается. Царапина, которая у других пустяк, у него течёт долго.",
+      "weight": 1,
+      "tags": [
+        "health:blood"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гемофилия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Сахарный диабет 1-го типа",
+      "description": "Без инсулина человек не живёт. Запас лекарства здесь важнее еды.",
+      "weight": 1,
+      "tags": [
+        "health:endocrine"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Сахарный_диабет_1-го_типа"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Булимия",
+      "description": "Срывы с едой и очищением. Общие запасы от этого тают быстрее.",
+      "tags": [
+        "health:mental",
+        "health:digestive"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Нервная_булимия"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Шизофрения",
+      "description": "Человек может слышать и видеть то, чего нет. В темноте бункера это бьёт по всем.",
+      "tags": [
+        "health:mental",
+        "health:nervous"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Шизофрения"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Делирий",
+      "description": "Путаница и видения. Такой человек плохо отличает дверь наружу от двери в кладовую.",
+      "tags": [
+        "health:mental",
+        "health:nervous"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Делирий"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Психоз",
+      "description": "Острый срыв: человек может не слушаться и не узнавать своих.",
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Психоз"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Плоскостопие",
+      "description": "Ноги быстро устают и болят. Долгая вылазка пешком даётся тяжелее.",
+      "tags": [
+        "health:physical",
+        "health:foot"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Плоскостопие"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Рахит",
+      "description": "Кости и мышцы слабые из-за нехватки витамина D. В бункере без солнца это не проходит само.",
+      "tags": [
+        "health:physical"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Рахит"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Синдром Мюнхгаузена",
+      "description": "Человек выдумывает или вызывает у себя симптомы. Аптечку на него лучше не тратить вслепую.",
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Синдром_Мюнхгаузена"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Сколиоз",
+      "description": "Позвоночник искривлён. Тяжёлые ящики и долгая работа внаклонку усиливают боль.",
+      "tags": [
+        "health:physical"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Сколиоз"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Алкоголизм",
+      "description": "Без выпивки начинается ломка. В замкнутом бункере это и драка, и риск вылазки за дозой.",
+      "tags": [
+        "health:addiction",
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Алкоголизм"
+      },
+      "source": "original"
+    },
+    {
+      "title": "Аллергия",
+      "description": "Реакция на пыль, плесень или еду. В бункере аллерген часто нельзя просто убрать.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Аллергия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бронхиальная астма",
+      "description": "Приступ душит. Пыль, плесень и дым от плиты могут его запустить.",
+      "weight": 1,
+      "tags": [
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Бронхиальная_астма"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Близорукость",
+      "description": "Вдаль видит плохо. Без очков на вылазке легко пропустить опасность.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Близорукость"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Дальнозоркость",
+      "description": "Вблизи текст и мелкая работа расплываются. Инструкции и пайка даются хуже.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Дальнозоркость"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Астигматизм",
+      "description": "Картинка двоится и плывёт. В полутьме бункера ориентироваться труднее.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Астигматизм_(медицина)"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Дальтонизм",
+      "description": "Путает цвета. Красную метку на трубе или проводе может не отличить.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Дальтонизм"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Катаракта",
+      "description": "Хрусталик мутнеет, в сумраке видит плохо.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Катаракта"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Глаукома",
+      "description": "Давление в глазу портит зрение по краям. Может болеть голова.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Глаукома"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Кариес",
+      "description": "Зуб болит и мешает есть то, что есть. Стоматолога в бункере нет.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Кариес"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пульпит",
+      "description": "Боль из зуба стреляет так, что не до споров и не до сна.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Пульпит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пародонтит",
+      "description": "Дёсны воспалены, жевать твёрдое больно.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Пародонтит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гайморит",
+      "description": "Лицо болит, нос не дышит. В сыром бункере это затягивается.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гайморит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Тонзиллит",
+      "description": "Горло воспалено, глотать больно, температура скачет.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Тонзиллит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Отит",
+      "description": "Ухо стреляет. Шум генератора и крики рядом переносятся плохо.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Отит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Тугоухость",
+      "description": "Слышит плохо. Команду «не открывай люк» может просто не разобрать.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Тугоухость"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Заикание",
+      "description": "В споре и панике речь запинается. Объяснить план быстро получается не всегда.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Заикание"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мигрень",
+      "description": "Приступ выключает человека на часы: свет, шум и запахи невыносимы.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Мигрень"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бессонница",
+      "description": "Почти не спит. Через несколько ночей ошибается в простых вещах.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Бессонница"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Апноэ во сне",
+      "description": "Во сне дыхание останавливается. Храп держит в бодрствовании всю спальню.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Синдром_апноэ_во_сне"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Анемия",
+      "description": "Мало гемоглобина: слабость, одышка, холод. Тяжёлую работу тянет плохо.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Анемия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гипертония",
+      "description": "Давление скачет вверх. Стресс голосования и тяжёлая работа могут кончиться кризом.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гипертензия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гипотония",
+      "description": "Давление низкое: кружится голова, когда резко встаёт, особенно в духоте.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Артериальная_гипотензия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Вегетососудистая дистония",
+      "description": "То бросает в жар, то в холод, сердце колотится без видимой причины.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Вегетососудистая_дистония"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гастрит",
+      "description": "Желудок воспалён. Консервы, спешка и нервы делают каждый приём еды болезненным.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гастрит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Язва желудка",
+      "description": "Боль и риск кровотечения. Острую и случайную еду с вылазки есть опасно.",
+      "weight": 1,
+      "tags": [
+        "health:digestive"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Язва_желудка"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Изжога",
+      "description": "Кислота поднимается вверх. Лежать после еды на нижней койке почти нельзя.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гастроэзофагеальная_рефлюксная_болезнь"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Синдром раздражённого кишечника",
+      "description": "Живот крутит от стресса и непривычной еды. Общий санузел занят чаще обычного.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Синдром_раздражённого_кишечника"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Геморрой",
+      "description": "Сидячая жизнь в бункере и тяжёлые ящики делают это болью на каждый день.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Геморрой"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Непереносимость лактозы",
+      "description": "Молочное даёт вздутие и боль. Если запасы в основном сгущёнка, человеку почти нечего есть.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Непереносимость_лактозы"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Целиакия",
+      "description": "Злаки разрушают кишечник. Хлеб, каша и сухари для него не еда.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Целиакия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Подагра",
+      "description": "Сустав, чаще большой палец, вспыхивает так, что на ногу не встать.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Подагра"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Мочекаменная болезнь",
+      "description": "Камень может скрутить приступом в самый неподходящий час.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Мочекаменная_болезнь"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Цистит",
+      "description": "Частые болезненные походы в санузел. В холоде бункера обостряется.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Цистит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Варикоз",
+      "description": "Ноги ноют и отекают. Долго стоять у генератора или идти пешком тяжело.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Варикозное_расширение_вен"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Сахарный диабет 2-го типа",
+      "description": "Сахар скачет от консервов и отсутствия движения. Раны заживают хуже.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Сахарный_диабет_2-го_типа"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Артрит",
+      "description": "Суставы воспалены. Холодный отсек и сырость делают руки и колени непослушными.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Артрит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Артроз",
+      "description": "Сустав стёрт. Приседать, таскать и карабкаться больно.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Остеоартроз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Остеохондроз",
+      "description": "Спина и шея зажимаются. Неловкий рывок с мешком может уложить на койку.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Остеохондроз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Межпозвоночная грыжа",
+      "description": "Боль отдаёт в ногу или руку. Поднять ящик «как все» уже нельзя.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Межпозвоночная_грыжа"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Радикулит",
+      "description": "Прострел в пояснице. Пока не отпустит, человек почти не ходит.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Радикулит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Вальгусная стопа",
+      "description": "Стопа завалена, обувь натирает. Длинный переход с вылазки портит ноги.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Вальгусная_деформация_первого_пальца_стопы"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Экзема",
+      "description": "Кожа мокнет и чешется. Грязная вода и пыль делают это хуже.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Экзема"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Псориаз",
+      "description": "Бляшки на коже. Стресс бункера часто даёт обострение.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Псориаз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Атопический дерматит",
+      "description": "Кожа сохнет и зудит. Мыло из запасов и пыль легко запускают сыпь.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Атопический_дерматит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Акне",
+      "description": "Воспаления на лице. На выживание не влияет, на нервы в тесной комнате — да.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Акне"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Крапивница",
+      "description": "Волдыри высыпают от еды, холода или нервов.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Крапивница"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Поллиноз",
+      "description": "Аллергия на пыльцу. Если открыть вентиляцию в сезон, нос и глаза отекают.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Поллиноз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Хронический ринит",
+      "description": "Нос заложен почти всегда. Дышать в духоте и так нечем.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Ринит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Искривление носовой перегородки",
+      "description": "Одна ноздря почти не дышит. Насморк переносится тяжелее.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Искривление_носовой_перегородки"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Конъюнктивит",
+      "description": "Глаза красные и слезятся. Грязными руками после труб это легко раздать соседям.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Конъюнктивит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Грибок ногтей",
+      "description": "Ногти крошатся. В общем душе без тапочек это переходит дальше.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Онихомикоз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Герпес",
+      "description": "На губе или коже вспыхивает в стрессе. Общая кружка его разносит.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Простой_герпес"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Бронхит",
+      "description": "Кашель с мокротой. В сыром отсеке не проходит неделями.",
+      "weight": 1,
+      "tags": [
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Бронхит"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Витилиго",
+      "description": "Кожа теряет пигмент пятнами. На здоровье почти не влияет, на вид — да.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Витилиго"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Облысение",
+      "description": "Волосы редеют. В бункере от этого никому не хуже, кроме самолюбия.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Облысение"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Гипергидроз",
+      "description": "Пот льёт даже в холоде. Руки скользят на инструменте и на оружии.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Гипергидроз"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Укачивание",
+      "description": "В тесной качке, лифте люка и даже на качелях генератора мутит.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Укачивание"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Депрессия",
+      "description": "Нет сил спорить, есть и вставать. В темноте бункера это углубляется.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Депрессия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Тревожное расстройство",
+      "description": "Ждёт беды постоянно. Сирена, стук и темнота запускают дрожь.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Генерализованное_тревожное_расстройство"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Панические атаки",
+      "description": "Внезапно нечем дышать и кажется, что это конец. Проходит, но в момент человек бесполезен.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Паническая_атака"
+      },
+      "source": "author"
+    },
+    {
+      "title": "ПТСР",
+      "description": "Резкий звук возвращает в старый ужас. Может замереть или броситься к люку.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Посттравматическое_стрессовое_расстройство"
+      },
+      "source": "author"
+    },
+    {
+      "title": "ОКР",
+      "description": "Проверяет замок, кран и плиту снова и снова. Полезный сторож, пока это не съедает ночь.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Обсессивно-компульсивное_расстройство"
+      },
+      "source": "author"
+    },
+    {
+      "title": "СДВГ",
+      "description": "Внимание прыгает. Длинную инструкцию дочитывает через раз.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Синдром_дефицита_внимания_и_гиперактивности"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Биполярное расстройство",
+      "description": "То дни подъёма и споров, то дни, когда человек не встаёт.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Биполярное_аффективное_расстройство"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Нервная анорексия",
+      "description": "Почти не ест даже когда еда есть. Слабеет быстрее остальных.",
+      "weight": 1,
+      "tags": [
+        "health:mental"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Нервная_анорексия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Никотиновая зависимость",
+      "description": "Без сигарет злится и не думает. Дым в бункере без вентиляции бьёт по всем.",
+      "weight": 1,
+      "tags": [
+        "health:addiction"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Никотиновая_зависимость"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Игровая зависимость",
+      "description": "Тянет к экрану, которого больше нет. Руки заняты не тем, чем надо.",
+      "weight": 1,
+      "tags": [
+        "health:addiction"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Игровая_зависимость"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Эпилепсия",
+      "description": "Приступ может случиться от мигающей лампы. Рядом лучше не оставлять одного у лестницы.",
+      "weight": 1,
+      "tags": [
+        "health:nervous"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Эпилепсия"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Косоглазие",
+      "description": "Глаза смотрят врозь, глубину оценивает хуже. Промахнуться мимо ступеньки проще.",
+      "weight": 1,
+      "tags": [
+        "health:common"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Косоглазие"
+      },
+      "source": "author"
+    },
+    {
+      "title": "Пневмония",
+      "description": "Воспаление лёгких. Без антибиотиков в сыром бункере это выматывает на недели.",
+      "weight": 1,
+      "tags": [
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Пневмония"
+      },
+      "source": "author"
+    },
+    {
+      "title": "ХОБЛ",
+      "description": "Лёгкие хронически не тянут. Лестница и дым укладывают отдыхать.",
+      "weight": 1,
+      "tags": [
+        "health:respiratory"
+      ],
+      "data": {
+        "link": "https://ru.wikipedia.org/wiki/Хроническая_обструктивная_болезнь_лёгких"
+      },
+      "source": "author"
+    }
+  ]
+}

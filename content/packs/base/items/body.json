@@ -1,0 +1,12 @@
+{
+  "type": "body",
+  "items": [
+    { "key": "fragile", "title": "Хрупкое", "data": { "order": 1, "agility": "Высокая", "stamina": "Низкая", "strength": "Низкая" }, "source": "original" },
+    { "key": "thin", "title": "Худое", "data": { "order": 2, "agility": "Высокая", "stamina": "Обычная", "strength": "Низкая" }, "source": "original" },
+    { "key": "athletic", "title": "Атлетическое", "data": { "order": 3, "agility": "Высокая", "stamina": "Высокая", "strength": "Высокая" }, "source": "original" },
+    { "key": "strong", "title": "Крепкое", "data": { "order": 4, "agility": "Обычная", "stamina": "Высокая", "strength": "Высокая" }, "source": "original" },
+    { "key": "full", "title": "Полное", "data": { "order": 5, "agility": "Обычная", "stamina": "Низкая", "strength": "Обычная" }, "source": "original" },
+    { "key": "obeseLight", "title": "Ожирение-слабое", "data": { "order": 6, "agility": "Низкая", "stamina": "Низкая", "strength": "Обычная" }, "source": "original" },
+    { "key": "obeseHeavy", "title": "Ожирение-сильное", "data": { "order": 7, "agility": "Низкая", "stamina": "Низкая", "strength": "Обычная" }, "source": "original" }
+  ]
+}

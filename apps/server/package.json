@@ -1,0 +1,27 @@
+{
+  "name": "@bunker/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "start": "tsx src/index.ts",
+    "seed": "tsx src/content/seed-cli.ts",
+    "db:migrate": "prisma migrate deploy",
+    "db:generate": "prisma generate",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@bunker/engine": "*",
+    "@bunker/shared": "*",
+    "@fastify/static": "^10.1.8",
+    "@prisma/client": "^6.1.0",
+    "fastify": "^5.2.0",
+    "socket.io": "^4.8.1",
+    "tsx": "^4.19.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "prisma": "^6.1.0"
+  }
+}

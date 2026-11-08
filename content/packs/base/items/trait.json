@@ -1,0 +1,26 @@
+{
+  "type": "trait",
+  "items": [
+    { "title": "Самовлюблённый", "tags": ["trait:social", "trait:negative"], "source": "original" },
+    { "title": "Трудолюбивый", "tags": ["trait:social", "trait:positive"], "source": "original" },
+    { "title": "Общительный", "tags": ["trait:social", "trait:positive"], "source": "original" },
+    { "title": "Беспринципный", "tags": ["trait:social", "trait:negative"], "source": "original" },
+    { "title": "Впечатлительный", "tags": ["trait:emotional"], "source": "original" },
+    { "title": "Жизнерадостный", "tags": ["trait:emotional", "trait:positive"], "source": "original" },
+    { "title": "Импульсивный", "tags": ["trait:emotional", "trait:negative"], "source": "original" },
+    { "title": "Безэмоциональный", "tags": ["trait:emotional", "trait:negative"], "source": "original" },
+    { "title": "Целеустремлённый", "tags": ["trait:volitional", "trait:positive"], "source": "original" },
+    { "title": "Решительный", "tags": ["trait:volitional", "trait:positive"], "source": "original" },
+    { "title": "Неуверенный", "tags": ["trait:volitional", "trait:negative"], "source": "original" },
+    { "title": "Трусливый", "tags": ["trait:volitional", "trait:negative"], "source": "original" },
+    { "title": "Рассудительный", "tags": ["trait:intellectual", "trait:positive"], "source": "original" },
+    { "title": "Глупый", "tags": ["trait:intellectual", "trait:negative"], "source": "original" },
+    { "title": "Находчивый", "tags": ["trait:intellectual", "trait:positive"], "source": "original" },
+    { "title": "Мудрый", "tags": ["trait:intellectual", "trait:positive"], "source": "original" },
+    { "title": "Жестокий", "tags": ["trait:moral", "trait:negative"], "source": "original" },
+    { "title": "Добрый", "tags": ["trait:moral", "trait:positive"], "source": "original" },
+    { "title": "Отзывчивый", "tags": ["trait:moral", "trait:positive"], "source": "original" },
+    { "title": "Честный", "tags": ["trait:moral", "trait:positive"], "source": "original" },
+    { "title": "Хладнокровный", "tags": ["trait:emotional", "trait:positive"], "source": "original" }
+  ]
+}

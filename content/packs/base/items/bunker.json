@@ -1,0 +1,477 @@
+{
+  "groups": [
+    {
+      "type": "bunkerSize",
+      "items": [
+        {
+          "title": "26 м²",
+          "source": "original"
+        },
+        {
+          "title": "40 м²",
+          "source": "author"
+        },
+        {
+          "title": "55 м²",
+          "source": "author"
+        },
+        {
+          "title": "72 м²",
+          "source": "author"
+        },
+        {
+          "title": "90 м²",
+          "source": "author"
+        },
+        {
+          "title": "120 м²",
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerDuration",
+      "items": [
+        {
+          "title": "1 год",
+          "source": "author"
+        },
+        {
+          "title": "1 год 1 месяц",
+          "source": "author"
+        },
+        {
+          "title": "1 год 2 месяца",
+          "source": "author"
+        },
+        {
+          "title": "1 год 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "1 год 4 месяца",
+          "source": "author"
+        },
+        {
+          "title": "1 год 5 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 6 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 7 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 8 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 9 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 10 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "1 год 11 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года",
+          "source": "author"
+        },
+        {
+          "title": "2 года 1 месяц",
+          "source": "author"
+        },
+        {
+          "title": "2 года 2 месяца",
+          "source": "author"
+        },
+        {
+          "title": "2 года 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "2 года 4 месяца",
+          "source": "author"
+        },
+        {
+          "title": "2 года 5 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 6 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 7 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 8 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 9 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 10 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "2 года 11 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года",
+          "source": "author"
+        },
+        {
+          "title": "3 года 1 месяц",
+          "source": "author"
+        },
+        {
+          "title": "3 года 2 месяца",
+          "source": "author"
+        },
+        {
+          "title": "3 года 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "3 года 4 месяца",
+          "source": "author"
+        },
+        {
+          "title": "3 года 5 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года 6 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года 7 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года 8 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года 9 месяцев",
+          "source": "original"
+        },
+        {
+          "title": "3 года 10 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "3 года 11 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года",
+          "source": "author"
+        },
+        {
+          "title": "4 года 1 месяц",
+          "source": "author"
+        },
+        {
+          "title": "4 года 2 месяца",
+          "source": "author"
+        },
+        {
+          "title": "4 года 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "4 года 4 месяца",
+          "source": "author"
+        },
+        {
+          "title": "4 года 5 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 6 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 7 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 8 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 9 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 10 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "4 года 11 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 1 месяц",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 2 месяца",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 4 месяца",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 5 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 6 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 7 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 8 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 9 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 10 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "5 лет 11 месяцев",
+          "source": "author"
+        },
+        {
+          "title": "6 лет",
+          "source": "author"
+        },
+        {
+          "title": "6 месяцев",
+          "enabled": false,
+          "weight": 0,
+          "source": "author"
+        },
+        {
+          "title": "8 лет",
+          "enabled": false,
+          "weight": 0,
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerFood",
+      "items": [
+        {
+          "title": "на год и 9 месяцев",
+          "source": "original"
+        },
+        {
+          "title": "на 1 год и 5 месяцев, только веганские продукты",
+          "source": "original"
+        },
+        {
+          "title": "на 3 месяца",
+          "source": "author"
+        },
+        {
+          "title": "на полгода",
+          "source": "author"
+        },
+        {
+          "title": "на 3 года, только консервы",
+          "source": "author"
+        },
+        {
+          "title": "еды нет, воды на 2 месяца",
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerHistory",
+      "items": [
+        {
+          "title": "Был построен 19 лет назад. Имеется затхлый запах",
+          "tags": [
+            "problem:smell"
+          ],
+          "source": "original"
+        },
+        {
+          "title": "На входе имеется огромный пчелиный улей",
+          "tags": [
+            "problem:bees"
+          ],
+          "source": "original"
+        },
+        {
+          "title": "Построен военными в 1970-х. Нет электричества",
+          "tags": [
+            "problem:electricity"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Частный бункер миллиардера. Сломаны воздушные фильтры",
+          "tags": [
+            "problem:air"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Бывшее бомбоубежище школы. В стенах плесень",
+          "tags": [
+            "problem:mold"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Построен год назад, проблем не обнаружено",
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerLocation",
+      "items": [
+        {
+          "title": "Горы Урала",
+          "source": "original"
+        },
+        {
+          "title": "Под заброшенной больницей",
+          "source": "original"
+        },
+        {
+          "title": "Находится под городом",
+          "source": "original"
+        },
+        {
+          "title": "В лесу",
+          "source": "author"
+        },
+        {
+          "title": "Около озера",
+          "source": "author"
+        },
+        {
+          "title": "В ущелье",
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerRooms",
+      "items": [
+        {
+          "title": "У всех общая комната",
+          "source": "original"
+        },
+        {
+          "title": "Две спальни, кухня и санузел",
+          "source": "author"
+        },
+        {
+          "title": "Отдельные капсулы для сна и общий зал",
+          "source": "author"
+        },
+        {
+          "title": "Три комнаты и склад",
+          "source": "author"
+        }
+      ]
+    },
+    {
+      "type": "bunkerItem",
+      "items": [
+        {
+          "title": "Изолятор",
+          "source": "original"
+        },
+        {
+          "title": "Радио",
+          "source": "original"
+        },
+        {
+          "title": "Двуспальная кровать",
+          "source": "original"
+        },
+        {
+          "title": "Генератор",
+          "tags": [
+            "item:power"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Аптечка",
+          "tags": [
+            "item:medicine"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Верстак с инструментами",
+          "tags": [
+            "item:tools"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Фильтр для воды",
+          "source": "author"
+        },
+        {
+          "title": "Библиотека",
+          "source": "author"
+        },
+        {
+          "title": "Гидропонная ферма",
+          "tags": [
+            "item:food"
+          ],
+          "source": "author"
+        },
+        {
+          "title": "Оружейный шкаф",
+          "tags": [
+            "item:weapon"
+          ],
+          "source": "author"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "bunker-online",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c yellow,cyan \"npm run dev -w @bunker/server\" \"npm run dev -w @bunker/web\"",
+    "build": "npm run build -w @bunker/web",
+    "play": "node scripts/play.mjs",
+    "play:lan": "node scripts/play.mjs --lan",
+    "seed": "tsx apps/server/src/content/seed-cli.ts",
+    "seed:update": "tsx apps/server/src/content/seed-cli.ts --update",
+    "db:migrate": "npm run db:migrate -w @bunker/server",
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/shared && tsc -p packages/engine && tsc -p apps/server && tsc -p apps/web"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.10.0",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

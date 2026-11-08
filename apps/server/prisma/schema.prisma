@@ -1,0 +1,126 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// The path is relative to this file: <repo>/data/bunker.db
+datasource db {
+  provider = "sqlite"
+  url      = "file:../../../data/bunker.db"
+}
+
+model Pack {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  name        String
+  description String        @default("")
+  kind        String        @default("addon")
+  priority    Int           @default(0)
+  enabled     Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  definitions Definition[]
+  items       ContentItem[]
+}
+
+/// Characteristic or bunker field definition; `json` holds the validated definition.
+model Definition {
+  id     String @id @default(cuid())
+  packId String
+  pack   Pack   @relation(fields: [packId], references: [id], onDelete: Cascade)
+  kind   String
+  key    String
+  json   String
+
+  @@unique([packId, kind, key])
+}
+
+/// JSON columns are stored as strings because SQLite has no JSON type in Prisma.
+model ContentItem {
+  id            String   @id @default(cuid())
+  packId        String
+  pack          Pack     @relation(fields: [packId], references: [id], onDelete: Cascade)
+  type          String
+  externalKey   String
+  title         String
+  description   String   @default("")
+  weight        Float    @default(1)
+  enabled       Boolean  @default(true)
+  tags          String   @default("[]")
+  constraints   String   @default("[]")
+  modifierRules String   @default("{}")
+  abilities     String   @default("[]")
+  data          String   @default("{}")
+  source        String   @default("user")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([packId, type, externalKey])
+  @@index([type])
+}
+
+model Room {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  status    String
+  version   Int
+  state     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// One Discord account. Stats live here and are shared by every room.
+model Player {
+  id              String        @id @default(cuid())
+  discordId       String        @unique
+  username        String
+  displayName     String
+  nameKey         String
+  avatarUrl       String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  games           Int           @default(0)
+  bunkerEntries   Int           @default(0)
+  survivalPercent Int           @default(0)
+  rating          Int           @default(0)
+  sessions        Session[]
+  grants          RatingGrant[]
+
+  @@index([nameKey])
+  @@index([rating])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  playerId  String
+  player    Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([playerId])
+}
+
+/// One row per profile per finished party, so a result cannot be scored twice.
+model RatingGrant {
+  id           String   @id @default(cuid())
+  settlementId String
+  playerId     String
+  player       Player   @relation(fields: [playerId], references: [id], onDelete: Cascade)
+  delta        Int
+  bunker       Boolean
+  createdAt    DateTime @default(now())
+
+  @@unique([settlementId, playerId])
+}
+
+model ActionLog {
+  id        Int      @id @default(autoincrement())
+  roomCode  String
+  version   Int
+  actorId   String
+  type      String
+  payload   String
+  createdAt DateTime @default(now())
+
+  @@index([roomCode, version])
+}

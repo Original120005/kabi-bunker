@@ -1,0 +1,1453 @@
+{
+  "type": "hobby",
+  "items": [
+    {
+      "title": "Гольф",
+      "source": "original"
+    },
+    {
+      "title": "Рыбалка",
+      "tags": [
+        "hobby:food",
+        "hobby:outdoor"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Охота",
+      "tags": [
+        "hobby:food",
+        "hobby:outdoor",
+        "hobby:weapon"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Садоводство",
+      "tags": [
+        "hobby:food",
+        "hobby:plants"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выращивание микрозелени на подоконнике",
+      "tags": [
+        "hobby:food",
+        "hobby:plants"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Кулинария",
+      "tags": [
+        "hobby:food"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выпечка хлеба на закваске",
+      "tags": [
+        "hobby:food"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пивоварение",
+      "tags": [
+        "hobby:food",
+        "hobby:alcohol"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Самогоноварение",
+      "tags": [
+        "hobby:alcohol"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Консервирование и закатки",
+      "tags": [
+        "hobby:food"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сбор грибов",
+      "tags": [
+        "hobby:food",
+        "hobby:outdoor"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пчеловодство",
+      "tags": [
+        "hobby:food",
+        "hobby:animals"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Туризм с палатками",
+      "tags": [
+        "hobby:outdoor",
+        "hobby:survival"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Альпинизм",
+      "tags": [
+        "hobby:outdoor",
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Спелеология",
+      "tags": [
+        "hobby:outdoor",
+        "hobby:survival"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выживание в дикой природе по роликам из интернета",
+      "tags": [
+        "hobby:survival"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Бокс",
+      "tags": [
+        "hobby:sport",
+        "hobby:fight"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Карате",
+      "tags": [
+        "hobby:sport",
+        "hobby:fight"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Йога",
+      "tags": [
+        "hobby:sport",
+        "hobby:calm"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Бег",
+      "tags": [
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пауэрлифтинг",
+      "tags": [
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Плавание",
+      "tags": [
+        "hobby:sport",
+        "hobby:water"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Стрельба из лука",
+      "tags": [
+        "hobby:sport",
+        "hobby:weapon"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Страйкбол",
+      "tags": [
+        "hobby:weapon"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Паркур",
+      "tags": [
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Шахматы",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Настольные игры",
+      "tags": [
+        "hobby:mind",
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разгадывание кроссвордов",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сборка кубика Рубика на скорость",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Чтение",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Писательство",
+      "tags": [
+        "hobby:art"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Рисование",
+      "tags": [
+        "hobby:art"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на гитаре",
+      "tags": [
+        "hobby:music"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на баяне",
+      "tags": [
+        "hobby:music"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Караоке",
+      "tags": [
+        "hobby:music",
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Битбокс",
+      "tags": [
+        "hobby:music"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Танцы",
+      "tags": [
+        "hobby:music",
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Стендап-комедия",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Фокусы с картами",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Жонглирование",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Вязание",
+      "tags": [
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Шитьё",
+      "tags": [
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Резьба по дереву",
+      "tags": [
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Гончарное дело",
+      "tags": [
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Кузнечное дело",
+      "tags": [
+        "hobby:craft",
+        "hobby:weapon"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ремонт старых автомобилей",
+      "tags": [
+        "hobby:tech"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Радиолюбительство",
+      "tags": [
+        "hobby:tech"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пайка электроники",
+      "tags": [
+        "hobby:tech"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Программирование",
+      "tags": [
+        "hobby:tech",
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Видеоигры",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Астрономия",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Химические опыты на кухне",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Первая помощь (курсы Красного Креста)",
+      "tags": [
+        "hobby:medicine"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Траволечение",
+      "tags": [
+        "hobby:medicine",
+        "hobby:plants"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дрессировка собак",
+      "tags": [
+        "hobby:animals"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разведение кроликов",
+      "tags": [
+        "hobby:animals",
+        "hobby:food"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Наблюдение за птицами",
+      "tags": [
+        "hobby:animals",
+        "hobby:outdoor"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Таксидермия",
+      "tags": [
+        "hobby:animals",
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Изучение языков",
+      "tags": [
+        "hobby:mind"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Изучение азбуки Морзе",
+      "tags": [
+        "hobby:tech"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Медитация",
+      "tags": [
+        "hobby:calm"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Гадание на картах Таро",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование крышек от пива",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование ножей",
+      "tags": [
+        "hobby:weapon"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Поиск НЛО",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Споры в комментариях",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Собирание пазлов на 5000 деталей",
+      "tags": [
+        "hobby:mind",
+        "hobby:calm"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Косплей",
+      "tags": [
+        "hobby:craft",
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Метание топоров",
+      "tags": [
+        "hobby:weapon",
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сон",
+      "tags": [
+        "hobby:calm"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Просмотр сериалов про зомби",
+      "tags": [
+        "hobby:fun"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Лепка пельменей",
+      "tags": [
+        "hobby:food"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Уход за кактусами",
+      "tags": [
+        "hobby:plants",
+        "hobby:calm"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Скандинавская ходьба",
+      "tags": [
+        "hobby:sport"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Исторические реконструкции",
+      "tags": [
+        "hobby:fight",
+        "hobby:craft"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Слесарное дело",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Столярное дело",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Кладка печей",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Плетение корзин",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Кожевенное дело",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Мыловарение",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Свечное дело",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Заточка ножей",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ремонт обуви",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Вязание узлов",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Вязание рыболовных сетей",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Копчение мяса",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сушка грибов и трав",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сбор ягод",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разведение кур",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разведение улиток",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Аквариумистика",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Голубиная почта",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ориентирование по карте",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Геокэшинг",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Диггерство",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Гребля",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дайвинг",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Скалолазание",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Велопрогулки",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Скейтборд",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ролики",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Лыжи",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коньки",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Настольный теннис",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Бадминтон",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дворовый футбол",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Хоккей на коробке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Армрестлинг",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Гиревой спорт",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Самбо",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дзюдо",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Борьба",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Тхэквондо",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Капоэйра",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ушу",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Цигун",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Фехтование",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Метание ножей",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Стрельба из рогатки",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дартс",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Бильярд",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Покер",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Преферанс",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Нарды",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Домино",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пасьянс",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Настольные ролевые игры",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование игральных костей",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Судоку",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Каллиграфия",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Оригами",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выжигание по дереву",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Макраме",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Бисероплетение",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ведение дневника",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Фанфики",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Стихи на салфетках",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Плёночная фотография",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Граффити",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на барабанах",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на скрипке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на блокфлейте",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на губной гармошке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Пение в душе",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Свист",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Имитация голосов животных",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Чревовещание",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Скороговорки",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование марок",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование камней",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование зажигалок",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование фигурок",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование пробок",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование чеков",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование бабочек",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Астрология",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Нумерология",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Спиритические сеансы",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Смотреть чужие стримы",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Листать мемы часами",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Спорить с телевизором",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Считать ворон",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Катание на офисном кресле",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Жонглирование апельсинами",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра на кастрюлях",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выращивание плесени в банке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выращивание бонсай",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Грибы на подоконнике",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Компостирование",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дегустация сыра",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дегустация чая",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Варка кофе как ритуал",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Смотреть кулинарные шоу",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Тихая охота за грибами",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Зимняя рыбалка",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Автостоп",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Мотокросс",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Картинг",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Прыжки на скакалке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Хулахуп",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Батут",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Волейбол",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Фигурное катание на видео",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Историческое фехтование",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Сборка моделей танков",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование открыток",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Решение японских кроссвордов",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Складывание полотенец по линеечке",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Перекладывание вещей с места на место",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разговоры с комнатными растениями",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование пуговиц",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Игра в города",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Составление списков на все случаи",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Разгадывание ребусов",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Плетение фенечек",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Выращивание кристаллов из соли",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Ремонт зонта, который всё равно сломается",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Коллекционирование билетов",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Наблюдение за муравьями",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Дрессировка кошек",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Катание на санках во взрослом возрасте",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    },
+    {
+      "title": "Свитер для собаки, которой нет",
+      "tags": [
+        "hobby:extra"
+      ],
+      "source": "author"
+    }
+  ]
+}

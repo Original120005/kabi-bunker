@@ -1,0 +1,129 @@
+{
+  "characteristics": [
+    {
+      "key": "gender",
+      "name": "Пол",
+      "sort": 1,
+      "contentType": "gender",
+      "onSteal": "regenerate",
+      "modifiers": [
+        {
+          "kind": "age",
+          "key": "age",
+          "min": 16,
+          "max": 85,
+          "groups": [
+            { "key": "young", "label": "Молодой", "min": 16, "max": 34 },
+            { "key": "adult", "label": "Взрослый", "min": 35, "max": 59 },
+            { "key": "old", "label": "Пожилой", "min": 60, "max": 85 }
+          ]
+        },
+        { "kind": "flag", "key": "childfree", "chance": 0.1, "label": "ч/ф" }
+      ],
+      "hint": "Ч/ф — категорически против продолжения рода."
+    },
+    {
+      "key": "body",
+      "name": "Телосложение",
+      "sort": 2,
+      "contentType": "body",
+      "onSteal": "regenerate",
+      "modifiers": [{ "kind": "range", "key": "height", "min": 150, "max": 210, "format": "(Рост: {n} см.)" }]
+    },
+    { "key": "trait", "name": "Человеческая черта", "sort": 3, "contentType": "trait", "onSteal": "regenerate" },
+    {
+      "key": "profession",
+      "name": "Профессия",
+      "sort": 4,
+      "contentType": "profession",
+      "onSteal": "empty",
+      "modifiers": [
+        {
+          "kind": "scale",
+          "key": "experience",
+          "ageBound": true,
+          "levels": [
+            { "key": "novice", "label": "Новичок", "minYears": 0, "hint": "до 3 месяцев" },
+            { "key": "intern", "label": "Стажёр", "minYears": 0.25, "hint": "3 месяца – 1 год" },
+            { "key": "amateur", "label": "Любитель", "minYears": 1, "hint": "1–2 года" },
+            { "key": "experienced", "label": "Опытный", "minYears": 2, "hint": "2–5 лет" },
+            { "key": "professional", "label": "Профессионал", "minYears": 5, "hint": "5–10 лет" },
+            { "key": "expert", "label": "Эксперт", "minYears": 10, "hint": "более 10 лет" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "health",
+      "name": "Здоровье",
+      "sort": 5,
+      "contentType": "health",
+      "onSteal": "regenerate",
+      "modifiers": [
+        {
+          "kind": "scale",
+          "key": "severity",
+          "format": "({label} степень)",
+          "levels": [
+            { "key": "light", "label": "Лёгкая" },
+            { "key": "medium", "label": "Средняя" },
+            { "key": "heavy", "label": "Тяжёлая" },
+            { "key": "critical", "label": "Критическая" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "hobby",
+      "name": "Хобби/Увлечение",
+      "sort": 6,
+      "contentType": "hobby",
+      "onSteal": "empty",
+      "modifiers": [
+        {
+          "kind": "scale",
+          "key": "experience",
+          "ageBound": true,
+          "levels": [
+            { "key": "novice", "label": "Новичок", "minYears": 0, "hint": "до 3 месяцев" },
+            { "key": "amateur", "label": "Любитель", "minYears": 0.25, "hint": "3 месяца – 1 год" },
+            { "key": "experienced", "label": "Опытный", "minYears": 1, "hint": "1–2 года" },
+            { "key": "advanced", "label": "Продвинутый", "minYears": 2, "hint": "2–5 лет" },
+            { "key": "master", "label": "Мастер (гуру)", "minYears": 5, "hint": "более 5 лет" }
+          ]
+        }
+      ]
+    },
+    { "key": "phobia", "name": "Фобия/Страх", "sort": 7, "contentType": "phobia", "onSteal": "regenerate" },
+    { "key": "bigInventory", "name": "Крупный инвентарь", "sort": 8, "contentType": "bigInventory", "onSteal": "empty" },
+    {
+      "key": "backpack",
+      "name": "Рюкзак",
+      "sort": 9,
+      "contentType": "backpack",
+      "onSteal": "empty",
+      "modifiers": [{ "kind": "range", "key": "quantity", "min": 1, "max": 10, "format": "({n} шт.)" }]
+    },
+    { "key": "extraInfo", "name": "Дополнительное сведение", "sort": 10, "contentType": "extraInfo", "onSteal": "empty" },
+    {
+      "key": "special",
+      "name": "Спец. возможность",
+      "sort": 11,
+      "contentType": "special",
+      "specialCard": true,
+      "countPerPlayer": 2,
+      "rotatable": false,
+      "onSteal": "regenerate",
+      "hint": "Используется в любой момент, пока игрок в лагере, кроме процесса голосования."
+    }
+  ],
+  "bunkerFields": [
+    { "key": "size", "name": "Размер бункера", "sort": 1, "contentType": "bunkerSize", "placement": "tile", "icon": "size" },
+    { "key": "duration", "name": "Время нахождения", "sort": 2, "contentType": "bunkerDuration", "placement": "tile", "icon": "time" },
+    { "key": "food", "name": "Количество еды и воды", "sort": 3, "contentType": "bunkerFood", "placement": "tile", "icon": "food" },
+    { "key": "history", "name": "Как и где был построен", "sort": 4, "contentType": "bunkerHistory", "placement": "text" },
+    { "key": "location", "name": "Локация бункера", "sort": 5, "contentType": "bunkerLocation", "placement": "text" },
+    { "key": "rooms", "name": "Комнаты", "sort": 6, "contentType": "bunkerRooms", "placement": "text" },
+    { "key": "items", "name": "В бункере присутствуют", "sort": 7, "contentType": "bunkerItem", "placement": "list", "count": 3 }
+  ]
+}

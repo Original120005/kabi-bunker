@@ -1,0 +1,5093 @@
+{
+  "type": "profession",
+  "items": [
+    {
+      "key": "Бизнесмен",
+      "title": "Бизнесмен",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может забрать себе открытый \"Крупный инвентарь\" изгнанного игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Businessman",
+        "abilityEn": "Can take the open \"Large Equipment\" of an exiled player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Биолог",
+      "title": "Биолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" семена культур, овощей",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Biologist",
+        "abilityEn": "Can add seeds of crops and vegetables to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Биофизик",
+      "title": "Биофизик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" микроскоп",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Biophysicist",
+        "abilityEn": "Can add a microscope to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Биоэколог",
+      "title": "Биоэколог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить местонахождение бункера на \"в лесу\", \"около озера\", \"около реки\", \"около моря\", \"на горе\" или \"в ущелье\". Объекты вокруг бункера, сгенерированные игроками, остаются",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bioecologist",
+        "abilityEn": "Can change the location of the bunker to \"in the forest,\" \"near the lake,\" \"near the river,\" \"near the sea,\" \"on the mountain,\" or \"in the gorge.\" Player-generated objects around the bunker remain"
+      },
+      "source": "original"
+    },
+    {
+      "key": "3D Аниматор",
+      "title": "3D Аниматор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" планшет с зарядным устройством",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "3D Animator",
+        "abilityEn": "Can add a tablet with a charger to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Абитуриент",
+      "title": "Абитуриент",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить себе \"Профессию\" на случайную, если он старше 27 лет",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Applicant",
+        "abilityEn": "Can change their \"Profession\" to a random one if they are over 27 years old"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Агроном",
+      "title": "Агроном",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" ящик с продуктами",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Agronomist",
+        "abilityEn": "Can add a box of food to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Антиквар",
+      "title": "Антиквар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить дополнительный предмет в \"Рюкзак\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Antique Dealer",
+        "abilityEn": "Can add an additional item to any player's \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Археолог",
+      "title": "Археолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" лопату и тахеометр",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Archaeologist",
+        "abilityEn": "Can add a shovel and a total station to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Астроном",
+      "title": "Астроном",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" телескоп",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Astronomer",
+        "abilityEn": "Can add a telescope to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Астрофизик",
+      "title": "Астрофизик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" атлас звёздного неба",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Astrophysicist",
+        "abilityEn": "Can add a star atlas to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Бариста",
+      "title": "Бариста",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" мешок с кофейными зернами",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Barista",
+        "abilityEn": "Can add a bag of coffee beans to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Библиотекарь",
+      "title": "Библиотекарь",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" пару книг (на выбор) и очки",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Librarian",
+        "abilityEn": "Can add a couple of books (of choice) and glasses to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ботаник",
+      "title": "Ботаник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" семена любых растений",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Botanist",
+        "abilityEn": "Can add seeds of any plants to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Булочник",
+      "title": "Булочник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" свежих булочек на 2 недели",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Baker",
+        "abilityEn": "Can add fresh buns for 2 weeks to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Бурильщик",
+      "title": "Бурильщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" дрель с заряженным аккумулятором",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Driller",
+        "abilityEn": "Can add a drill with a charged battery to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Вахтер",
+      "title": "Вахтер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" сейф",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Watchman",
+        "abilityEn": "Can add a safe to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Веб-дизайнер",
+      "title": "Веб-дизайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" планшет с зарядным устройством",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Web Designer",
+        "abilityEn": "Can add a tablet with a charger to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ветеринар",
+      "title": "Ветеринар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" любое животное (до 50 кг.) или добавить себе в \"Рюкзак\" вакцину от бешенства",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Veterinarian",
+        "abilityEn": "Can add any animal (up to 50 kg) to their \"Large Equipment\" or add a rabies vaccine to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Видеооператор",
+      "title": "Видеооператор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" несколько дисков о выживании. Посмотрел все фильмы о выживании",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Videographer",
+        "abilityEn": "Can add several survival discs to their \"Backpack.\" Has watched all survival movies"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Вирусолог",
+      "title": "Вирусолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" универсальную сыворотку от воздушно-капельных инфекций (1 шт.)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Virologist",
+        "abilityEn": "Can add a universal serum for airborne infections (1 dose) to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Водолаз",
+      "title": "Водолаз",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" набор для дайвинга",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Diver",
+        "abilityEn": "Can add a diving kit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Военнослужащий",
+      "title": "Военнослужащий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" пистолет и 28 патронов",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Military Personnel",
+        "abilityEn": "Can add a pistol and 28 bullets to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Военный инженер",
+      "title": "Военный инженер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" ящик инструментов и решить проблемы с отоплением в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Military Engineer",
+        "abilityEn": "Can add a toolbox to their \"Large Equipment\" and solve heating problems in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Военный летчик",
+      "title": "Военный летчик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" снаряжение парашютиста",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Military Pilot",
+        "abilityEn": "Can add parachute equipment to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Вор",
+      "title": "Вор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть \"Рюкзак\" другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Thief",
+        "abilityEn": "Can steal another player's \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гейм-дизайнер",
+      "title": "Гейм-дизайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" личный ноутбук",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Game Designer",
+        "abilityEn": "Can add a personal laptop to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Географ",
+      "title": "Географ",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" карту местности",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Geographer",
+        "abilityEn": "Can add a map of the area to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Геолог",
+      "title": "Геолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" кирку и лопату",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Geologist",
+        "abilityEn": "Can add a pickaxe and shovel to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гид-переводчик",
+      "title": "Гид-переводчик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" справочник по выживанию в экстремальных условиях",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Tour Guide",
+        "abilityEn": "Can add a survival guide for extreme conditions to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Горничная",
+      "title": "Горничная",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" набор для дезинфекции",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Maid",
+        "abilityEn": "Can add a disinfection kit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дальнобойщик",
+      "title": "Дальнобойщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" стопку журналов",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Truck Driver",
+        "abilityEn": "Can add a stack of magazines to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дворник",
+      "title": "Дворник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" метлу. Имеет иммунитет к простудным заболеваниям",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Janitor",
+        "abilityEn": "Can add a broom to their \"Large Equipment.\" Immune to colds"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дегустатор",
+      "title": "Дегустатор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" 10 литров любого напитка. Неуязвим к \"Фобиям/Страхам\" и болезням, связанным с алкоголем",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Taster",
+        "abilityEn": "Can add 10 liters of any drink to their \"Large Equipment.\" Immune to \"Phobia/Fear\" and alcohol-related illnesses"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дезинсектор",
+      "title": "Дезинсектор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При попадании в бункер может убрать проблемы с грызунами и насекомыми, а также добавить себе в \"Крупный инвентарь\" защитный костюм",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Exterminator",
+        "abilityEn": "Upon entering the bunker, can remove problems with rodents and insects and add a protective suit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Директор",
+      "title": "Директор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять свою \"Профессию\" с изгнанным игроком",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Director",
+        "abilityEn": "Can exchange their \"Profession\" with an exiled player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Доярка",
+      "title": "Доярка",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" корову",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Milkmaid",
+        "abilityEn": "Can add a cow to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Животновод",
+      "title": "Животновод",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" мешок корма для животных (3 кг.). Неуязвим к \"Фобиям/Страхам\", связанным с животными",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Livestock Farmer",
+        "abilityEn": "Can add a bag of animal feed to their \"Backpack\" (3 kg). Immune to \"Phobia/Fear\" related to animals"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Жокей",
+      "title": "Жокей",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" лошадь",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Jockey",
+        "abilityEn": "Can add a horse to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Завуч школы",
+      "title": "Завуч школы",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может повысить стаж \"Профессии\" на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "School Deputy",
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Заправщик АЗС",
+      "title": "Заправщик АЗС",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" 2 канистры с бензином",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Gas Station Attendant",
+        "abilityEn": "Can add 2 gasoline cans to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Знахарь",
+      "title": "Знахарь",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" целебные травы или уменьшить \"Среднюю\"/\"Тяжелую\" степень болезни на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Herbalist",
+        "abilityEn": "Can add medicinal herbs to their \"Backpack\" or reduce a \"Moderate\"/\"Severe\" illness by 1 for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Инкассатор",
+      "title": "Инкассатор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" бронежилет",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cash Collector",
+        "abilityEn": "Can add a bulletproof vest to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кассир",
+      "title": "Кассир",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При наличии рядом торгового центра может добавить себе в \"Крупный инвентарь\" любой товар на 10 кг",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Cashier",
+        "abilityEn": "If near a shopping center, can add any product up to 10 kg to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кибернетик",
+      "title": "Кибернетик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" мощный моноблок",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cyberneticist",
+        "abilityEn": "Can add a powerful all-in-one PC to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кинолог",
+      "title": "Кинолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" овчарку (3 года) и корм для нее на 3 месяца",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dog Trainer",
+        "abilityEn": "Can add a shepherd dog (3 years old) and food for 3 months to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Коллектор",
+      "title": "Коллектор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть \"Крупный инвентарь\" у любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Debt Collector",
+        "abilityEn": "Can steal \"Large Equipment\" from any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Командир корабля",
+      "title": "Командир корабля",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" надувную моторную лодку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ship Captain",
+        "abilityEn": "Can add an inflatable motorboat to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Комбайнер",
+      "title": "Комбайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" семена для посева",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Combine Harvester",
+        "abilityEn": "Can add seeds for sowing to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Коммерческий директор",
+      "title": "Коммерческий директор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может аннулировать \"Профессии\" всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Commercial Director",
+        "abilityEn": "Can nullify the \"Profession\" of all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Композитор",
+      "title": "Композитор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" музыкальный инструмент. Имеет иммунитет к \"Фобиям/Страхам\", связанным с музыкой",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Composer",
+        "abilityEn": "Can add a musical instrument to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to music"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Космонавт",
+      "title": "Космонавт",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" скафандр",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Astronaut",
+        "abilityEn": "Can add a spacesuit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Криминалист",
+      "title": "Криминалист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может забрать \"Крупный инвентарь\" изгнанного игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Criminalist",
+        "abilityEn": "Can take the \"Large Equipment\" of an exiled player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кузнец",
+      "title": "Кузнец",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" молоток",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Blacksmith",
+        "abilityEn": "Can add a hammer to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Маникюрщик",
+      "title": "Маникюрщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" маникюрный набор",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Manicurist",
+        "abilityEn": "Can add a manicure set to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Математик",
+      "title": "Математик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" коробку канцтоваров",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Mathematician",
+        "abilityEn": "Can add a box of stationery to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Матрос",
+      "title": "Матрос",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" канат 60 метров",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sailor",
+        "abilityEn": "Can add a 60-meter rope to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Менеджер по продажам",
+      "title": "Менеджер по продажам",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять свой \"Рюкзак\" с рюкзаком другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sales Manager",
+        "abilityEn": "Can exchange their \"Backpack\" with another player's \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Метеоролог",
+      "title": "Метеоролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" небольшое метеорологическое устройство",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Meteorologist",
+        "abilityEn": "Can add a small meteorological device to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Механик",
+      "title": "Механик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" генератор электричества",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Mechanic",
+        "abilityEn": "Can add an electric generator to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Модельер",
+      "title": "Модельер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" 3 комплекта утеплённой одежды",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Fashion Designer",
+        "abilityEn": "Can add 3 sets of insulated clothing to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Моряк",
+      "title": "Моряк",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" лодку. Неуязвим к \"Фобиям/Страхам\", связанным с морем и водой",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sailor",
+        "abilityEn": "Can add a boat to their \"Large Equipment.\" Immune to \"Phobia/Fear\" related to the sea and water"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Музыкант",
+      "title": "Музыкант",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" автономную музыкальную колонку. Имеет иммунитет к \"Фобиям/Страхам\", связанным с музыкой",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Musician",
+        "abilityEn": "Can add an autonomous music speaker to their \"Backpack.\" Immune to \"Phobia/Fear\" related to music"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Мясник",
+      "title": "Мясник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 5 кг сырокопчёного мяса",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Butcher",
+        "abilityEn": "Can add 5 kg of smoked meat to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Няня",
+      "title": "Няня",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 10 бутылочек детского питания и \"слюнявчик\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Nanny",
+        "abilityEn": "Can add 10 bottles of baby food and a bib to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Оператор колл-центра",
+      "title": "Оператор колл-центра",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" радиотелефон",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Call Center Operator",
+        "abilityEn": "Can add a radiotelephone to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Орнитолог",
+      "title": "Орнитолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может исправить проблемы бункера, связанные с животными, а также может добавить себе в \"Крупный инвентарь\" клетку с попугаем",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ornithologist",
+        "abilityEn": "Can fix bunker problems related to animals and add a parrot in a cage to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Охотник",
+      "title": "Охотник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может убрать проблемы бункера, связанные с животными, а также может добавить себе в \"Крупный инвентарь\" винтовку с 10 патронами",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hunter",
+        "abilityEn": "Can remove bunker problems related to animals and add a rifle with 10 bullets to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Парикмахер",
+      "title": "Парикмахер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" ножницы. Может вылечить \"Фобия/Страх\", связанную с растительностью на теле",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hairdresser",
+        "abilityEn": "Can add scissors to their \"Backpack.\" Can cure \"Phobia/Fear\" related to body hair"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Парфюмер",
+      "title": "Парфюмер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может решить проблему с неприятным запахом у другого игрока или добавить в \"Рюкзак\" эфирные масла",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Perfumer",
+        "abilityEn": "Can solve another player's unpleasant odor problem or add essential oils to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Певец",
+      "title": "Певец",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" микрофон, магнитофон и несколько кассет с песнями",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Singer",
+        "abilityEn": "Can add a microphone, tape recorder, and several cassettes with songs to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Педагог",
+      "title": "Педагог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может повысить стаж \"Профессии\" на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Teacher",
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пивовар",
+      "title": "Пивовар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 1 ящик пива и семена хмеля",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Brewer",
+        "abilityEn": "Can add 1 box of beer and hop seeds to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Плотник",
+      "title": "Плотник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может перенести бункер в лес и добавить себе в \"Рюкзак\" ножовку и рубанок",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Carpenter",
+        "abilityEn": "Can move the bunker to the forest and add a saw and plane to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Повар",
+      "title": "Повар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 10 пачек доширака",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cook",
+        "abilityEn": "Can add 10 packs of instant noodles to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пожарный",
+      "title": "Пожарный",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" защитный костюм",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Firefighter",
+        "abilityEn": "Can add a protective suit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Посудомойщик",
+      "title": "Посудомойщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" посудомоечную машину",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dishwasher",
+        "abilityEn": "Can add a dishwasher to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Почтальон",
+      "title": "Почтальон",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" велосипед, стопку листов А4 и клей",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Postman",
+        "abilityEn": "Can add a bicycle, a stack of A4 paper, and glue to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Предприниматель",
+      "title": "Предприниматель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 2 небольших предмета",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Entrepreneur",
+        "abilityEn": "Can add 2 small items to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Преподаватель",
+      "title": "Преподаватель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может повысить стаж \"Профессии\" на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lecturer",
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Программист",
+      "title": "Программист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Профессию\" другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Programmer",
+        "abilityEn": "Can change another player's \"Profession\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пчеловод",
+      "title": "Пчеловод",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 3 банки мёда и решить проблему с пчелиным ульем на входе",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Beekeeper",
+        "abilityEn": "Can add 3 jars of honey to their \"Backpack\" and solve the problem with the beehive at the entrance"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Радиотехник",
+      "title": "Радиотехник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" все необходимое для связи с другими бункерами и внешним миром",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Radio Technician",
+        "abilityEn": "Can add everything needed to communicate with other bunkers and the outside world to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Разнорабочий",
+      "title": "Разнорабочий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" один любой ручной строительный инструмент на свой выбор",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Handyman",
+        "abilityEn": "Can add any hand construction tool of their choice to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Реаниматолог",
+      "title": "Реаниматолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" дефибриллятор",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Resuscitator",
+        "abilityEn": "Can add a defibrillator to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Рекрутер",
+      "title": "Рекрутер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить стаж \"Профессии\" на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Recruiter",
+        "abilityEn": "Can reduce the \"Profession\" experience of any player by 1"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ректор",
+      "title": "Ректор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может повысить стаж \"Профессии\" на 1 любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Rector",
+        "abilityEn": "Can increase the \"Profession\" experience of any player by 1"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Садовод",
+      "title": "Садовод",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" мешок земли плодородной почвы и семена моркови",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Gardener",
+        "abilityEn": "Can add a bag of fertile soil and carrot seeds to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Санитар",
+      "title": "Санитар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" аптечку с медикаментами",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sanitary Worker",
+        "abilityEn": "Can add a first aid kit with medications to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сварщик",
+      "title": "Сварщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" сварочный аппарат",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Welder",
+        "abilityEn": "Can add a welding machine to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Секретарь",
+      "title": "Секретарь",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может копировать себе в \"Крупный инвентарь\" любой предмет (не помещение), который уже есть в бункере или у другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Secretary",
+        "abilityEn": "Can copy any item (not a room) from the bunker or another player to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Скотник",
+      "title": "Скотник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" скотину (1 шт.)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cattleman",
+        "abilityEn": "Can add livestock (1 animal) to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сотрудник салона связи",
+      "title": "Сотрудник салона связи",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" товар из салона связи",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Telecom Shop Employee",
+        "abilityEn": "Can add a product from a telecom shop to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сторож",
+      "title": "Сторож",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" пистолет с солью",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Watchman",
+        "abilityEn": "Can add a salt gun to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Студент",
+      "title": "Студент",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" энергетики в количестве х2 от мест в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Student",
+        "abilityEn": "Can add energy drinks in double the number of bunker slots to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Судебный пристав",
+      "title": "Судебный пристав",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть \"Крупный инвентарь\" у другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bailiff",
+        "abilityEn": "Can steal \"Large Equipment\" from another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сушист",
+      "title": "Сушист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 2 кг суши",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sushi Chef",
+        "abilityEn": "Can add 2 kg of sushi to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Таксист",
+      "title": "Таксист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" автомобиль с полностью залитым баком",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Taxi Driver",
+        "abilityEn": "Can add a car with a full tank to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Тату-мастер",
+      "title": "Тату-мастер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" набор татуировщика с бинтом и антисептиком",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Tattoo Artist",
+        "abilityEn": "Can add a tattoo kit with bandages and antiseptic to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Тележурналист",
+      "title": "Тележурналист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" телевизор",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "TV Journalist",
+        "abilityEn": "Can add a TV to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Типограф",
+      "title": "Типограф",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" стопку журналов (на выбор: научные/развлекательные/строительные)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Printer",
+        "abilityEn": "Can add a stack of magazines (choice of scientific/entertainment/construction) to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Тракторист",
+      "title": "Тракторист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может сказать \"300\" и добавить себе в \"Рюкзак\" 2 кг зерна",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Tractor Driver",
+        "abilityEn": "Can say \"300\" and add 2 kg of grain to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Уборщик",
+      "title": "Уборщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может удалить \"Рюкзак\" любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cleaner",
+        "abilityEn": "Can delete any player's \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ученый",
+      "title": "Ученый",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может поменяться \"Профессией\" с другим игроком с возможностью использовать её проф. возможность (даже если она уже была использована)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Scientist",
+        "abilityEn": "Can swap \"Profession\" with another player and use their professional ability (even if it has already been used)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Учитель географии",
+      "title": "Учитель географии",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" атлас мира",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Geography Teacher",
+        "abilityEn": "Can add a world atlas to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Фельдшер",
+      "title": "Фельдшер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" большую аптечку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Paramedic",
+        "abilityEn": "Can add a large first aid kit to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Фермер",
+      "title": "Фермер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" ящик с продуктами",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Farmer",
+        "abilityEn": "Can add a box of food to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Физик",
+      "title": "Физик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять \"Профессию\" двух других игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Physicist",
+        "abilityEn": "Can exchange the \"Profession\" of two other players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Фотограф",
+      "title": "Фотограф",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" фотоаппарат. Если в бункере присутствуют любые проблемы с крысами, то может исправить их",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Photographer",
+        "abilityEn": "Can add a camera to their \"Backpack.\" If there are any rat problems in the bunker, can fix them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Фумелье",
+      "title": "Фумелье",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" 50 сигар",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sommelier",
+        "abilityEn": "Can add 50 cigars to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Хакер",
+      "title": "Хакер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" ноутбук с зарядным устройством",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hacker",
+        "abilityEn": "Can add a laptop with a charger to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Химик",
+      "title": "Химик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" химические реактивы",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Chemist",
+        "abilityEn": "Can add chemical reagents to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Хоккеист",
+      "title": "Хоккеист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" амуницию хоккеиста",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hockey Player",
+        "abilityEn": "Can add hockey gear to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Часовщик",
+      "title": "Часовщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Профессии\" по часовой стрелке. Использованные профессиональные возможности нельзя применять повторно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Watchmaker",
+        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Швея",
+      "title": "Швея",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" комплект термоодежды",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Seamstress",
+        "abilityEn": "Can add a set of thermal clothing to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Эколог",
+      "title": "Эколог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" мешок удобренной плодовитой почвы",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ecologist",
+        "abilityEn": "Can add a bag of fertilized fertile soil to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Энергетик",
+      "title": "Энергетик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" переносную электростанцию",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Energy Engineer",
+        "abilityEn": "Can add a portable power station to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Энолог",
+      "title": "Энолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Крупный инвентарь\" ящик с вином",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Winemaker",
+        "abilityEn": "Can add a box of wine to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Эпидемиолог",
+      "title": "Эпидемиолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Неуязвим к инфекционным и вирусным заболеваниям. Может добавить себе в \"Рюкзак\" одну вакцину от любой инфекции или вируса",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Epidemiologist",
+        "abilityEn": "Immune to infectious and viral diseases. Can add one vaccine for any infection or virus to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Этнограф",
+      "title": "Этнограф",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" карту местности, где есть информация обо всех бункерах. Также, может устранить вражеский бункер или отменить враждебную связь между любыми игроками",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ethnographer",
+        "abilityEn": "Can add a map of the area to his \"Backpack\", where there is information about all the bunkers. It can also eliminate an enemy bunker or cancel hostile communication between any players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ювелир",
+      "title": "Ювелир",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может ювелирно украсть чужой \"Рюкзак\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Jeweler",
+        "abilityEn": "Can skillfully steal another player's \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Автомеханик",
+      "title": "Автомеханик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится СТО",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Car Mechanic",
+        "abilityEn": "Knows where the service station is located"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Агент банка",
+      "title": "Агент банка",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может заключить контракт с одним бункером: вражеский бункер становится дружеским, а дружеский - вражеским",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bank Agent",
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Агент по туризму",
+      "title": "Агент по туризму",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может один раз изменить \"Время нахождения\" в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Travel Agent",
+        "abilityEn": "Can change the \"Time in the bunker\" once"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Адвокат",
+      "title": "Адвокат",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может дать 15 секунд любому игроку во время оправдательных речей",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lawyer",
+        "abilityEn": "Can give 15 seconds to any player during defense speeches"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Администратор",
+      "title": "Администратор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может решить любую проблему в бункере, кроме бомжа",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Administrator",
+        "abilityEn": "Can solve any problem in the bunker, except for a homeless person"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Актер озвучки",
+      "title": "Актер озвучки",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может забрать на 15 секунд речи любого игрока и сразу же их использовать",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Voice Actor",
+        "abilityEn": "Can take 15 seconds of any player's speech and use it immediately"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Актер/Актриса",
+      "title": "Актер/Актриса",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может использовать проф. возможность вместо любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Actor/Actress",
+        "abilityEn": "Can use a professional ability instead of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Акушер",
+      "title": "Акушер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может помочь родить женщинам с любым телосложением",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Midwife",
+        "abilityEn": "Upon entering the bunker, can help women of any body type give birth"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Аналитик",
+      "title": "Аналитик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может раскрыть любую характеристику любого игрока, которая уже открыта у половины игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Analyst",
+        "abilityEn": "Can reveal any characteristic of any player that is already revealed by half of the players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Андролог",
+      "title": "Андролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить пол на противоположный другому игроку (возраст и чайлдфри-статус сохраняются)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Andrologist",
+        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Антрополог",
+      "title": "Антрополог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Фобия/Страх\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Anthropologist",
+        "abilityEn": "Can change the \"Phobia/Fear\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Артист",
+      "title": "Артист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может использовать профессиональную возможность вместо любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Artist",
+        "abilityEn": "Can use a professional ability instead of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Архитектор",
+      "title": "Архитектор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить информацию \"Когда был построен бункер\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Architect",
+        "abilityEn": "Can change the \"Bunker Information\" about when the bunker was built"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Астролог",
+      "title": "Астролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить \"Дополнительное сведение\" игрокам до и после себя",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Astrologer",
+        "abilityEn": "Can add \"Additional Information\" to players before and after themselves"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Аудитор",
+      "title": "Аудитор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если достаточно еды в бункере (без учёта провизии игроков), то может добавить 1 место в бункер",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Auditor",
+        "abilityEn": "If there is enough food in the bunker (excluding players' provisions), can add 1 slot to the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Балерина",
+      "title": "Балерина",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить свое \"Телосложение\" на \"Атлетическое\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ballerina",
+        "abilityEn": "Can change their \"Body Type\" to \"Athletic\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Банкир",
+      "title": "Банкир",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может заключить контракт с одним бункером: вражеский бункер становится дружеским, а дружеский - вражеским",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Banker",
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Бармен",
+      "title": "Бармен",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить в Доп.сведение \"Зависим от алкоголя\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bartender",
+        "abilityEn": "Can add \"Addicted to alcohol\" to the Additional information for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Батюшка",
+      "title": "Батюшка",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Человеческую черту\" другому игроку, если она отрицательная",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Priest",
+        "abilityEn": "Can change a negative \"Human Trait\" of another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Бизнес-консультант",
+      "title": "Бизнес-консультант",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Инвентарь\" в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Business Consultant",
+        "abilityEn": "Can change the \"Large Equipment\" in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Биохимик",
+      "title": "Биохимик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может сделать витамины на месяц",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Biochemist",
+        "abilityEn": "Upon entering the bunker, can make vitamins for a month"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Брокер",
+      "title": "Брокер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может заключить контракт с одним бункером: вражеский бункер становится дружеским, а дружеский - вражеским",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Broker",
+        "abilityEn": "Can sign a contract with one bunker: an enemy bunker becomes friendly, and a friendly one becomes hostile"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Букмекер",
+      "title": "Букмекер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять местами \"Хобби/Увлечение\" двух любых игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bookmaker",
+        "abilityEn": "Can swap the \"Hobby\" of any two players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Бухгалтер",
+      "title": "Бухгалтер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить количество еды в бункере в 2 раза (больше/меньше)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Accountant",
+        "abilityEn": "Can change the amount of food in the bunker by 2 times (increase or decrease)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ведущий мероприятий",
+      "title": "Ведущий мероприятий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может настроить 2 любых бункера друг против друга, в том числе ваш",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Event Host",
+        "abilityEn": "Can set any two bunkers against each other, including your own"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Венеролог",
+      "title": "Венеролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить венерологическое заболевание \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Venereologist",
+        "abilityEn": "Can cure venereal diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Визажист",
+      "title": "Визажист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить возраст другого игрока на \"Молодой\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Makeup Artist",
+        "abilityEn": "Can change the age of another player to \"Young\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Винодел",
+      "title": "Винодел",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может пронести с собой ящик с вином",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Winemaker",
+        "abilityEn": "Upon entering the bunker, can bring a box of wine"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Владелец магазина",
+      "title": "Владелец магазина",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер добавляет еды на +3 месяца",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Store Owner",
+        "abilityEn": "Upon entering the bunker, adds food for +3 months"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Военный врач",
+      "title": "Военный врач",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить любое заболевание \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Military Doctor",
+        "abilityEn": "Can cure any disease of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Воспитатель",
+      "title": "Воспитатель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может забрать ребёнка у другого игрока. Ребёнок не занимает слот",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Educator",
+        "abilityEn": "Can take a child from another player. The child does not occupy a slot"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Вышибала",
+      "title": "Вышибала",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может увеличить на 1 степень болезни другому игроку. Нельзя применить для игрока у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bouncer",
+        "abilityEn": "Can increase the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гастроэнтеролог",
+      "title": "Гастроэнтеролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевание пищеварительного тракта до \"Идеально здоров\" другому игроку. Нельзя применить для игрока у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Gastroenterologist",
+        "abilityEn": "Can cure digestive tract diseases to \"Perfect Health\" for another player. Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Геймер",
+      "title": "Геймер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает парочку ценных советов, как выжить в экстремальной ситуации, пройдя все игры по выживанию. Может добавить себе в \"Крупный инвентарь\" портативную игру на свой выбор",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Gamer",
+        "abilityEn": "Knows a few valuable tips on how to survive in extreme situations, having played all survival games. He can add a portable game of his choice to his \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гематолог",
+      "title": "Гематолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевание крови \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hematologist",
+        "abilityEn": "Can cure blood diseases of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Генетик",
+      "title": "Генетик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер значительно поднимает шанс на рождение здоровых детей",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Geneticist",
+        "abilityEn": "Upon entering the bunker, significantly increases the chance of healthy children being born"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Геронтолог",
+      "title": "Геронтолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить возраст любого игрока с «Пожилой» на «Взрослый»",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Gerontologist",
+        "abilityEn": "Can change the age of any player from \"Elderly\" to \"Adult\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гинеколог",
+      "title": "Гинеколог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевание репродуктивной женской системы \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Gynecologist",
+        "abilityEn": "Can cure diseases of the female reproductive system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гипнотизер",
+      "title": "Гипнотизер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Фобию/Страх\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hypnotist",
+        "abilityEn": "Can change the \"Phobia/Fear\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гримёр",
+      "title": "Гримёр",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить возраст другого игрока (сделать Молодой/Взрослый/Пожилой)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Makeup Artist",
+        "abilityEn": "Can change the age of another player (make it Young/Adult/Elderly)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гробовщик",
+      "title": "Гробовщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может сказать фразу \"Он еще жив!\" и оживить изгнанного игрока. Возвращенный игрок может изменить 1 свою самую плохую характеристику",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Undertaker",
+        "abilityEn": "Can say the phrase \"He's still alive!\" and revive an exiled player. A returned player can change their single worst characteristic"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Грузчик",
+      "title": "Грузчик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить своё \"Телосложение\" на \"Крепкое\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Loader",
+        "abilityEn": "Can change their \"Body Type\" to \"Strong\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дворецкий",
+      "title": "Дворецкий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может защитить другого игрока от вылета до следующего круга. Используется перед голосованием",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Butler",
+        "abilityEn": "Can protect another player from being expelled until the next round. Used before voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Декан",
+      "title": "Декан",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить стаж \"Профессии\" со \"Стажёра\" или \"Любителя\" до \"Новичок\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dean",
+        "abilityEn": "Can reduce the \"Profession\" experience from \"Intern\" or \"Amateur\" to \"Beginner\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Депутат",
+      "title": "Депутат",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может увеличить время своего высказывания на 30 секунд",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Deputy",
+        "abilityEn": "Can increase their speaking time by 30 seconds"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дерматолог",
+      "title": "Дерматолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни на 1 любого игрока, связанную с заболеванием кожи. Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dermatologist",
+        "abilityEn": "Can reduce the illness severity by 1 for any player related to skin diseases. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Диетолог",
+      "title": "Диетолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может улучшить телосложение с \"Хрупкий\" до \"Худой\" любому игроку",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Dietitian",
+        "abilityEn": "Upon entering the bunker, can improve the \"Body Type\" from \"Fragile\" to \"Thin\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дизайнер",
+      "title": "Дизайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может сделать любого игрока \"Молодой\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Designer",
+        "abilityEn": "Can make any player \"Young\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Диктор",
+      "title": "Диктор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить 30 секунд монолога любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Announcer",
+        "abilityEn": "Can add 30 seconds of monologue to any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Дипломат",
+      "title": "Дипломат",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить связь родственников, друзей, врагов и т.д. любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Diplomat",
+        "abilityEn": "Can cancel the relationship of relatives, friends, enemies, etc., for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Доктор",
+      "title": "Доктор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить любую болезнь, степень которой \"легкая\" или \"средняя\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Doctor",
+        "abilityEn": "Can cure any disease of \"Mild\" or \"Moderate\" severity for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Документовед",
+      "title": "Документовед",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может раскрыть \"Дополнительное сведение\" любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Document Specialist",
+        "abilityEn": "Can reveal the \"Additional Information\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Драматург",
+      "title": "Драматург",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может поменять \"Хобби/Увлечение\" всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Playwright",
+        "abilityEn": "Can change the \"Hobby\" of all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Живописец",
+      "title": "Живописец",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Хобби/Увлечение\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Painter",
+        "abilityEn": "Can change the \"Hobby\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Журналист",
+      "title": "Журналист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может высказать дополнительно свое мнение в течение 30 секунд. Используется перед голосованием",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Journalist",
+        "abilityEn": "Can express their opinion for an additional 30 seconds. Used before voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Звукорежиссер",
+      "title": "Звукорежиссер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отнять 30 секунд речи любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sound Engineer",
+        "abilityEn": "Can take 30 seconds of speech from any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Изобретатель",
+      "title": "Изобретатель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может создать автоматический инкубатор для яиц",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Inventor",
+        "abilityEn": "Upon entering the bunker, can create an automatic egg incubator"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Иллюзионист",
+      "title": "Иллюзионист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может дополнительно раскрыть любую свою характеристику",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Illusionist",
+        "abilityEn": "Can reveal any of their characteristics additionally"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Иллюстратор",
+      "title": "Иллюстратор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить \"Фобию/Страх\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Illustrator",
+        "abilityEn": "Can add a \"Phobia/Fear\" to any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Иммунолог",
+      "title": "Иммунолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевания иммунной системы \"Легкой степени\" и \"Средней степени\" любому игроку. Неуязвим к инфекционным заболеваниям",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Immunologist",
+        "abilityEn": "Can cure diseases of the immune system of \"Mild\" and \"Moderate\" severity for any player. Immune to infectious diseases"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Инженер",
+      "title": "Инженер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может создать оборудованную теплицу для выращивания растений в бункере",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Engineer",
+        "abilityEn": "Upon entering the bunker, can create a fully equipped greenhouse for growing plants in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Инспектор",
+      "title": "Инспектор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить любую проблему в бункере (отсутствие электричества, плесень, волки, проблемы с отоплением, крысы, бомж и т.д.)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Inspector",
+        "abilityEn": "Can add any problem to the bunker (lack of electricity, mold, wolves, heating problems, rats, homeless person, etc.)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Инструктор",
+      "title": "Инструктор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Телосложение\" любому игроку на свой выбор",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Instructor",
+        "abilityEn": "Can change the \"Body Type\" of any player to their choice"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Историк",
+      "title": "Историк",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть любую характеристику у изгнанного игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Historian",
+        "abilityEn": "Can steal any characteristic from an exiled player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Каратист",
+      "title": "Каратист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить состояние здоровья \"Идеально здоров\" у другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Karateka",
+        "abilityEn": "Can regenerate the \"Health\" condition \"Perfect Health\" for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кардиолог",
+      "title": "Кардиолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить болезнь другому игроку, связанную с сердечно-сосудистыми заболеваниями",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cardiologist",
+        "abilityEn": "Can cure diseases related to cardiovascular diseases for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Картограф",
+      "title": "Картограф",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может добавить комнату 50 м², где находятся защитные костюмы",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Cartographer",
+        "abilityEn": "Upon entering the bunker, can add a 50 m² room with protective suits"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Каскадер",
+      "title": "Каскадер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить направленную на себя карту \"Спец. возможности\" другого игрока. Не распространяется на карты \"Спец. возможности\", применённые ко всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Stuntman",
+        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Киллер",
+      "title": "Киллер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может увеличить заболевание до \"Критической степени\" игроку до или после себя",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Killer",
+        "abilityEn": "Can increase the illness severity to \"Critical\" for a player before or after themselves"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Киномеханик",
+      "title": "Киномеханик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить себе \"Дополнительные сведения\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Film Projectionist",
+        "abilityEn": "Can change their \"Additional Information\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кинорежиссер",
+      "title": "Кинорежиссер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Дополнительные сведения\" всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Film Director",
+        "abilityEn": "Can change the \"Additional Information\" of all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Климатолог",
+      "title": "Климатолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить катаклизм",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Climatologist",
+        "abilityEn": "Can change the Cataclysm"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Клоун",
+      "title": "Клоун",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Профессии\" по часовой стрелке. Использованные профессиональные возможности нельзя применять повторно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Clown",
+        "abilityEn": "Can change \"Profession\" clockwise. Used professional abilities cannot be reused"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Комик",
+      "title": "Комик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Человеческую черту\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Comedian",
+        "abilityEn": "Can change the \"Human Trait\" of another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кондитер",
+      "title": "Кондитер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может обеспечить сладостями на месяц",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Confectioner",
+        "abilityEn": "Upon entering the bunker, can provide sweets for a month"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Косметолог",
+      "title": "Косметолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять местами \"Телосложение\" двух других игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cosmetologist",
+        "abilityEn": "Can swap the \"Body Type\" of two other players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Критик",
+      "title": "Критик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может увеличить себе обвинительную речь на 30 секунд",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Critic",
+        "abilityEn": "Can increase their accusatory speech by 30 seconds"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Крупье",
+      "title": "Крупье",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть \"Рюкзак\" у игрока до или после него",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Croupier",
+        "abilityEn": "Can steal the \"Backpack\" of a player before or after themselves"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Культуролог",
+      "title": "Культуролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить \"Фобию/Страх\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cultural Scientist",
+        "abilityEn": "Can cure the \"Phobia/Fear\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Курьер",
+      "title": "Курьер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер проносит с собой термосумку с едой на +1 неделю",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Courier",
+        "abilityEn": "Upon entering the bunker, can bring a thermal bag with food for +1 week"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ландшафтный дизайнер",
+      "title": "Ландшафтный дизайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить информацию \"Размер бункера\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Landscape Designer",
+        "abilityEn": "Can change the \"Bunker Information\" about the bunker size"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Лейтенант",
+      "title": "Лейтенант",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может удалить голос против себя. Используется после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lieutenant",
+        "abilityEn": "Can remove a vote against themselves. Used after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Лесоруб",
+      "title": "Лесоруб",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить своё \"Телосложение\" на \"Крепкий\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lumberjack",
+        "abilityEn": "Can change their \"Body Type\" to \"Strong\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Лингвист",
+      "title": "Лингвист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает 5 языков",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Linguist",
+        "abilityEn": "Knows 5 languages"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Лоббист",
+      "title": "Лоббист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить последнюю карту \"Спец. возможности\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lobbyist",
+        "abilityEn": "Can cancel the last \"Special Ability\" card"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Логопед",
+      "title": "Логопед",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить любому игроку дефект речи до конца игры (обязан отыгрывать) или же убрать дефект речи",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Speech Therapist",
+        "abilityEn": "Can add a speech defect to any player until the end of the game (must role-play) or remove a speech defect"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Майор",
+      "title": "Майор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится склад с оружием",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Major",
+        "abilityEn": "Knows where the weapons warehouse is located"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Маркетолог",
+      "title": "Маркетолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может раскрыть дополнительно ещё 1 свою характеристику в любой момент",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Marketer",
+        "abilityEn": "Can reveal one additional characteristic of their own at any time"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Массажист",
+      "title": "Массажист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить \"Телосложение\" \"Ожирение-сильное\" или \"Ожирение-слабое\" до \"Полный\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Masseur",
+        "abilityEn": "Can reduce the \"Body Type\" from \"Strong Obesity\" or \"Weak Obesity\" to \"Full\" for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Медсестра/Медбрат",
+      "title": "Медсестра/Медбрат",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить любое заболевание \"Лёгкой степени\" другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Nurse/Medic",
+        "abilityEn": "Can cure any disease of \"Mild\" severity for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Микробиолог",
+      "title": "Микробиолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может создать из плесени пенициллин (антибиотик)",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Microbiologist",
+        "abilityEn": "Upon entering the bunker, can create penicillin (antibiotic) from mold"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Модель",
+      "title": "Модель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить свое \"Телосложение\" на \"Худой\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Model",
+        "abilityEn": "Can change their \"Body Type\" to \"Thin\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Монах",
+      "title": "Монах",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Человеческую черту\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Monk",
+        "abilityEn": "Can change the \"Human Trait\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Моушн-дизайнер",
+      "title": "Моушн-дизайнер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Хобби/Увлечение\" другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Motion Designer",
+        "abilityEn": "Can change the \"Hobby\" of another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Нарколог",
+      "title": "Нарколог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить наркозависимость и алкоголизм любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Narcologist",
+        "abilityEn": "Can cure drug addiction and alcoholism for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Невролог",
+      "title": "Невролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевания нервной системы \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Neurologist",
+        "abilityEn": "Can cure diseases of the nervous system of \"Mild\" and \"Moderate\" severity to \"Perfect Health\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Нейрохирург",
+      "title": "Нейрохирург",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни, связанную с заболеванием нервной системы, включая головной мозг, спинной мозг и периферическую нервную систему до \"Легкая степень\" любому игроку. Нельзя применить на игрока со степенью болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Neurosurgeon",
+        "abilityEn": "Can reduce the illness severity related to diseases of the nervous system, including the brain, spinal cord, and peripheral nervous system to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Нотариус",
+      "title": "Нотариус",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При наличии изгнанного игрока может добавить один голос в любого игрока. Используется после голосования",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Notary",
+        "abilityEn": "If there is an exiled player, can add one vote to any player. Used after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Окулист",
+      "title": "Окулист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни, связанную с заболеванием зрения до \"Легкая степень\" любому игроку. Нельзя применить для игрока, у которого степень болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ophthalmologist",
+        "abilityEn": "Can reduce the illness severity related to vision diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Онколог",
+      "title": "Онколог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни онкологических заболеваний до \"Легкая степень\" любому игроку. Нельзя применить для игрока, у которого степень болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Oncologist",
+        "abilityEn": "Can reduce the illness severity of oncological diseases to \"Mild\" for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Организатор мероприятий",
+      "title": "Организатор мероприятий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При наличии рядом бункеров со строителями и медиками, они смогут прийти в наш бункер, не занимая слоты и не тратя нашу еду (приходят со своей)",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Event Organizer",
+        "abilityEn": "If there are nearby bunkers with builders and medics, they can come to our bunker without taking slots or consuming our food (they bring their own)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ортопед",
+      "title": "Ортопед",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни, связанную с травмой любому игроку. Нельзя применить для игрока, у которого степень болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Orthopedist",
+        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Оториноларинголог",
+      "title": "Оториноларинголог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить болезнь, связанную с ушами, горлом, носом любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Otolaryngologist",
+        "abilityEn": "Can cure diseases related to the ears, throat, and nose for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Официант",
+      "title": "Официант",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится ближайший винный погреб",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Waiter",
+        "abilityEn": "Knows where the nearest wine cellar is located"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Охранник",
+      "title": "Охранник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может перенаправить 2 чужих голоса в себя. Используется сразу после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Security Guard",
+        "abilityEn": "Can redirect 2 votes from others to themselves. Used immediately after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Оценщик",
+      "title": "Оценщик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может выбрать характеристику, которую будет открывать другой игрок",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Appraiser",
+        "abilityEn": "Can choose the characteristic that another player will reveal"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Парамедик",
+      "title": "Парамедик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вернуть изгнанного игрока во временный лагерь и изменить ему одну плохую открытую характеристику",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Paramedic",
+        "abilityEn": "Can return an exiled player to the temporary camp and change one bad revealed characteristic"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Патологоанатом",
+      "title": "Патологоанатом",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть открытое \"Здоровье\" изгнанного игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Pathologist",
+        "abilityEn": "Can steal the revealed \"Health\" of an exiled player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Педиатр",
+      "title": "Педиатр",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может снизить степень инфекционной болезни со \"Средней степени\" до \"Легкой степени\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Pediatrician",
+        "abilityEn": "Can reduce the severity of an infectious disease from \"Moderate\" to \"Mild\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Переводчик",
+      "title": "Переводчик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает 7 языков и умеет общаться с глухонемыми",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Translator",
+        "abilityEn": "Knows 7 languages and can communicate with the deaf and mute"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пилот",
+      "title": "Пилот",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Неуязвим к \"Фобиям/Страхам\", связанными с высотой, воздухом, скоростью и движением",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Pilot",
+        "abilityEn": "Immune to \"Phobia/Fear\" related to height, air, speed, and movement"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Писатель",
+      "title": "Писатель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Дополнительные сведения\" или \"Хобби/Увлечение\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Writer",
+        "abilityEn": "Can change the \"Additional Information\" or \"Hobby\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пластический хирург",
+      "title": "Пластический хирург",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Пол\" на противоположный другому игроку (возраст и чайлдфри-статус сохраняются)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Plastic Surgeon",
+        "abilityEn": "Can change the \"Gender\" of another player to the opposite (age and childfree status remain)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Подолог",
+      "title": "Подолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить болезнь другому игроку, связанную со стопой или ногтями. Нельзя применить для игрока, у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Podiatrist",
+        "abilityEn": "Can cure diseases related to the foot or nails for another player. Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Политолог",
+      "title": "Политолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может взять слово на 15 секунд. Используется после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Political Scientist",
+        "abilityEn": "Can take the floor for 15 seconds. Used after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Полицейский",
+      "title": "Полицейский",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может перенаправить голос, направленный на него, в другого игрока. Используется сразу после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Police Officer",
+        "abilityEn": "Can redirect a vote directed at themselves to another player. Used immediately after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Посол",
+      "title": "Посол",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вмешаться в речь другого игрока на 15 секунд, если вся речь не менее 45 секунд",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Ambassador",
+        "abilityEn": "Can interrupt another player's speech for 15 seconds if the entire speech is at least 45 seconds"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Президент",
+      "title": "Президент",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить один голос в любого игрока. Используется после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "President",
+        "abilityEn": "Can add one vote to any player. Used after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Провизор",
+      "title": "Провизор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер расскажет о местоположении склада с медикаментами",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Pharmacist",
+        "abilityEn": "Upon entering the bunker, can tell the location of the medical warehouse"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Продавец",
+      "title": "Продавец",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится ближайший торговый центр",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Salesperson",
+        "abilityEn": "Knows where the nearest shopping center is located"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Продюсер",
+      "title": "Продюсер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если имеются вражеские бункеры, может с ними договориться",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Producer",
+        "abilityEn": "If there are enemy bunkers, can negotiate with them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Проктолог",
+      "title": "Проктолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевания прямой кишки и толстого кишечника другого игрока до \"Идеально здоров\". Нельзя применить для игрока, у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Proctologist",
+        "abilityEn": "Can cure diseases of the rectum and large intestine of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Прокурор",
+      "title": "Прокурор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может воспользоваться голосом другого игрока. Используется перед голосованием",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Prosecutor",
+        "abilityEn": "Can use another player's vote. Used before voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Прораб",
+      "title": "Прораб",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может разделить любую комнату в бункере на 2 комнаты",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Foreman",
+        "abilityEn": "Can divide any room in the bunker into 2 rooms"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Психиатр",
+      "title": "Психиатр",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить \"Фобию/Страх\" или \"Здоровье\", связанное с психическим заболеванием, у другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Psychiatrist",
+        "abilityEn": "Can cure \"Phobia/Fear\" or \"Health\" related to mental illness for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Психолог",
+      "title": "Психолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить \"Фобию/Страх\" другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Psychologist",
+        "abilityEn": "Can cure the \"Phobia/Fear\" of another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Психотерапевт",
+      "title": "Психотерапевт",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить психическое заболевание другого игрока до \"Идеально здоров\". Нельзя применить для игрока, у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Psychotherapist",
+        "abilityEn": "Can cure mental illness of another player to \"Perfect Health.\" Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Пульмонолог",
+      "title": "Пульмонолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевания дыхательной системы другому игроку. Нельзя применить для игрока, у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Pulmonologist",
+        "abilityEn": "Can cure diseases of the respiratory system for another player. Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Реабилитолог",
+      "title": "Реабилитолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни на 1 другому игроку. Нельзя применить для игрока, у которого степень болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Rehabilitation Specialist",
+        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Ревизор",
+      "title": "Ревизор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При наличии вражеских бункеров ликвидирует их",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Auditor",
+        "abilityEn": "If there are enemy bunkers, eliminates them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Режиссер",
+      "title": "Режиссер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может поменять местами любую характеристику двух других игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Director",
+        "abilityEn": "Can swap any characteristic of two other players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Риелтор",
+      "title": "Риелтор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При наличии вражеского бункера может уменьшить место в бункере на 1, а при наличии дружеского — добавить 1 место",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Realtor",
+        "abilityEn": "If there is an enemy bunker, can reduce the bunker slots by 1, and if there is a friendly bunker, can add 1 slot"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Руководитель",
+      "title": "Руководитель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может раскрыть \"Дополнительные сведения\" другого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Leader",
+        "abilityEn": "Can reveal the \"Additional Information\" of another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Рэпер",
+      "title": "Рэпер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Имеет иммунитет к заболеваниям, связанными с нарушением речи и слуха",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Rapper",
+        "abilityEn": "Immune to diseases related to speech and hearing disorders"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сантехник",
+      "title": "Сантехник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер, может добавить оборудованную ванную комнату 4 м² в бункер",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Plumber",
+        "abilityEn": "Upon entering the bunker, can add a fully equipped 4 m² bathroom to the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Священник",
+      "title": "Священник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить направленную на себя карту \"Спец. возможности\" другого игрока. Не распространяется на карты \"Спец. возможности\", применённые ко всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Priest",
+        "abilityEn": "Can cancel a \"Special Ability\" card directed at themselves from another player. Does not apply to \"Special Ability\" cards applied to all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Секретный агент",
+      "title": "Секретный агент",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить любую закрытую характеристику любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Secret Agent",
+        "abilityEn": "Can change any hidden characteristic of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Скульптор",
+      "title": "Скульптор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может сделать двух игроков родственниками (должны пройти оба игрока либо ни один из них). После вылета одного игрока сразу же уходит другой. Один игрок не может быть воскрешён",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sculptor",
+        "abilityEn": "Can make two players relatives (both must pass or neither). After one player is expelled, the other leaves immediately. One player cannot be revived"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Следователь",
+      "title": "Следователь",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может сделать двух игроков врагами (пройти в бункер может только один из них). Если слотов в бункере столько же, сколько выживших, то происходит голосование за изгнание одного или обоих игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Investigator",
+        "abilityEn": "Can make two players enemies (only one can enter the bunker). If the number of slots in the bunker equals the number of survivors, a vote is held to expel one or both players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Слесарь",
+      "title": "Слесарь",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить информацию \"Размер бункера\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Locksmith",
+        "abilityEn": "Can change the \"Bunker Information\" about the bunker size"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Солдат",
+      "title": "Солдат",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, как оказывать первую медицинскую помощь. Может изменить себе телосложение на \"Крепкое\"",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Soldier",
+        "abilityEn": "Knows how to provide first aid. Can change his bodytype to \"Strong\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сомнолог",
+      "title": "Сомнолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить состояние здоровья легкой или средней степени другому игроку, связанное с нарушением сна",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Somnologist",
+        "abilityEn": "Can cure \"Health\" conditions of \"Mild\" or \"Moderate\" severity related to sleep disorders for another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сотрудник NASA",
+      "title": "Сотрудник NASA",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может убрать временные рамки, если катаклизм ограничен по времени",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "NASA Employee",
+        "abilityEn": "Can remove time limits if the Cataclysm is time-limited"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сотрудник ЦРУ",
+      "title": "Сотрудник ЦРУ",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить информацию \"В бункере присутствуют\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "CIA Employee",
+        "abilityEn": "Can change the \"Bunker Information\" about who is present in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Социолог",
+      "title": "Социолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Фобия/Страх\" всем игрокам",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sociologist",
+        "abilityEn": "Can change the \"Phobia/Fear\" of all players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Спасатель",
+      "title": "Спасатель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может перенаправить чужой голос против себя. Используется сразу после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Rescuer",
+        "abilityEn": "Can redirect another player's vote against themselves. Used immediately after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Спортивный тренер",
+      "title": "Спортивный тренер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Телосложение\" на \"атлетическое\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sports Coach",
+        "abilityEn": "Can change the \"Body Type\" to \"Athletic\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Спортсмен",
+      "title": "Спортсмен",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может поменять свое \"Телосложение\" на \"Атлетическое\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Athlete",
+        "abilityEn": "Can change their \"Body Type\" to \"Athletic\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Станочник",
+      "title": "Станочник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может добавить станок (по дереву или металлу) в бункер",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Machinist",
+        "abilityEn": "Upon entering the bunker, can add a machine (for wood or metal) to the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Стилист",
+      "title": "Стилист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Пол\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Stylist",
+        "abilityEn": "Can change the \"Gender\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Стоматолог",
+      "title": "Стоматолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить другому игроку любую болезнь, связанную с ротовой полостью или зубами. Невозможно вылечить \"Критическую степень\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dentist",
+        "abilityEn": "Can cure any disease related to the oral cavity or teeth for another player. Cannot cure \"Critical\" severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Страховой агент",
+      "title": "Страховой агент",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть чужое \"Здоровье\" у игрока, у которого идут 30 оправдательных секунд",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Insurance Agent",
+        "abilityEn": "Can steal another player's \"Health\" during their 30-second defense"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Стример",
+      "title": "Стример",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может открыть 1 дополнительную характеристику на своем ходу",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Streamer",
+        "abilityEn": "Can open 1 additional characteristic on their turn"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Стриптизёр",
+      "title": "Стриптизёр",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить чайлдфри другому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Stripper",
+        "abilityEn": "Can add childfree status to another player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Строитель",
+      "title": "Строитель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может достроить санузел, поставить двери и решить проблемы с отоплением в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Builder",
+        "abilityEn": "Can finish the bathroom, install doors, and solve heating problems in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Стюард/Стюардесса",
+      "title": "Стюард/Стюардесса",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может защитить себя от вылета до следующего круга. Используется перед голосованием",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Flight Attendant",
+        "abilityEn": "Can protect themselves from being expelled until the next round. Used before voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Судья",
+      "title": "Судья",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если несколько игроков на голосовании набрали одинаковое равное количество голосов, то может выбрать, кого выгнать",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Judge",
+        "abilityEn": "If several players have the same number of votes during voting, can choose who to expel"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сурдопереводчик",
+      "title": "Сурдопереводчик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" устройство для автоматического перевода с любого языка (включая язык глухонемых)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Sign Language Interpreter",
+        "abilityEn": "Can add a device to his backpack for automatic translation from any language (including the language of the deaf and dumb)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сценарист",
+      "title": "Сценарист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может обменять \"Дополнительные сведения\" у двух других игроков",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Screenwriter",
+        "abilityEn": "Can exchange \"Additional information\" with two other players"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Танцор",
+      "title": "Танцор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить на 1 степень \"Телосложение\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Dancer",
+        "abilityEn": "Can change the \"Body Type\" of any player by 1 degree"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Телеведущий",
+      "title": "Телеведущий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить на 30 секунд речь любому игроку или увеличить свое время на высказывание",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "TV Host",
+        "abilityEn": "Can reduce another player's speech by 30 seconds or increase their own speaking time"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Телохранитель",
+      "title": "Телохранитель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может перенаправить голос на себя, который был против какого-то игрока. Используется сразу после голосования",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bodyguard",
+        "abilityEn": "Can redirect a vote against themselves that was directed at another player. Used immediately after voting"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Терапевт",
+      "title": "Терапевт",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень любого заболевания на 1 другого игрока. Нельзя применить для игрока у которого степень болезни \"Критическая\". Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Therapist",
+        "abilityEn": "Can reduce the illness severity by 1 for another player. Cannot be applied to a player with \"Critical\" illness severity. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Товаровед",
+      "title": "Товаровед",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер добавляет себе свежие продукты на +1 месяц",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Merchandiser",
+        "abilityEn": "Upon entering the bunker, adds fresh food for +1 month"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Травматолог",
+      "title": "Травматолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может уменьшить степень болезни, связанной с травмами на 1 любого игрока. Вылечить болезнь невозможно",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Traumatologist",
+        "abilityEn": "Can reduce the illness severity related to injuries by 1 for any player. Cannot cure the disease"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Уролог",
+      "title": "Уролог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить другому игроку болезнь, связанную с заболеванием мочеполовой системы. \"Критическая степень\" уменьшается до \"Тяжелой степени\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Urologist",
+        "abilityEn": "Can cure diseases related to the genitourinary system for another player. \"Critical\" severity is reduced to \"Severe\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Учитель иностранного языка",
+      "title": "Учитель иностранного языка",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить действующую карту иностранца у любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Foreign Language Teacher",
+        "abilityEn": "Can cancel the current foreigner card of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Учитель истории",
+      "title": "Учитель истории",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить \"Дополнительные сведения\" любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "History Teacher",
+        "abilityEn": "Can change the \"Additional Information\" of any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Учитель младших классов",
+      "title": "Учитель младших классов",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может позволить детям не занимать места в бункере",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Elementary School Teacher",
+        "abilityEn": "Can allow children not to occupy slots in the bunker"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Фармацевт",
+      "title": "Фармацевт",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится склад с медикаментами",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Pharmacist",
+        "abilityEn": "Knows where the medical warehouse is located"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Философ",
+      "title": "Философ",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может изменить себе \"Человеческую черту\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Philosopher",
+        "abilityEn": "Can change their own \"Human Trait\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Финансист",
+      "title": "Финансист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если в бункере присутствуют любые проблемы с электричеством или водоснабжением, то может исправить их",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Financier",
+        "abilityEn": "If there are any problems with electricity or water supply in the bunker, can fix them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Хирург",
+      "title": "Хирург",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить любую болезнь другому игроку. Нельзя применить на игрока с заболеванием \"Критической степени\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Surgeon",
+        "abilityEn": "Can cure any disease for another player. Cannot be applied to a player with \"Critical\" illness severity"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Хореограф",
+      "title": "Хореограф",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может излечить сколиоз \"Лёгкой степени\", а также изменить своё \"Телосложение\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Choreographer",
+        "abilityEn": "Can cure scoliosis of \"Mild\" severity, as well as change your \"Body Type\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Художник",
+      "title": "Художник",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может снизить степень болезни \"Стресс\" (не ниже \"Лёгкой\") любому игроку. При прохождении в бункер может снизить влияние фобий на жизнь бункера",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Artist",
+        "abilityEn": "Can reduce the illness severity \"Stress\" (not below \"Mild\") for any player. Upon entering the bunker, can reduce the impact of phobias on bunker life"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Художник компьютерной графики",
+      "title": "Художник компьютерной графики",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если в бункере присутствуют любые проблемы с воздушными фильтрами, то может исправить их",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Computer Graphics Artist",
+        "abilityEn": "If there are any problems with air filters in the bunker, can fix them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Частный детектив",
+      "title": "Частный детектив",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может раскрыть любую характеристику другого игрока, при желании сразу может ее украсть",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Private Detective",
+        "abilityEn": "Can reveal any characteristic of another player and, if desired, can steal it immediately"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Шахтер",
+      "title": "Шахтер",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер, добавляет комнату 50 м², где находятся защитные костюмы",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Miner",
+        "abilityEn": "If the player enters the bunker, adds a 50 m² room with protective suits"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Экономист",
+      "title": "Экономист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может увеличить количество еды в бункере на 2 месяца",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Economist",
+        "abilityEn": "Can increase the amount of food in the bunker for 2 months"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Экскурсовод",
+      "title": "Экскурсовод",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может помочь совершить одну безопасную вылазку",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Tour Guide",
+        "abilityEn": "Upon entering the bunker, can help make one safe outing"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Электрик",
+      "title": "Электрик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Если в бункере присутствуют любые проблемы с электроэнергией, то может исправить их",
+          "kind": "passive"
+        }
+      ],
+      "data": {
+        "nameEn": "Electrician",
+        "abilityEn": "If there are any problems with electricity in the bunker, can fix them"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Юрист",
+      "title": "Юрист",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить процесс голосования в текущем раунде и начать новый. Нельзя использовать на 15 прощальных секундах",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Lawyer",
+        "abilityEn": "Can cancel the voting process in the current round and start a new one. Cannot be used during the 15-second farewell"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Разработчик роботов",
+      "title": "Разработчик роботов",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может решить проблему с электричеством или добавить робота-пылесоса себе в \"Крупный инвентарь\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Robot Developer",
+        "abilityEn": "Can solve electricity problems or add a robot vacuum to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Врач гериатр",
+      "title": "Врач гериатр",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может позволить одному пожилому человеку не занимать место при условии совместного прохождения в бункер",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Geriatrician",
+        "abilityEn": "Can allow one elderly person not to occupy a slot if they enter the bunker together"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Установщик кондиционеров",
+      "title": "Установщик кондиционеров",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "При прохождении в бункер может решить проблемы с запахом и воздушными фильтрами",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Air Conditioner Installer",
+        "abilityEn": "Upon entering the bunker, can solve problems with odor and air filters"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Энтомолог",
+      "title": "Энтомолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может избавить бункер от насекомых или добавить 2 кг. сушёных сверчков себе в \"Рюкзак\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Entomologist",
+        "abilityEn": "Can rid the Bunker of insects or add 2 kg of dried crickets to its \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Машинист поезда",
+      "title": "Машинист поезда",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может украсть \"Крупный инвентарь\" у любого игрока",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Train Operator",
+        "abilityEn": "Can steal \"Large Equipment\" from any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Биоэтик",
+      "title": "Биоэтик",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может отменить связь родственников, друзей, врагов и т.д. любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Bioethicist",
+        "abilityEn": "Can cancel family, friendship, or enmity ties for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Сыровар",
+      "title": "Сыровар",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" сыр (5 кг.)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Cheesemaker",
+        "abilityEn": "Can add 5 kg of cheese to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Кондуктор",
+      "title": "Кондуктор",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится метрополитен",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Conductor",
+        "abilityEn": "Knows the location of the metro system"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Озеленитель",
+      "title": "Озеленитель",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить пару саженцев вечнозелёных растений себе в \"Рюкзак\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Landscaper",
+        "abilityEn": "Can add a couple of evergreen seedlings to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Неонатолог",
+      "title": "Неонатолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить грудного ребёнка (до 1 года) любому игроку (ребёнок не занимает место в бункере)",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Neonatologist",
+        "abilityEn": "Can add an infant (under 1 year old) to any player (the child does not take up space in the bunker)"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Радиоведущий",
+      "title": "Радиоведущий",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить антенну спутниковой связи себе в \"Крупный инвентарь\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Radio Host",
+        "abilityEn": "Can add a satellite communication antenna to their \"Large Equipment\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Паразитолог",
+      "title": "Паразитолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевание, связанное с паразитами \"Легкой степени\" и \"Средней степени\" до \"Идеально здоров\" любому игроку",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Parasitologist",
+        "abilityEn": "Can cure a disease related to parasites of \"Mild\" and \"Moderate\" severity to \"Perfectly Healthy\" for any player"
+      },
+      "source": "original"
+    },
+    {
+      "key": "Гирудотерапевт",
+      "title": "Гирудотерапевт",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может добавить себе в \"Рюкзак\" банку с 10-ю пиявками",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Hirudotherapist",
+        "abilityEn": "Can add a jar with 10 leeches to their \"Backpack\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Эндокринолог",
+      "title": "Эндокринолог",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Может вылечить заболевания эндокринной системы другому игроку. Нельзя применить для игрока у которого степень болезни \"Критическая\"",
+          "kind": "active"
+        }
+      ],
+      "data": {
+        "nameEn": "Endocrinologist",
+        "abilityEn": "Can cure endocrine system diseases for another player. Cannot be applied to a player whose disease severity is \"Critical\""
+      },
+      "source": "original"
+    },
+    {
+      "key": "Консьерж",
+      "title": "Консьерж",
+      "abilities": [
+        {
+          "name": "Проф. возможность",
+          "text": "Знает, где находится пустая комната (10 м²) и может добавить отмычку себе в \"Рюкзак\"",
+          "kind": "narrative"
+        }
+      ],
+      "data": {
+        "nameEn": "Concierge",
+        "abilityEn": "Knows the location of an empty room (10 m²) and can add a lockpick to their \"Backpack\""
+      },
+      "source": "original"
+    }
+  ]
+}
